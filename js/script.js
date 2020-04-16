@@ -1,7 +1,7 @@
 /* SCRIPTS JS */
 
-function soma(a, b) {
+function somaDois(a, b) {
     return console.log(a + b)
 }
 
-soma(2, 3)
+somaDois(2, 3)
