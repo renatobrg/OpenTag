@@ -1,4 +1,6 @@
 # Site OpenTag
 
-![./images/Logo-Open.png](Logo OpenTag)
-Criação e desenvolvimento do site da OpenTag
+![](./images/Logo-Open.png)
+<img src="./images/Logo-Open.png" />
+
+Criação e desenvolvimento do **Site da OpenTag**
