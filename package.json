@@ -1,0 +1,35 @@
+{
+  "name": "opentag",
+  "version": "1.0.0",
+  "description": "<img src=\"./images/Simbolo-Open.png\" height=\"100\" />",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatobrg/OpenTag.git"
+  },
+  "keywords": [],
+  "author": "Renato Borges",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.6.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "7.0.1",
+    "gulp-concat": "2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "3.0.0",
+    "gulp-uglifycss": "1.0.9",
+    "gulp-watch": "^5.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/renatobrg/OpenTag/issues"
+  },
+  "homepage": "https://github.com/renatobrg/OpenTag#readme"
+}
