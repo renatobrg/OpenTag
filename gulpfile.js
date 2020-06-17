@@ -1,30 +1,23 @@
 const { series, parallel } = require('gulp')
-const { src, dest} = require('gulp')
 const gulp = require('gulp')
-
 const sass = require('gulp-sass')
+const uglifycss = require('gulp-uglifycss')
 const concat = require('gulp-concat')
 const watch = require('gulp-watch')
 
 
-//TRECHO REFERENTE AO VISUAL
-function transformaSASS() {
-    return src('sass/index.sass')
-        .pipe(sass({outputStyle: 'compressed'}).on('#DeuRuim', sass.logError))
+function transformaCSS() {
+    return gulp.src('sass/index.sass')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(uglifycss({ "uglifyComments": true}))
         .pipe(concat('style.min.css'))
-        .pipe(dest('css'))
+        .pipe(gulp.dest('css'))
 }
 
-function monitorarArquivos() {
-    watch('sass/**/*.sass', ['transformaSASS'])
+function modificaArquivos() {
+    gulp.watch('sass/**/*.sass', transformaCSS)
 }
 
-
-gulp.task('transformaSASS', transformaSASS)
-gulp.task('watch', monitorarArquivos)
-
-
-module.exports.default = parallel(
-    transformaSASS,
-    monitorarArquivos
+exports.default = series(
+    modificaArquivos
 )

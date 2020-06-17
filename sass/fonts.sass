@@ -2,16 +2,22 @@
 @import node_modules/@fortawesome/fontawesome-free/css/fontawesome.css
 @import mixins
 
+$font-dense: '../fonts/Dense/'
+
 @font-face 
     font-family: 'Dense', 'Montserrat', sans-serif
-    src: url('Dense-Regular.eot')
-    src: url('Dense-Regular.eot?#iefix') format('embedded-opentype')
-         url('Dense-Regular.woff2') format('woff2')
-         url('Dense-Regular.woff') format('woff')
+    src: url($font-dense + 'Dense-Regular.eot'),
+         url:($font-dense + 'Dense-Regular.eot?#iefix') format('embedded-opentype'),
+         url($font-dense + 'Dense-Regular.woff2') format('woff2'),
+         url($font-dense + 'Dense-Regular.woff') format('woff')
     font-weight: normal
     font-style: normal
 
 h1
-    font-family: 'Dense'
-    font-weight: $bold
-    color: $black
+    font-family: 'Montserrat'
+    font-weight: $regular
+    font-size: 3rem
+    color: $white
+
+    strong
+        font-weight: $regular

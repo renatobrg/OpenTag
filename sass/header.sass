@@ -1,0 +1,48 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+@import responsive
+
+.main-header
+
+    .pre-header
+        padding: 15px 0px
+        background-color: $dark
+
+        .wrap-container
+            display: flex
+            justify-content: space-between
+            align-items: center
+    
+    .nav-header
+        padding: 30px 0px
+        background-color: $black
+
+        .wrap-container
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            picture
+                height: 50px
+                img
+                    height: 100%
+                    width: auto
+            
+            nav
+                ul
+                    padding: 0px
+                    margin: 0px
+                    li
+                        display: inline-block
+                        margin: 0px 10px
+                        a
+                            display: block
+                            color: $white
+                            padding: 5px
+                            +transition(.2s)
+                            
+                            &:hover
+                                background-color: $primary
+                                

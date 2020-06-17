@@ -3,16 +3,17 @@
 /*GLOBALS*/
 .wrap-container
     max-width: 1170px
+    margin: 0 auto
 
 
 .show-desk
     display: block
 
-    @media $tablet-small
+    @media (max-width: $tablet-small)
         display: none
 
 .show-mobile
     display: none
     
-    @media $tablet-small
+    @media (max-width: $tablet-small)
         display: block

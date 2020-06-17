@@ -1,0 +1,52 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+@import responsive
+
+main
+    height: 85vh
+    background-image: url('../imgs/bg-topo-home.jpg')
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    h1
+        text-align: center
+        padding: 150px 0px
+        span
+            display: block
+        strong
+            color: $primary
+
+    .wrap-box
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: center
+        margin: 0px auto
+        width: 80vw
+
+        .box
+            flex-basis: 20%
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            align-items: center
+            text-align: center
+            padding: 30px
+            height: 250px
+            background-color: $primary
+            margin: 0px 15px
+
+            &__icon
+                width: 70px
+                height: 70px
+                margin: 0px auto 15px
+
+                img
+                    width: 100%
+            
+            &__title
+                color: $white
+                font-weight: $regular
