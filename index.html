@@ -10,32 +10,45 @@
 <body>
 
     <header class="main-header">
-            <div class="pre-header">
-                <div class="wrap-container">
-                    <ul>
-                        <li><a href="" title="" aria-label=""></a></li>
-                        <li><a href="" title="" aria-label=""></a></li>
+        <div class="pre-header">
+            <div class="wrap-container pre-header__wrap">
+                <div class="pre-header__esq-itens">
+                    <ul class="redes-sociais-icons">
+                        <li>
+                            <a href="#" title="" aria-label="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" aria-label="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
                     </ul>
-                    <span>contato@opentag.com</span>
-                    <span>11.95488.9713</span>
+                    <span><i class="fas fa-envelope"></i>&nbsp; contato@opentag.com</span>
                 </div>
-            </div>
 
-            <div class="nav-header">
-                <div class="wrap-container">
-                    <picture>
-                        <img src="./imgs/Logo-Open.png" alt="Logo OpenTag - Agência Digital">
-                    </picture>
-                    <nav>
-                        <ul>
-                            <li><a href="#" title="Ir para a Home">Home</a></li>
-                            <li><a href="#" title="Ir para a Sobre Nós">A Open</a></li>
-                            <li><a href="#" title="Ir para a Serviços">Serviços</a></li>
-                            <li><a href="#" title="Ir para a Portfolio">Porfolio</a></li>
-                            <li><a href="#" title="Ir para a Contato">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <div class="pre-header__dir-itens">
+                    <span><i class="fas fa-phone-square-alt"></i>&nbsp; 11.95488.9713 &nbsp;|&nbsp; 11.95488.9713</span>
+                </div>                    
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="wrap-container main-header__wrap">
+                <picture class="main-header__logo">
+                    <img src="./imgs/Logo-Open.png" alt="Logo OpenTag - Agência Digital">
+                </picture>
+
+                <nav class="main-header__menu">
+                    <ul>
+                        <li><a href="#" title="Ir para a Home">Home</a></li>
+                        <li><a href="#" title="Ir para a Sobre Nós">A Open</a></li>
+                        <li><a href="#" title="Ir para a Serviços">Serviços</a></li>
+                        <li><a href="#" title="Ir para a Portfolio">Porfolio</a></li>
+                        <li><a href="#" title="Ir para a Contato">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -43,11 +56,12 @@
     <main>
         <h1>
             <span>A <strong>agência perfeita</strong> pra quem quer</span> 
-            <span>se <strong>mostrar para o mundo</strong>.</span>
+            <span>se <strong>mostrar para o mundo</strong></span>
         </h1>
 
         <div class="wrap-box">
             <a href="#" class="box">
+                <div class="box__overlay"></div>
                 <picture class="box__icon">
                     <img src="./imgs/star.png" alt="Ícone X" />
                 </picture>
@@ -57,6 +71,7 @@
             </a>
 
             <a href="#" class="box">
+                <div class="box__overlay"></div>
                 <picture class="box__icon">
                     <img src="./imgs/star.png" alt="Ícone X" />
                 </picture>
@@ -66,6 +81,7 @@
             </a>
 
             <a href="#" class="box">
+                <div class="box__overlay"></div>
                 <picture class="box__icon">
                     <img src="./imgs/star.png" alt="Ícone X" />
                 </picture>
@@ -75,6 +91,7 @@
             </a>
 
             <a href="#" class="box">
+                <div class="box__overlay"></div>
                 <picture class="box__icon">
                     <img src="./imgs/star.png" alt="Ícone X" />
                 </picture>
@@ -84,6 +101,7 @@
             </a>
 
             <a href="#" class="box">
+                <div class="box__overlay"></div>
                 <picture class="box__icon">
                     <img src="./imgs/star.png" alt="Ícone X" />
                 </picture>
@@ -96,15 +114,18 @@
 
     <section class="a-open">
         <div class="wrap-container">
-            <article>
-                <h2>Estamos <span>Aqui</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsa necessitatibus eum minima? Perspiciatis itaque maxime laboriosam, repellat, adipisci, minus dolore unde quaerat ex corporis eaque nemo eligendi autem consequatur.</p>
-                <a href="" title="">Ler Sobre</a>
+            <article class="content">
+                <h2 class="content__title">Estamos <span>Aqui</span></h2>
+                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Soluta ipsa necessitatibus eum minima? Perspiciatis itaque maxime laboriosam, 
+                repellat, adipisci, minus dolore unde quaerat ex corporis eaque nemo eligendi 
+                autem. Minus dolore unde quaerat ex corporis eaque nemo eligendi autem consequatur.</p>
+                <a class="btn-primary" href="#" title="">Ler Sobre</a>
             </article>
         </div>
 
-        <picture>
-            <img src="" alt="Homem sentado usando o notebook" />
+        <picture class="img-float">
+            <img src="./imgs/homem-sentado-2.png" alt="Homem sentado usando o notebook" />
         </picture>
     </section>
 
@@ -179,46 +200,49 @@
 
     <footer class="main-footer">
         <div class="nav-footer">
-            <article>
-                <h3>Sobre Nós</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, quod, laborum ratione fugiat aliquid soluta laboriosam quisquam veritatis dolorum non aspernatur facilis ex deleniti pariatur eligendi, doloremque animi? Cupiditate, architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusantium itaque tempore sint voluptatum eligendi dolorem, distinctio quae delectus. Commodi corrupti rerum molestiae ex error inventore sed fugiat suscipit dolore!</p>
-                <picture><img src="" alt="Logo Rodapé - OpenTag - Agência Digital" /></picture>
-            </article>
-            <nav>
-                <h3>Menu Rápido</h3>
-                <ul>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                </ul>
-            </nav>
+            <div class="wrap-container">
+                <article>
+                    <h3>Sobre Nós</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, quod, laborum ratione fugiat aliquid soluta laboriosam quisquam veritatis dolorum non aspernatur facilis ex deleniti pariatur eligendi, doloremque animi? Cupiditate, architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusantium itaque tempore sint voluptatum eligendi dolorem, distinctio quae delectus. Commodi corrupti rerum molestiae ex error inventore sed fugiat suscipit dolore!</p>
+                    <picture><img src="" alt="Logo Rodapé - OpenTag - Agência Digital" /></picture>
+                </article>
+                <nav>
+                    <h3>Menu Rápido</h3>
+                    <ul>
+                        <li><a href="" title=""></a></li>
+                        <li><a href="" title=""></a></li>
+                        <li><a href="" title=""></a></li>
+                        <li><a href="" title=""></a></li>
+                        <li><a href="" title=""></a></li>
+                    </ul>
+                </nav>
 
-            <address>
-                <h3>Entre em Contato</h3>
-                <p>
-                    <b>Telefone</b>
-                    <br />
-                    11.95488.9713
-                    <br />
-                    11.95488.9713
-                </p>
+                <address>
+                    <h3>Entre em Contato</h3>
+                    <p>
+                        <b>Telefone</b>
+                        <br />
+                        11.95488.9713
+                        <br />
+                        11.95488.9713
+                    </p>
 
-                <p>
-                    <b>E-Mail</b>
-                    <br />
-                    contato@opentag.com.br
-                </p>
+                    <p>
+                        <b>E-Mail</b>
+                        <br />
+                        contato@opentag.com.br
+                    </p>
 
-                <ul>
-                    <li><a href="" title="" aria-label=""></a></li>
-                    <li><a href="" title="" aria-label=""></a></li>
-                </ul>
-            </address>
+                    <ul>
+                        <li><a href="" title="" aria-label=""></a></li>
+                        <li><a href="" title="" aria-label=""></a></li>
+                    </ul>
+                </address>
+            </div>
         </div>
+
         <div class="pos-footer">
-            2020 - OpenTag - Agência Digital - Todos os direitos reservados.
+           <small>2020 - OpenTag - Agência Digital - Todos os direitos reservados.</small>
         </div>
     </footer>
     

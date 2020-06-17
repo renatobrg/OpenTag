@@ -1,4 +1,7 @@
 @import responsive
+@import mixins
+@import motors
+
 
 /*GLOBALS*/
 .wrap-container
@@ -17,3 +20,21 @@
     
     @media (max-width: $tablet-small)
         display: block
+
+
+/*BUTTONS*/
+.btn-primary
+    display: inline-block
+    width: 150px
+    height: auto
+    padding: 15px
+    background-color: $primary
+    text-align: center
+    text-transform: uppercase
+    font-weight: $bold
+    font-size: 0.8rem
+    color: $white
+    +transition(.2s)
+
+    &:hover
+        background-color: $secondary

@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap")
-@import node_modules/@fortawesome/fontawesome-free/css/fontawesome.css
+@import ../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss
+@import ../node_modules/@fortawesome/fontawesome-free/scss/regular.scss
+@import ../node_modules/@fortawesome/fontawesome-free/scss/brands.scss
+@import ../node_modules/@fortawesome/fontawesome-free/scss/solid.scss
 @import mixins
 
 $font-dense: '../fonts/Dense/'
@@ -13,11 +16,33 @@ $font-dense: '../fonts/Dense/'
     font-weight: normal
     font-style: normal
 
-h1
+h1, h2, p
     font-family: 'Montserrat'
     font-weight: $regular
+
+h1
     font-size: 3rem
     color: $white
 
     strong
         font-weight: $regular
+
+h2
+    font-size: 2.5rem
+    color: $grey
+
+    span
+        color: $primary
+
+    &::after
+        display: block
+        content: ''
+        width: 100px
+        height: 2px
+        background-color: $primary
+        margin: 10px auto 0px
+
+
+p
+    font-size: 1rem
+    line-height: 1.8rem 
