@@ -77,9 +77,27 @@ main
             &:last-child
                 background-image: url('../imgs/bg-topo-servs-seo-adwords.jpg')
 
-            &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:last-child
-                &:hover
-                    +grayscale(40%)
+            // &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:last-child
+            //     &:hover
+            //         +grayscale(40%)
+
+    .scrolldown
+        display: block
+        padding: 12px
+        margin: 50px auto 0px
+        width: 50px
+        height: 50px
+        border: 1px solid rgba(255,255,255,0.3)
+        +border-radius(50%)
+        +transition(.2s)
+        font-size: 1.2rem
+        text-align: center
+        color: rgba(255,255,255,0.3)
+
+        &:hover
+            background-color: rgba(255,255,255,0.1)
+            border: 1px solid rgba(255,255,255,0.5)
+            color: rgba(255,255,255,0.5)
 
 
 .a-open
@@ -100,13 +118,13 @@ main
                 font-size: 3rem
 
             &__text
-                padding: 30px 0px
+                padding: 30px 0px 50px
                 font-size: 1.3rem
                 line-height: 2rem
                 color: $grey
     
     .img-float
-        width: 40vw
+        width: 45vw
         height: auto
         position: absolute
         z-index: 3
@@ -118,21 +136,208 @@ main
 
 
 .servicos
-    padding: 150px
     position: relative
     z-index: 2
+    margin-top: -130px
     background-color: $light
+    clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%)
+
+    .wrap-container
+        padding: 350px 0px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .coluna-esq, .coluna-dir
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+            flex-basis: 50%
+
+            h2
+                text-align: center
+                margin-bottom: 50px
+
+            .box-servicos
+                width: 100%
+                height: 400px
+                padding: 30px
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                overflow: hidden
+
+                h3
+                    text-align: left
+                    font-size: 2.5rem
+                    font-weight: $bold
+                    color: $white
+
+                    span
+                        display: block
+                
+                p
+                    display: none
+                //     color: transparent
+                //     margin-bottom: -50px
+                //     +transition(.2s)
+                
+                // &:hover
+                //     p
+                //         color: $white
+                //         margin-bottom: 30px
+            
+            .show-desk
+                margin-top: 50px
+            
+            .show-mobile
+                display: none
+
+        .coluna-esq
+            .box-servicos
+                background-image: url('../imgs/box-home-serv-identidade-visual.jpg')
+        
+        .coluna-dir
+            .box-servicos
+                &:first-child
+                    background-image: url('../imgs/box-home-serv-sites.jpg')
+                
+                &:nth-child(2)
+                    background-image: url('../imgs/box-home-serv-mkt-digital.jpg')
 
 
 .portfolio
-    padding: 150px
+    padding: 150px 0px
+    height: auto
+    margin-top: -200px
     position: relative
     z-index: 1
     background-image: url('../imgs/bg-port-home.jpg')
+    clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0)
+
+    .wrap-container
+        padding: 150px 0px 100px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        .coluna-esq, .coluna-dir
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+            flex-basis: 50%
+
+            h2
+                text-align: center
+                margin-bottom: 50px
+
+            .box-portfolio
+                display: flex
+                width: 80%
+                height: 200px
+                padding: 15px
+                margin: 0px auto 30px
+                flex-direction: column
+                justify-content: flex-end
+                overflow: hidden
+                background-size: cover
+
+                h3
+                    display: none
+                    // text-align: left
+                    // font-size: 1rem
+                    // font-weight: $bold
+                    // color: $white
+
+            .btn-primary
+                margin-top: 20px
+
+        .coluna-esq
+            .box-portfolio
+                &:first-child
+                    background-image: url('../imgs/box-home-portfolio-acquapower.jpg')
+
+                &:nth-child(2)
+                    background-image: url('../imgs/box-home-portfolio-bio-estetica.jpg')
+
+        .coluna-dir
+            .box-portfolio
+                &:nth-child(2)
+                    background-image: url('../imgs/box-home-portfolio-muaylokeiros.jpg')
+
+                &:nth-child(3)
+                    background-image: url('../imgs/box-home-portfolio-inove.jpg')
 
 
 .contato
-    padding: 150px
+    padding: 50px 0px 150px
     position: relative
     z-index: 1
     background-color: $white
+
+    .wrap-container
+        display: flex
+        justify-content: space-between
+
+        .content
+            flex-basis: 50%
+            padding: 0px 90px
+            text-align: center
+
+            &__title
+                font-size: 3rem
+                line-height: 3.5rem
+                padding: 15px 0px
+
+                span
+                    color: $primary
+                    display: block
+            
+            &__txt
+                font-size: 1.5rem
+                line-height: 2rem
+                color: $grey
+
+        aside
+            flex-basis: 50%
+
+            .form-home
+                width: 80%
+                input, textarea
+                    display: block
+                    width: 100%
+                    height: 50px
+                    border: none
+                    margin: 0px
+                    margin-bottom: 15px
+                    background-color: $light
+                    padding-left: 15px
+                    font-size: 1rem
+                    box-sizing: border-box
+                    
+                    &:focus
+                        outline: none
+
+                textarea
+                    resize: none
+                    padding: 15px
+                    font-size: 1rem
+                    font-family: 'Montserrat' !important
+                    height: 150px
+
+                .linha-meia
+                    input
+                        width: 48%
+                        float: left
+
+                        &:last-child
+                            float: right
+
+                .btn-primary
+                    float: right
+                    width: 200px
+                    border: none
+                    cursor: pointer
+
