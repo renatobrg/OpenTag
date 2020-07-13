@@ -1,0 +1,104 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+@import responsive
+
+
+.page-sobre-nos
+    padding: 100px 0px
+    background-color: $dark
+    position: relative
+
+    .wrap-container
+        display: flex
+
+        .content
+            flex-basis: 75%
+
+            &__title
+                color: $light
+
+                &::after
+                    display: block
+                    content: ''
+                    width: 100px
+                    height: 2px
+                    background-color: $light
+                    margin: 5px 0px 0px 3px
+
+            &__text
+                color: $light
+                padding-top: 30px 
+
+    .img-float-right
+        display: block
+        width: 500px
+        height: auto
+        position: absolute
+        bottom: -50px
+        right: 0px
+        z-index: 1
+
+        img
+            width: 100%
+
+
+.chamada
+    padding: 100px 0px
+    background-image: url('../imgs/bg-topo-home.jpg')
+    background-size: cover
+    position: relative
+    z-index: 2
+
+    .wrap-container
+        .pages
+            text-align: center
+            .brs
+                display: block
+                color: $light
+                .cor
+                    color: $primary
+
+            &::after
+                display: none
+
+
+.depoimentos
+    padding: 100px 0px
+    background-color: $dark
+
+    .wrap-container
+        .depos
+            text-align: center
+            width: 70%
+            margin: 0px auto
+
+            &__title
+                span
+                    color: $primary
+                &::after
+                    background-color: $light
+
+            &__foto
+                display: block
+                margin: 50px auto 0px
+                width: 150px
+                height: 150px
+                overflow: hidden
+                background-color: $light
+                +border-radius(50%)
+
+                img
+                    width: auto
+                    height: 100%
+
+            &__nome
+                margin-top: 30px
+                font-size: 1.5rem
+                font-weight: $bold
+                color: $light
+
+            &__text
+                margin-top: 15px
+                color: $light

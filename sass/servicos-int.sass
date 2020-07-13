@@ -1,0 +1,40 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+@import responsive
+
+
+.servicos-int
+    padding: 100px 0px
+    background-color: $dark
+    position: relative
+
+    .wrap-container
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+
+        .content
+            flex-basis: 70%
+
+            &__title
+                color: $light
+
+                &::after
+                    display: block
+                    content: ''
+                    width: 100px
+                    height: 2px
+                    background-color: $light
+                    margin: 5px 0px 0px 3px
+
+            &__text
+                color: $light
+                padding-top: 30px
+        
+        .barra-lateral
+            flex-basis: 25%
+            border-left: 1px solid $light
+            padding-left: 30px
+            margin-left: 30px

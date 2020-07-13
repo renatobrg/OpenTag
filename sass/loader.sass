@@ -1,0 +1,69 @@
+@import global
+@import mixins
+@import motors
+@import responsive
+    
+.wrap-loader
+    position: absolute
+    top: 0px
+    left: 0px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    background-color: $black
+    width: 100%
+    height: 100vh
+    overflow: hidden
+    opacity: 0
+    animation: loadpage 1s ease-in-out forwards
+
+    .logo-svg
+        width: 20%
+        margin: 0px auto
+
+        svg
+            stroke-width: 2px
+            stroke: #333
+            width: 100%
+            height: 100%
+            stroke-dashoffset: 1450
+            stroke-dasharray: 1450
+            fill-opacity: 1
+            animation: svganimations 3s ease-in-out forwards
+
+            .st0 
+                fill: none
+                stroke: $white
+                stroke-width: 2.1609
+                stroke-miterlimit: 10
+    
+            .st1
+                fill: $primary
+                stroke: $white
+                stroke-width: 2.1609
+                stroke-miterlimit: 10
+                opacity: 0
+                animation: loadpage 2s ease-in-out forwards
+            
+            .st2
+                fill: $white
+                stroke: $white
+                stroke-width: 2.1609
+                stroke-miterlimit: 10
+
+
+@keyframes svganimations
+	0%
+		stroke-dashoffset: 1450
+	100%
+		stroke-dashoffset: 0
+
+
+@keyframes loadpage
+    0%
+        opacity: 0
+        
+    100%
+        opacity: 1
+        

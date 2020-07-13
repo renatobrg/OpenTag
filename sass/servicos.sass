@@ -1,0 +1,58 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+@import responsive
+
+
+.page-servicos
+    padding: 100px 0px
+    background-color: $dark
+    position: relative
+
+    .wrap-container
+        .content
+
+            &__title
+                color: $light
+
+                &::after
+                    display: block
+                    content: ''
+                    width: 100px
+                    height: 2px
+                    background-color: $light
+                    margin: 5px 0px 0px 3px
+
+            &__text
+                color: $light
+                padding-top: 30px
+
+        .boxes
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            margin-top: 50px
+
+            .box
+                position: relative
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                overflow: hidden
+                padding: 15px
+
+                flex-basis: 18%
+                min-height: 200px
+                background-color: $primary
+
+                &__title
+                    color: $white
+
+                    span
+                        display: block
+
+                &__subtitle
+                    display: none
+

@@ -16,9 +16,11 @@ $font-dense: '../fonts/Dense/'
     font-weight: normal
     font-style: normal
 
+
 h1, h2, h3, h4, p
     font-family: 'Montserrat'
     font-weight: $regular
+
 
 h1
     font-size: 3rem
@@ -27,9 +29,10 @@ h1
     strong
         font-weight: $regular
 
+
 h2
     font-size: 2.5rem
-    color: $grey
+    text-transform: capitalize
 
     span
         color: $primary
@@ -41,8 +44,26 @@ h2
         height: 2px
         background-color: $primary
         margin: 10px auto 0px
+    
+    &.home
+        color: $grey
+    
+    &.pages
+        color: $white
+
+
+h3
+    font-size: 1.5rem
+    font-weight: $bold
 
 
 p
-    font-size: 1rem
+    font-size: 1.2rem
+    font-weight: $regular
     line-height: 1.8rem 
+
+
+.big
+    font-size: 3.2rem
+    font-weight: $bold
+    text-transform: capitalize
