@@ -18,6 +18,7 @@ function modificaArquivos() {
     gulp.watch('sass/**/*.sass', transformaCSS)
 }
 
+
 exports.default = series(
     modificaArquivos
 )
