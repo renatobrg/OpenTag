@@ -10,22 +10,23 @@
     background-color: $dark
     position: relative
 
+    @media (max-width: $laptop-small)
+        padding: 50px 0px
+
     .wrap-container
         display: flex
+
+        @media (max-width: $laptop-small)
+            flex-direction: column
 
         .content
             flex-basis: 75%
 
+            @media (max-width: $laptop-small)
+                flex-basis: 100%
+
             &__title
                 color: $light
-
-                &::after
-                    display: block
-                    content: ''
-                    width: 100px
-                    height: 2px
-                    background-color: $light
-                    margin: 5px 0px 0px 3px
 
             &__text
                 color: $light
@@ -40,6 +41,18 @@
         right: 0px
         z-index: 1
 
+        @media (max-width: $laptop-small)
+            text-align: right
+            position: relative
+            width: 350px
+            margin: 0px auto
+
+        @media (max-width: $tablet-small)
+            width: 250px
+
+        @media (max-width: $mobile-large)  
+            width: 90%
+
         img
             width: 100%
 
@@ -50,6 +63,9 @@
     background-size: cover
     position: relative
     z-index: 2
+
+    @media (max-width: $laptop-small)
+        padding: 50px 0px
 
     .wrap-container
         .pages
@@ -68,6 +84,9 @@
     padding: 100px 0px
     background-color: $dark
 
+    @media (max-width: $laptop-small)
+        padding: 50px 0px
+
     .wrap-container
         .depos
             text-align: center
@@ -79,6 +98,7 @@
                     color: $primary
                 &::after
                     background-color: $light
+                    margin: 15px auto 0px
 
             &__foto
                 display: block
@@ -102,3 +122,4 @@
             &__text
                 margin-top: 15px
                 color: $light
+

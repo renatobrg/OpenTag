@@ -10,19 +10,14 @@
     background-color: $dark
     position: relative
 
+    @media (max-width: $laptop-small)
+        padding: 50px 0px 20px
+
     .wrap-container
         .content
 
             &__title
                 color: $light
-
-                &::after
-                    display: block
-                    content: ''
-                    width: 100px
-                    height: 2px
-                    background-color: $light
-                    margin: 5px 0px 0px 3px
 
             &__text
                 color: $light
@@ -31,28 +26,84 @@
         .boxes
             display: flex
             flex-direction: row
+            flex-wrap: wrap
             justify-content: space-between
-            align-items: center
+            align-items: flex-start
             margin-top: 50px
+
+            @media (max-width: $mobile-large)
+                flex-direction: column
 
             .box
                 position: relative
                 display: flex
-                flex-direction: column
-                justify-content: flex-end
+                flex-direction: row
+                justify-content: flex-start
                 overflow: hidden
-                padding: 15px
+                padding: 15px 0px
+                flex-basis: 48%
+                min-height: 250px
 
-                flex-basis: 18%
-                min-height: 200px
-                background-color: $primary
+                @media (max-width: $tablet-large)
+                    flex-direction: column
+                    min-height: auto
+                
+                .box-imagem
+                    background-color: $primary
+                    flex-basis: 50%
+                    padding: 15px
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-end
+                    min-height: 250px
 
-                &__title
-                    color: $white
+                    &__title
+                        color: $white
+                        +transition(.2s)
 
-                    span
+                        span
+                            display: block
+
+                    &__subtitle
+                        display: none
+
+                &:hover
+                    .box-imagem
+                        &__title
+                            color: $black
+
+                .box-text
+                    padding: 15px
+                    background-color: $black
+                    flex-basis: 50%
+                    justify-content: flex-end
+                    position: relative
+                    height: auto
+
+                    &__text
+                        color: $light
+                        font-size: 0.8rem
+                        position: relative
+                        z-index: 3
+
+                    &::before
+                        content: ''
                         display: block
+                        position: absolute
+                        z-index: 2
+                        width: 50px
+                        height: 50px
+                        background-color: transparent
+                        transform: rotate(45deg)
+                        left: -15px
+                        top: 90px
+                        +transition(.2s)
 
-                &__subtitle
-                    display: none
+                        @media (max-width: $tablet-large)
+                            display: none
+                
+                &:hover
+                    .box-text
+                        &::before
+                            background-color: $black
 

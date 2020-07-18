@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap")
-@import ../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss
-@import ../node_modules/@fortawesome/fontawesome-free/scss/regular.scss
-@import ../node_modules/@fortawesome/fontawesome-free/scss/brands.scss
-@import ../node_modules/@fortawesome/fontawesome-free/scss/solid.scss
+@import node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss
+@import node_modules/@fortawesome/fontawesome-free/scss/regular.scss
+@import node_modules/@fortawesome/fontawesome-free/scss/brands.scss
+@import node_modules/@fortawesome/fontawesome-free/scss/solid.scss
+
 @import mixins
+@import responsive
 
 $font-dense: '../fonts/Dense/'
 
@@ -34,6 +36,15 @@ h2
     font-size: 2.5rem
     text-transform: capitalize
 
+    @media (max-width: $laptop-small)
+        font-size: 2rem
+
+    @media (max-width: $tablet-small)
+        font-size: 1.8rem
+
+    @media (max-width: $mobile-large)
+        font-size: 1.5rem
+
     span
         color: $primary
 
@@ -42,28 +53,61 @@ h2
         content: ''
         width: 100px
         height: 2px
-        background-color: $primary
         margin: 10px auto 0px
-    
+
+        @media (max-width: $tablet-small)
+            width: 50px
+
     &.home
         color: $grey
-    
+
+        &::after
+            background-color: $primary
+
     &.pages
         color: $white
+
+        &::after
+            margin: 10px 0px 0px
+            background-color: $white
+            
 
 
 h3
     font-size: 1.5rem
     font-weight: $bold
 
+    @media (max-width: $laptop-small)
+        font-size: 1.3rem
+
+    @media (max-width: $tablet-small)
+        font-size: 1rem
+
 
 p
     font-size: 1.2rem
     font-weight: $regular
-    line-height: 1.8rem 
+    line-height: 1.8rem
+
+    @media (max-width: $laptop-small)
+        font-size: 1rem
+        line-height: 1.5rem
 
 
 .big
     font-size: 3.2rem
     font-weight: $bold
     text-transform: capitalize
+
+    @media (max-width: $laptop-medium)
+        font-size: 2.8rem
+
+    @media (max-width: $laptop-small)
+        font-size: 2.3rem
+
+    @media (max-width: $tablet-small)
+        font-size: 1.8rem
+
+    @media (max-width: $mobile-large)
+        font-size: 1.3rem
+

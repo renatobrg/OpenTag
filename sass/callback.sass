@@ -9,15 +9,30 @@
     padding-bottom: 100px
     background-color: $dark
 
+    @media (max-width: $laptop-small)
+        padding-bottom: 50px
+
     .wrap-container
         border-top: 1px solid $grey
         padding-top: 100px
+
+        @media (max-width: $laptop-small)
+            padding-top: 50px
 
         .box
             padding: 50px
             background-image: url('../imgs/bg-topo-home.jpg')
             background-size: cover
             text-align: center
+
+            @media (max-width: $laptop-small)
+                width: 80%
+                margin: 0px auto
+                padding: 30px
+            
+            @media (max-width: $tablet-small)
+                width: 100%
+
 
             &__title
                 color: $light
@@ -28,5 +43,11 @@
                 color: $primary
                 padding: 15px 0px
 
+                @media (max-width: $laptop-small)
+                    font-size: 1rem
+
             .btn-primary
                 width: 250px
+
+                @media (max-width: $mobile-small)
+                    width: 100%

@@ -5,83 +5,111 @@
 @import responsive
 
 .main-footer
+
     .nav-footer
         padding: 100px 0px
         background-image: url('../imgs/bg-footer-home.jpg')
+
+        @media (max-width: $laptop-small)
+            padding: 50px 0px
         
         .wrap-container
-            display: flex
-            justify-content: space-between
-            align-items: flex-start
+            .wrap-footer
+                display: flex
+                justify-content: space-between
+                align-items: flex-start
 
-            article, nav, address
-                h3
-                    font-size: 1.2rem
-                    margin-bottom: 30px
-                    color: $grey
-                p
-                    font-size: 0.8rem
-                    line-height: 1.2rem
-                    color: $light
-                    margin-bottom: 15px
+                @media (max-width: $tablet-small)
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
 
-            article
-                flex-basis: 25%
-                
-                picture
-                    display: block
-                    width: auto
-                    height: 60px
+                article, nav, address
 
-                    img
-                        height: 100%
+                    @media (max-width: $tablet-small)
+                        text-align: center
 
-            nav
-                flex-basis: 15%
+                    h3
+                        font-size: 1.2rem
+                        margin-bottom: 30px
+                        color: $midgrey
 
-                .menu-rapido
-                    li
+                        @media (max-width: $tablet-small)
+                            margin-bottom: 20px
+
+                    p
                         font-size: 0.8rem
-                        padding-bottom: 5px
+                        line-height: 1.2rem
+                        color: $light
+                        margin-bottom: 15px
 
-                        a
-                            color: $light
-                            +transition(.2s)
+                article
+                    flex-basis: 25%
+                    
+                    picture
+                        display: block
+                        width: auto
+                        height: 60px
+
+                        img
+                            height: 100%
+
+                nav
+                    flex-basis: 15%
+
+                    @media (max-width: $laptop-small)
+                        flex-basis: 20%
+                    
+                    @media (max-width: $tablet-small)
+                        display: none
+
+                    .menu-rapido
+                        li
+                            font-size: 0.8rem
+                            padding-bottom: 5px
+
+                            a
+                                color: $light
+                                +transition(.2s)
+
+                                &:hover
+                                    color: $primary
+
+                            ul
+                                margin-left: 15px 
+
+
+                address
+                    flex-basis: 25%
+                    font-style: normal
+
+                    @media (max-width: $laptop-small)
+                        flex-basis: 20%
+                    
+                    @media (max-width: $tablet-small)
+                        margin-top: 50px
+
+                    .redes-sociais-icons
+                        li
+                            display: inline-block
+
+                            a
+                                display: block
+                                padding-top: 5px
+                                margin-right: 10px
+                                width: 30px
+                                height: 30px
+                                border: 1px solid $white
+                                +border-radius(50%)
+                                +transition(.2s)
+                                text-align: center
+                                font-size: 1rem
+                                color: $white
 
                             &:hover
-                                color: $primary
-
-                        ul
-                            margin-left: 15px 
-
-
-
-
-            address
-                flex-basis: 25%
-                font-style: normal
-
-                .redes-sociais-icons
-                    li
-                        display: inline-block
-
-                        a
-                            display: block
-                            padding-top: 5px
-                            margin-right: 10px
-                            width: 30px
-                            height: 30px
-                            border: 1px solid $white
-                            +border-radius(50%)
-                            +transition(.2s)
-                            text-align: center
-                            font-size: 1rem
-                            color: $white
-
-                        &:hover
-                            a
-                                background-color: $primary
-                                border: 1px solid $primary
+                                a
+                                    background-color: $primary
+                                    border: 1px solid $primary
 
 
     .pos-footer

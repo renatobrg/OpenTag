@@ -1,12 +1,22 @@
-@import responsive
 @import mixins
 @import motors
+@import responsive
 
 
 /*GLOBALS*/
 .wrap-container
     max-width: 1170px
     margin: 0 auto
+
+    @media (max-width: $laptop-medium)
+        max-width: 990px
+    
+    @media (max-width: $laptop-small)
+        width: 100%
+        padding: 0px 50px
+    
+    @media (max-width: $tablet-small)
+        padding: 0px 30px
 
 
 .show-desk
