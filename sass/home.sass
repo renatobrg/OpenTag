@@ -7,7 +7,7 @@
 
 .main-hero
     position: relative
-    height: 85vh
+    height: 90vh
     background-image: url('../imgs/bg-topo-home.jpg')
     background-repeat: no-repeat
     background-size: cover
@@ -15,9 +15,22 @@
     flex-direction: column
     align-items: center
 
+    @media (max-width: $laptop-small)
+        height: auto
+        padding: 50px 0px
+
     &__title
         text-align: center
         padding: 150px 0px
+
+        @media (max-width: $laptop-small)
+            padding: 0px
+            padding-bottom: 20px
+
+        @media (max-width: $tablet-small)
+            padding: 0px 30px
+
+
         span
             display: block
         strong
@@ -31,6 +44,19 @@
         margin: 0px auto
         width: 80vw
 
+        @media (max-width: $laptop-medium)
+            width: 90vw
+
+        @media (max-width: $laptop-small)
+            flex-wrap: wrap
+            width: 80vw
+        
+        @media (max-width: $tablet-small)
+            flex-direction: column
+            align-items: center
+            padding: 0px 30px
+            width: 100%
+
         .box
             position: relative
             flex-basis: 20%
@@ -43,7 +69,28 @@
             height: 250px
             margin: 0px 15px
             overflow: hidden
+            background-size: cover
             +transition(.2s)
+
+            @media (max-width: $laptop-medium)
+                height: 230px
+
+            @media (max-width: $laptop-small)
+                flex-basis: 25%
+                margin: 30px 15px 0px
+                height: auto
+            
+            @media (max-width: $tablet-small)
+                flex-basis: 100%
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                width: 90%
+                padding: 20px 15px
+                margin: 30px 0px 0px
+            
+            @media (max-width: $mobile-large)
+                width: 100%
 
             &__icon
                 position: relative
@@ -51,6 +98,19 @@
                 width: 90px
                 height: 90px
                 margin: 0px auto 15px
+
+                @media (max-width: $laptop-medium)
+                    width: 70px
+                    height: 70px
+
+                @media (max-width: $tablet-small)
+                    width: 60px
+                    height: 60px
+                    margin: 0px
+                    margin-right: 30px
+
+                @media (max-width: $mobile-large)
+                    margin-right: 15px
 
                 svg
                     width: 100%
@@ -65,9 +125,22 @@
                 z-index: 2
                 color: $white
                 font-weight: $regular
+                font-size: 1.3rem
+
+                @media (max-width: $laptop-medium)
+                    font-size: 1rem
+
+                @media (max-width: $tablet-small)
+                    font-size: 1.3rem
+                
+                @media (max-width: $mobile-large)
+                    font-size: 1rem
 
                 span
                     display: block
+
+                    @media (max-width: $tablet-small)
+                        display: inline-block
 
 
             &:first-child
@@ -111,6 +184,8 @@
 .a-open
     padding: 150px
     position: relative
+    background-color: $dark
+
 
     .wrap-container
         display: flex
@@ -122,6 +197,9 @@
             text-align: center
             margin-right: 5%
 
+            @media (max-width: $laptop-large)
+                margin-right: 0%
+
             &__title
                 font-size: 3rem
 
@@ -129,15 +207,20 @@
                 padding: 30px 0px 50px
                 font-size: 1.3rem
                 line-height: 2rem
-                color: $grey
+                color: $light
     
     .img-float
-        width: 45vw
+        width: 40%
         height: auto
         position: absolute
         z-index: 3
         top: -30px
-        left: -100px
+        left: -200px
+
+        @media (max-width: $laptop-large)
+            width: 60%
+            top: 100px
+            left: -250px
 
         img
             width: 100%
@@ -147,7 +230,7 @@
     position: relative
     z-index: 2
     margin-top: -130px
-    background-color: $light
+    background-color: $black
     clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%)
 
     .wrap-container
@@ -283,7 +366,7 @@
     padding: 50px 0px 150px
     position: relative
     z-index: 1
-    background-color: $white
+    background-color: $dark
 
     .wrap-container
         display: flex
