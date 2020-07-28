@@ -18,6 +18,9 @@
     @media (max-width: $laptop-small)
         height: auto
         padding: 50px 0px
+    
+    @media (max-width: $tablet-small)
+        padding: 50px 30px
 
     &__title
         text-align: center
@@ -28,11 +31,11 @@
             padding-bottom: 20px
 
         @media (max-width: $tablet-small)
-            padding: 0px 50px
-
+            padding: 0px 20px
 
         span
             display: block
+
         strong
             color: $primary
 
@@ -50,11 +53,9 @@
         @media (max-width: $laptop-small)
             flex-wrap: wrap
             width: 80vw
-        
+
         @media (max-width: $tablet-small)
-            flex-direction: column
-            align-items: center
-            padding: 0px 30px
+            justify-content: space-around
             width: 100%
 
         .box
@@ -79,18 +80,11 @@
                 flex-basis: 25%
                 margin: 30px 15px 0px
                 height: auto
-            
+
             @media (max-width: $tablet-small)
-                flex-basis: 100%
-                flex-direction: row
-                justify-content: center
-                align-items: center
-                width: 90%
+                flex-basis: 45%
                 padding: 20px 15px
                 margin: 30px 0px 0px
-            
-            @media (max-width: $mobile-large)
-                width: 100%
 
             &__icon
                 position: relative
@@ -104,13 +98,8 @@
                     height: 70px
 
                 @media (max-width: $tablet-small)
-                    width: 60px
-                    height: 60px
-                    margin: 0px
-                    margin-right: 30px
-
-                @media (max-width: $mobile-large)
-                    margin-right: 15px
+                    width: 50px
+                    height: 50px
 
                 svg
                     width: 100%
@@ -131,17 +120,10 @@
                     font-size: 1rem
 
                 @media (max-width: $tablet-small)
-                    font-size: 1.3rem
-                
-                @media (max-width: $mobile-large)
-                    font-size: 1rem
+                    font-size: 0.8rem
 
                 span
                     display: block
-
-                    @media (max-width: $tablet-small)
-                        display: inline-block
-
 
             &:first-child
                 background-image: url('../imgs/bg-topo-servs-identidade-visual.jpg')
@@ -157,10 +139,11 @@
 
             &:last-child
                 background-image: url('../imgs/bg-topo-servs-seo-adwords.jpg')
-
-            // &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:last-child
-            //     &:hover
-            //         +grayscale(40%)
+            
+            &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:last-child
+                @media (max-width: $mobile-large)
+                    background-image: none
+                    background-color: $primary
 
     .scrolldown
         display: block
@@ -351,7 +334,10 @@
                 
                 @media (max-width: $tablet-small)
                     margin-bottom: 30px
-                    height: 200px
+                    height: 150px
+                
+                @media (max-width: $mobile-large)
+                    width: 100%
 
                 h3
                     text-align: left
@@ -479,9 +465,8 @@
                 @media (max-width: $laptop-small)
                     height: 150px
                 
-                @media (max-width: $tablet-small)
-                    height: 200px
-                    width: 90%
+                @media (max-width: $mobile-large)
+                    width: 100%
 
                 h3
                     display: none
@@ -521,7 +506,7 @@
     background-color: $dark
 
     @media (max-width: $laptop-small)
-        padding: 50px 0px
+        padding: 100px 0px
 
     .wrap-container
         .depos
@@ -558,7 +543,6 @@
 
             &__nome
                 margin-top: 30px
-                font-size: 1.5rem
                 font-weight: $bold
                 color: $light
 
