@@ -28,7 +28,7 @@
             padding-bottom: 20px
 
         @media (max-width: $tablet-small)
-            padding: 0px 30px
+            padding: 0px 50px
 
 
         span
@@ -182,45 +182,98 @@
 
 
 .a-open
-    padding: 150px
+    padding: 150px 0px
     position: relative
     background-color: $dark
 
+    @media (max-width: $laptop-medium)
+        padding: 100px 0px 200px
+
+    @media (max-width: $laptop-small)
+        padding: 50px 0px 150px
+    
+    @media (max-width: $tablet-small)
+        padding: 50px 0px 0px
+    
+    @media (max-width: $mobile-large)
+        padding: 50px 0px
 
     .wrap-container
         display: flex
         justify-content: flex-end
         align-items: center
 
+        @media (max-width: $tablet-small)
+            justify-content: center
+
         .content
             flex-basis: 55%
             text-align: center
-            margin-right: 5%
 
             @media (max-width: $laptop-large)
                 margin-right: 0%
-
-            &__title
-                font-size: 3rem
+            
+            @media (max-width: $laptop-medium)
+                flex-basis: 65%
+            
+            @media (max-width: $laptop-small)
+                flex-basis: 60%
+            
+            @media (max-width: $tablet-small)
+                flex-basis: 90%
+            
+            @media (max-width: $mobile-large)
+                flex-basis: 100%
 
             &__text
                 padding: 30px 0px 50px
                 font-size: 1.3rem
                 line-height: 2rem
                 color: $light
+
+                @media (max-width: $laptop-medium)
+                    padding: 30px 0px
+                    font-size: 1rem
+                    line-height: 1.5rem
     
     .img-float
-        width: 40%
+        width: 45%
         height: auto
         position: absolute
         z-index: 3
-        top: -30px
+        top: -20px
         left: -200px
 
         @media (max-width: $laptop-large)
-            width: 60%
-            top: 100px
+            width: 55%
+            top: 0px
             left: -250px
+
+        @media (max-width: $laptop-medium)
+            width: 50%
+            top: -30px
+            left: -200px
+
+        @media (max-width: $laptop-small)
+            top: -10px
+            left: -150px
+
+        @media (max-width: $tablet-large)
+            top: -20px
+            left: -100px
+        
+        @media (max-width: $tablet-small)
+            position: relative
+            display: block
+            width: 400px
+            top: 0px
+            left: 0px
+            margin: 50px auto 0px
+            z-index: 0
+        
+        @media (max-width: $mobile-large)
+            width: 80%
+            margin: 50px auto 0px
 
         img
             width: 100%
@@ -233,11 +286,33 @@
     background-color: $black
     clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%)
 
+    @media (max-width: $laptop-large)
+        clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%)
+    
+    @media (max-width: $tablet-small)
+        clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%)
+    
+    @media (max-width: $mobile-large)
+        clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%)
+
     .wrap-container
-        padding: 350px 0px
+        padding: 250px 0px 350px
         display: flex
         justify-content: space-between
         align-items: center
+
+        @media (max-width: $laptop-medium)
+            padding: 250px 30px
+        
+        @media (max-width: $tablet-large)
+            padding: 150px 30px 200px
+
+        @media (max-width: $tablet-small)
+            flex-direction: column
+            padding: 150px 30px
+        
+        @media (max-width: $mobile-large)
+            padding: 100px 30px
 
         .coluna-esq, .coluna-dir
             display: flex
@@ -245,6 +320,9 @@
             justify-content: flex-start
             align-items: center
             flex-basis: 50%
+
+            @media (max-width: $tablet-small)
+                width: 100%
 
             h2
                 text-align: center
@@ -258,6 +336,22 @@
                 flex-direction: column
                 justify-content: flex-end
                 overflow: hidden
+                background-size: cover
+                background-repeat: no-repeat
+
+                @media (max-width: $laptop-large)
+                    height: 300px
+
+                @media (max-width: $laptop-medium)
+                    width: 90%
+                    height: 250px
+                
+                @media (max-width: $laptop-small)
+                    padding: 15px
+                
+                @media (max-width: $tablet-small)
+                    margin-bottom: 30px
+                    height: 200px
 
                 h3
                     text-align: left
@@ -265,25 +359,52 @@
                     font-weight: $bold
                     color: $white
 
+                    @media (max-width: $laptop-large)
+                        font-size: 2rem
+                    
+                    @media (max-width: $laptop-medium)
+                        font-size: 1.7rem
+                    
+                    @media (max-width: $laptop-small)
+                        font-size: 1.2rem
+                    
+                    @media (max-width: $tablet-small)
+                        text-align: center
+                        font-size: 1.7rem
+                    
+                    @media (max-width: $mobile-large)
+                        font-size: 1.2rem
+
                     span
                         display: block
-                
+
+                        @media (max-width: $tablet-small)
+                            display: inline-block
+
                 p
                     display: none
-                //     color: transparent
-                //     margin-bottom: -50px
-                //     +transition(.2s)
-                
-                // &:hover
-                //     p
-                //         color: $white
-                //         margin-bottom: 30px
+                    color: transparent
+                    margin-bottom: -50px
+                    +transition(.2s)
+
+                &:hover
+                    p
+                        color: $white
+                        margin-bottom: 30px
             
             .show-desk
+                display: block
                 margin-top: 50px
-            
+
+                @media (max-width: $tablet-small)
+                    display: none
+
             .show-mobile
                 display: none
+                
+                @media (max-width: $tablet-small)
+                    display: block
+                    margin-top: 20px
 
         .coluna-esq
             .box-servicos
@@ -305,7 +426,18 @@
     position: relative
     z-index: 1
     background-image: url('../imgs/bg-port-home.jpg')
+    background-size: cover
+    background-repeat: no-repeat
     clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0)
+
+    @media (max-width: $laptop-large)
+        clip-path: polygon(100% 15%, 100% 100%, 0 85%, 0 0)
+        margin-top: -100px
+    
+    @media (max-width: $tablet-small)
+        clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0)
+        margin-top: -50px
+        padding: 50px 30px
 
     .wrap-container
         padding: 150px 0px 100px
@@ -313,12 +445,21 @@
         justify-content: center
         align-items: center
 
+        @media (max-width: $laptop-small)
+            padding: 100px 0px
+
+        @media (max-width: $tablet-small)
+            flex-direction: column
+
         .coluna-esq, .coluna-dir
             display: flex
             flex-direction: column
             justify-content: flex-start
             align-items: center
             flex-basis: 50%
+
+            @media (max-width: $tablet-small)
+                width: 100%
 
             h2
                 text-align: center
@@ -335,6 +476,13 @@
                 overflow: hidden
                 background-size: cover
 
+                @media (max-width: $laptop-small)
+                    height: 150px
+                
+                @media (max-width: $tablet-small)
+                    height: 200px
+                    width: 90%
+
                 h3
                     display: none
                     // text-align: left
@@ -346,6 +494,9 @@
                 margin-top: 20px
 
         .coluna-esq
+            @media (max-width: $tablet-small)
+                order: 2
+
             .box-portfolio
                 &:first-child
                     background-image: url('../imgs/box-home-portfolio-acquapower.jpg')
@@ -354,6 +505,9 @@
                     background-image: url('../imgs/box-home-portfolio-bio-estetica.jpg')
 
         .coluna-dir
+            @media (max-width: $tablet-small)
+                order: 1
+
             .box-portfolio
                 &:nth-child(2)
                     background-image: url('../imgs/box-home-portfolio-muaylokeiros.jpg')
@@ -362,73 +516,59 @@
                     background-image: url('../imgs/box-home-portfolio-inove.jpg')
 
 
-.contato
-    padding: 50px 0px 150px
-    position: relative
-    z-index: 1
+.depoimentos
+    padding: 50px 0px 100px
     background-color: $dark
 
-    .wrap-container
-        display: flex
-        justify-content: space-between
+    @media (max-width: $laptop-small)
+        padding: 50px 0px
 
-        .content
-            flex-basis: 50%
-            padding: 0px 90px
+    .wrap-container
+        .depos
             text-align: center
+            width: 70%
+            margin: 0px auto
+
+            @media (max-width: $mobile-large)
+                width: 90%
 
             &__title
-                font-size: 3rem
-                line-height: 3.5rem
-                padding: 15px 0px
-
                 span
                     color: $primary
-                    display: block
-            
-            &__txt
-                font-size: 1.5rem
-                line-height: 2rem
-                color: $grey
-
-        aside
-            flex-basis: 50%
-
-            .form-home
-                width: 80%
-                input, textarea
-                    display: block
-                    width: 100%
-                    height: 50px
-                    border: none
-                    margin: 0px
-                    margin-bottom: 15px
+                &::after
                     background-color: $light
-                    padding-left: 15px
+                    margin: 10px auto 0px
+
+            &__foto
+                display: block
+                margin: 30px auto 0px
+                width: 150px
+                height: 150px
+                overflow: hidden
+                background-color: $light
+                +border-radius(50%)
+
+                @media (max-width: $mobile-large)
+                    width: 100px
+                    height: 100px
+
+                img
+                    width: auto
+                    height: 100%
+
+            &__nome
+                margin-top: 30px
+                font-size: 1.5rem
+                font-weight: $bold
+                color: $light
+
+            &__text
+                padding: 15px 0px 30px
+                font-size: 1.3rem
+                line-height: 2rem
+                color: $light
+
+                @media (max-width: $laptop-medium)
                     font-size: 1rem
-                    box-sizing: border-box
-                    
-                    &:focus
-                        outline: none
-
-                textarea
-                    resize: none
-                    padding: 15px
-                    font-size: 1rem
-                    font-family: 'Montserrat' !important
-                    height: 150px
-
-                .linha-meia
-                    input
-                        width: 48%
-                        float: left
-
-                        &:last-child
-                            float: right
-
-                .btn-primary
-                    float: right
-                    width: 200px
-                    border: none
-                    cursor: pointer
+                    line-height: 1.5rem
 
