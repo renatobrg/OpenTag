@@ -61,17 +61,55 @@
         .box
             position: relative
             flex-basis: 20%
-            display: flex
-            flex-direction: column
-            justify-content: flex-end
-            align-items: center
-            text-align: center
-            padding: 30px
             height: 250px
             margin: 0px 15px
             overflow: hidden
-            background-size: cover
             +transition(.2s)
+
+            img
+                +transition(.3s)
+                -webkit-transform: scale3d(1.1,1.1,1)
+                transform: scale3d(1.1,1.1,1)
+
+                @media (max-width: $tablet-small)
+                    display: none
+
+            &::after,
+            &::before
+                content: ''
+                position: absolute
+                display: block
+                z-index: 9
+                background-color: $white
+                +opacity(0)
+                +transition(.2s)
+
+            &::after
+                top: 10px
+                left: 20px
+                width: 1px
+                height: 5%
+
+            &::before
+                top: 20px
+                left: 10px
+                width: 5%
+                height: 1px
+
+            &:hover
+                img
+                    -webkit-transform: scale3d(1.2,1.2,1)
+                    transform: scale3d(1.2,1.2,1)
+
+                &::after
+                    width: 1px
+                    height: 92%
+                    +opacity(1)
+
+                &::before
+                    width: 92%
+                    height: 1px
+                    +opacity(1)
 
             @media (max-width: $laptop-medium)
                 height: 230px
@@ -86,64 +124,105 @@
                 padding: 20px 15px
                 margin: 30px 0px 0px
 
-            &__icon
-                position: relative
-                z-index: 2
-                width: 90px
-                height: 90px
-                margin: 0px auto 15px
+            .layer
+                position: absolute
+                top: 0px
+                left: 0px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                text-align: center
+                padding: 30px
+                width: 100%
+                height: 250px
+                +transition(.2s)
 
-                @media (max-width: $laptop-medium)
-                    width: 70px
-                    height: 70px
-
-                @media (max-width: $tablet-small)
-                    width: 50px
-                    height: 50px
-
-                svg
-                    width: 100%
-                    .st0
-                        fill: $white
-
-                img
-                    width: 100%
-
-            &__title
-                position: relative
-                z-index: 2
-                color: $white
-                font-weight: $regular
-                font-size: 1.3rem
-
-                @media (max-width: $laptop-medium)
-                    font-size: 1rem
-
-                @media (max-width: $tablet-small)
-                    font-size: 0.8rem
-
-                span
+                &::after,
+                &::before
+                    content: ''
+                    position: absolute
                     display: block
+                    z-index: 9
+                    background-color: $white
+                    +opacity(0)
+                    +transition(.2s)
 
-            &:first-child
-                background-image: url('../imgs/bg-topo-servs-identidade-visual.jpg')
+                &::after
+                    bottom: 10px
+                    right: 20px
+                    width: 1px
+                    height: 5%
 
-            &:nth-child(2)
-                background-image: url('../imgs/bg-topo-servs-sites-ecommerce.jpg')
+                &::before
+                    bottom: 20px
+                    right: 10px
+                    width: 5%
+                    height: 1px
 
-            &:nth-child(3)
-                background-image: url('../imgs/bg-topo-servs-marketing-digital.jpg')
+                &:hover
+                    &::after
+                        width: 1px
+                        height: 92%
+                        +opacity(1)
 
-            &:nth-child(4)
-                background-image: url('../imgs/bg-topo-servs-papelarias-brindes.jpg')
+                    &::before
+                        width: 93%
+                        height: 1px
+                        +opacity(1)
 
-            &:last-child
-                background-image: url('../imgs/bg-topo-servs-seo-adwords.jpg')
-            
-            &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:last-child
-                @media (max-width: $mobile-large)
-                    background-image: none
-                    background-color: $primary
+                &__icon
+                    position: relative
+                    z-index: 2
+                    width: 90px
+                    height: 90px
+                    margin: 0px auto 15px
+
+                    @media (max-width: $laptop-medium)
+                        width: 70px
+                        height: 70px
+
+                    @media (max-width: $tablet-small)
+                        width: 50px
+                        height: 50px
+
+                    svg
+                        width: 100%
+                        .st0
+                            fill: $white
+
+                    img
+                        width: 100%
+
+                &__title
+                    position: relative
+                    z-index: 2
+                    color: $white
+                    font-weight: $regular
+                    font-size: 1.3rem
+
+                    @media (max-width: $laptop-medium)
+                        font-size: 1rem
+
+                    @media (max-width: $tablet-small)
+                        font-size: 0.8rem
+
+                    span
+                        display: block
+
+                &__link
+                    display: block
+                    position: absolute
+                    z-index: 9
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    z-index: 1000
+                    text-indent: 200%
+                    white-space: nowrap
+                    font-size: 0
+                    opacity: 0
 
     .scrolldown
         display: block
