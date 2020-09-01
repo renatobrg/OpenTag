@@ -55,8 +55,12 @@
             width: 80vw
 
         @media (max-width: $tablet-small)
-            justify-content: space-around
+            justify-content: space-evenly
             width: 100%
+        
+        @media (max-width: $mobile-large)
+            justify-content: space-around
+            margin-top: 50px
 
         .box
             position: relative
@@ -64,52 +68,19 @@
             height: 250px
             margin: 0px 15px
             overflow: hidden
+            background-color: $primary
             +transition(.2s)
 
             img
                 +transition(.3s)
-                -webkit-transform: scale3d(1.1,1.1,1)
-                transform: scale3d(1.1,1.1,1)
+                +transform(scale3d(1.1,1.1,1))
 
                 @media (max-width: $tablet-small)
                     display: none
 
-            &::after,
-            &::before
-                content: ''
-                position: absolute
-                display: block
-                z-index: 9
-                background-color: $white
-                +opacity(0)
-                +transition(.2s)
-
-            &::after
-                top: 10px
-                left: 20px
-                width: 1px
-                height: 5%
-
-            &::before
-                top: 20px
-                left: 10px
-                width: 5%
-                height: 1px
-
             &:hover
                 img
-                    -webkit-transform: scale3d(1.2,1.2,1)
-                    transform: scale3d(1.2,1.2,1)
-
-                &::after
-                    width: 1px
-                    height: 92%
-                    +opacity(1)
-
-                &::before
-                    width: 92%
-                    height: 1px
-                    +opacity(1)
+                    +transform(scale3d(1.2,1.2,1))
 
             @media (max-width: $laptop-medium)
                 height: 230px
@@ -117,12 +88,16 @@
             @media (max-width: $laptop-small)
                 flex-basis: 25%
                 margin: 30px 15px 0px
-                height: auto
 
             @media (max-width: $tablet-small)
-                flex-basis: 45%
+                flex-basis: 35%
                 padding: 20px 15px
                 margin: 30px 0px 0px
+                height: 150px
+            
+            @media (max-width: $mobile-large)
+                flex-basis: 45%
+                margin: 15px 0px 0px
 
             .layer
                 position: absolute
@@ -138,38 +113,8 @@
                 height: 250px
                 +transition(.2s)
 
-                &::after,
-                &::before
-                    content: ''
-                    position: absolute
-                    display: block
-                    z-index: 9
-                    background-color: $white
-                    +opacity(0)
-                    +transition(.2s)
-
-                &::after
-                    bottom: 10px
-                    right: 20px
-                    width: 1px
-                    height: 5%
-
-                &::before
-                    bottom: 20px
-                    right: 10px
-                    width: 5%
-                    height: 1px
-
-                &:hover
-                    &::after
-                        width: 1px
-                        height: 92%
-                        +opacity(1)
-
-                    &::before
-                        width: 93%
-                        height: 1px
-                        +opacity(1)
+                @media (max-width: $tablet-small)
+                    height: 150px
 
                 &__icon
                     position: relative
@@ -223,6 +168,9 @@
                     white-space: nowrap
                     font-size: 0
                     opacity: 0
+
+                    @media (max-width: $tablet-small)
+                        height: 150px
 
     .scrolldown
         display: block
