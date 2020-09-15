@@ -330,81 +330,193 @@
             justify-content: flex-start
             align-items: center
             flex-basis: 50%
+            overflow: hidden
 
             @media (max-width: $tablet-small)
+                flex-basis: 100%
+                width: 80%
+                margin: 0px auto
+            
+            @media (max-width: $mobile-large)
                 width: 100%
 
             h2
                 text-align: center
                 margin-bottom: 50px
-
+            
             .box-servicos
+                position: relative
                 width: 100%
-                height: 400px
-                padding: 30px
-                display: flex
-                flex-direction: column
-                justify-content: flex-end
+                max-height: 400px
                 overflow: hidden
-                background-size: cover
-                background-repeat: no-repeat
+                background-color: $primary
+                +transition(.2s)
 
                 @media (max-width: $laptop-large)
                     height: 300px
 
                 @media (max-width: $laptop-medium)
-                    width: 90%
                     height: 250px
-                
-                @media (max-width: $laptop-small)
-                    padding: 15px
                 
                 @media (max-width: $tablet-small)
                     margin-bottom: 30px
-                    height: 150px
-                
-                @media (max-width: $mobile-large)
-                    width: 100%
+                    height: 200px
 
-                h3
-                    text-align: left
-                    font-size: 2.5rem
-                    font-weight: $bold
-                    color: $white
+                img
+                    +transition(.3s)
+                    +transform(scale3d(1.1,1.1,1))
 
-                    @media (max-width: $laptop-large)
-                        font-size: 2rem
-                    
-                    @media (max-width: $laptop-medium)
-                        font-size: 1.7rem
-                    
-                    @media (max-width: $laptop-small)
-                        font-size: 1.2rem
-                    
                     @media (max-width: $tablet-small)
-                        text-align: center
-                        font-size: 1.7rem
-                    
-                    @media (max-width: $mobile-large)
-                        font-size: 1.2rem
+                        display: none
 
-                    span
-                        display: block
-
-                        @media (max-width: $tablet-small)
-                            display: inline-block
-
-                p
-                    display: none
-                    color: transparent
-                    margin-bottom: -50px
+                .layer
+                    position: absolute
+                    top: 0px
+                    left: 0px
+                    width: 100%
+                    height: 400px
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-end
+                    align-items: flex-start
+                    text-align: left
+                    padding: 30px
                     +transition(.2s)
 
-                &:hover
-                    p
+                    @media (max-width: $laptop-large)
+                        height: 300px
+
+                    @media (max-width: $laptop-medium)
+                        height: 250px
+
+                    @media (max-width: $tablet-small)
+                        height: 200px
+                        justify-content: flex-start
+
+                    &__title
+                        text-align: left
+                        font-size: 2.5rem
+                        font-weight: $bold
+                        padding-left: 15px
                         color: $white
-                        margin-bottom: 30px
-            
+                        position: relative
+                        top: 50px
+                        +transition(.2s)
+
+                        @media (max-width: $laptop-large)
+                            font-size: 2rem
+
+                        @media (max-width: $laptop-medium)
+                            font-size: 1.7rem
+                            top: 65px
+
+                        @media (max-width: $laptop-small)
+                            font-size: 1.2rem
+                            top: 50px
+
+                        @media (max-width: $tablet-small)
+                            top: 0px
+                            padding-left: 0px
+                            font-size: 1rem
+
+                        span
+                            display: block
+
+                            @media (max-width: $tablet-small)
+                                display: inline-block
+
+                        &::before
+                            content: ''
+                            display: block
+                            width: 5px
+                            height: 80px
+                            background-color: $white
+                            position: absolute
+                            top: 10px
+                            left: 0px
+                            +transition(.2s)
+
+                            @media (max-width: $laptop-large)
+                                height: 65px
+
+                            @media (max-width: $laptop-medium)
+                                top: 5px
+                                height: 55px
+                            
+                            @media (max-width: $laptop-small)
+                                height: 40px
+                            
+                            @media (max-width: $tablet-small)
+                                width: 80px
+                                height: 2px
+                                top: 25px
+
+                    &__text
+                        position: relative
+                        padding-left: 15px
+                        top: 50px
+                        color: transparent
+                        +transition(.2s)
+
+                        @media (max-width: $laptop-medium)
+                            font-size: 1rem
+
+                        @media (max-width: $tablet-small)
+                            padding-left: 0px
+                            top: 15px
+                            color: $white
+
+                    &__link
+                        display: block
+                        position: absolute
+                        z-index: 9
+                        top: 0
+                        left: 0
+                        width: 100%
+                        height: 100%
+                        z-index: 1000
+                        text-indent: 200%
+                        white-space: nowrap
+                        font-size: 0
+                        opacity: 0
+
+                        @media (max-width: $tablet-small)
+                            height: 150px
+
+                &:hover
+                    img
+                        +transform(scale3d(1.15,1.15,1))
+
+                    .layer
+                        &__title
+                            top: -20px
+
+                            @media (max-width: $tablet-small)
+                                top: 0px
+
+                            &::before
+                                height: 145px
+
+                                @media (max-width: $laptop-large)
+                                    height: 125px
+                                
+                                @media (max-width: $laptop-medium)
+                                    height: 115px
+                                
+                                @media (max-width: $laptop-small)
+                                    height: 90px
+                                
+                                @media (max-width: $tablet-small)
+                                    width: 80px
+                                    height: 2px
+
+                        &__text
+                            top: -15px
+                            color: $white
+
+                            @media (max-width: $tablet-small)
+                                top: 15px
+
             .show-desk
                 display: block
                 margin-top: 50px
@@ -418,18 +530,6 @@
                 @media (max-width: $tablet-small)
                     display: block
                     margin-top: 20px
-
-        .coluna-esq
-            .box-servicos
-                background-image: url('../imgs/box-home-serv-identidade-visual.jpg')
-        
-        .coluna-dir
-            .box-servicos
-                &:first-child
-                    background-image: url('../imgs/box-home-serv-sites.jpg')
-                
-                &:nth-child(2)
-                    background-image: url('../imgs/box-home-serv-mkt-digital.jpg')
 
 
 .portfolio
