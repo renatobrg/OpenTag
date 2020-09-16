@@ -49,12 +49,12 @@
 	$opacity-ie: $opacity * 100
 	filter: alpha(opacity=$opacity-ie)
 
-=blur($filter)
-	-webkit-filter: blur($filter)
-    -moz-filter: blur($filter)
-    -o-filter: blur($filter)
-    -ms-filter: blur($filter)
-    filter: blur($filter)
+=filter($filter)
+	-webkit-filter: ($filter)
+    -moz-filter: ($filter)
+    -ms-filter: ($filter)
+    -o-filter: ($filter)
+    filter: ($filter)
 
 =grayscale($scale)
 	-webkit-filter: grayscale($scale)
