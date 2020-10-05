@@ -30,19 +30,63 @@
             &__imagem
                 display: block
                 width: 100%
-                height: 200px
-                background-color: $primary
-                margin: 50px 0px 0px
+                height: 350px
+                margin: 50px 0px
+
+                img
+                    width: 100%
+                    height: auto
 
             &__text
                 color: $light
-                padding-top: 30px
-        
+                padding-bottom: 30px
+            
+            &__list-services
+                list-style: none
+                padding-left: 25px
+                margin-bottom: 50px
+
+                li
+                    position: relative
+                    display: block
+                    color: $light
+                    padding-top: 5px 
+
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        top: 15px
+                        left: -25px
+                        width: 10px
+                        height: 10px
+                        background-color: $primary
+                        +border-radius(50%)
+
+            .galeria
+                &__title
+                    color: $light
+
+                &__imagens
+                    display: flex
+                    flex-direction: row
+                    flex-wrap: wrap
+                    justify-content: flex-start
+                    align-items: flex-start
+
+                    li
+                        flex-basis: 23%
+                        height: 100px
+                        background-color: $primary
+                        margin-right: 15px
+                        margin-top: 15px 
+
         .barra-lateral
             flex-basis: 25%
             border-left: 1px solid $grey
             padding-left: 30px
             min-height: 50vh
+            height: 100%
 
             @media (max-width: $tablet-small)
                 border-left: none
@@ -62,11 +106,25 @@
                     margin-bottom: 15px
 
                     a
-                        display: block
+                        display: flex
+                        align-items: center
+                        width: 100%
                         padding: 15px
                         background-color: rgba(255,255,255,0.05)
                         color: $light
+                        font-size: 0.9rem
                         +transition(.2s)
 
                         &:hover
                             background-color: rgba(255,255,255,0.1)
+                    
+                        .icone
+                            display: inline-block
+                            width: 30px
+                            height: 30px
+                            margin-right: 15px
+                        
+                        .texto
+                            display: inline-block
+                            width: auto
+                            height: auto
