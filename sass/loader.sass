@@ -1,8 +1,7 @@
 @import global
 @import mixins
 @import motors
-@import responsive
-    
+
 .wrap-loader
     position: absolute
     top: 0px
@@ -32,12 +31,12 @@
             fill-opacity: 1
             animation: svganimations 3s ease-in-out forwards
 
-            .st0 
+            .st0
                 fill: none
                 stroke: $white
                 stroke-width: 2.1609
                 stroke-miterlimit: 10
-    
+
             .st1
                 fill: $primary
                 stroke: $white
@@ -45,25 +44,22 @@
                 stroke-miterlimit: 10
                 opacity: 0
                 animation: loadpage 2s ease-in-out forwards
-            
+
             .st2
                 fill: $white
                 stroke: $white
                 stroke-width: 2.1609
                 stroke-miterlimit: 10
 
-
 @keyframes svganimations
-	0%
-		stroke-dashoffset: 1450
-	100%
-		stroke-dashoffset: 0
-
+    0%
+        stroke-dashoffset: 1450
+    100%
+        stroke-dashoffset: 0
 
 @keyframes loadpage
     0%
         opacity: 0
-        
+
     100%
         opacity: 1
-        

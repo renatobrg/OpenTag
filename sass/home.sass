@@ -2,8 +2,6 @@
 @import global
 @import mixins
 @import motors
-@import responsive
-
 
 .main-hero
     position: relative
@@ -15,10 +13,13 @@
     flex-direction: column
     align-items: center
 
+    @media (max-width: $laptop-large)
+        height: 80vh
+
     @media (max-width: $laptop-small)
         height: auto
         padding: 50px 0px
-    
+
     @media (max-width: $tablet-small)
         padding: 50px 30px
 
@@ -26,15 +27,24 @@
         text-align: center
         padding: 150px 0px
 
+        @media (max-width: $laptop-large)
+            padding: 80px 0px
+
         @media (max-width: $laptop-small)
             padding: 0px
             padding-bottom: 20px
 
         @media (max-width: $tablet-small)
-            padding: 0px 20px
+            padding: 0px 75px
+
+        @media (max-width: $mobile-large)
+            padding: 0px
 
         span
             display: block
+
+            @media (max-width: $tablet-small)
+                display: inline
 
         strong
             color: $primary
@@ -47,7 +57,7 @@
         margin: 0px auto
         width: 80vw
 
-        @media (max-width: $laptop-medium)
+        @media (max-width: $laptop-large)
             width: 90vw
 
         @media (max-width: $laptop-small)
@@ -55,12 +65,12 @@
             width: 80vw
 
         @media (max-width: $tablet-small)
-            justify-content: space-evenly
             width: 100%
-        
+            margin-top: 20px
+
         @media (max-width: $mobile-large)
             justify-content: space-around
-            margin-top: 50px
+            margin-top: 35px
 
         .box
             position: relative
@@ -82,19 +92,20 @@
                 img
                     +transform(scale3d(1.2,1.2,1))
 
-            @media (max-width: $laptop-medium)
-                height: 230px
+            @media (max-width: $laptop-large)
+                height: 160px
+                flex-basis: 15%
 
             @media (max-width: $laptop-small)
                 flex-basis: 25%
                 margin: 30px 15px 0px
 
             @media (max-width: $tablet-small)
-                flex-basis: 35%
+                flex-basis: 25%
                 padding: 20px 15px
-                margin: 30px 0px 0px
+                margin: 30px 15px 0px
                 height: 150px
-            
+
             @media (max-width: $mobile-large)
                 flex-basis: 45%
                 margin: 15px 0px 0px
@@ -113,8 +124,12 @@
                 height: 250px
                 +transition(.2s)
 
+                @media (max-width: $laptop-large)
+                    height: 160px
+
                 @media (max-width: $tablet-small)
                     height: 150px
+                    padding: 15px
 
                 &__icon
                     position: relative
@@ -123,11 +138,7 @@
                     height: 90px
                     margin: 0px auto 15px
 
-                    @media (max-width: $laptop-medium)
-                        width: 70px
-                        height: 70px
-
-                    @media (max-width: $tablet-small)
+                    @media (max-width: $laptop-large)
                         width: 50px
                         height: 50px
 
@@ -146,7 +157,7 @@
                     font-weight: $regular
                     font-size: 1.3rem
 
-                    @media (max-width: $laptop-medium)
+                    @media (max-width: $laptop-large)
                         font-size: 1rem
 
                     @media (max-width: $tablet-small)
@@ -185,11 +196,16 @@
         text-align: center
         color: rgba(255,255,255,0.3)
 
+        @media (max-width: $laptop-large)
+            width: 40px
+            height: 40px
+            margin: 30px auto 0px
+            padding: 8px 11px
+
         &:hover
             background-color: rgba(255,255,255,0.1)
             border: 1px solid rgba(255,255,255,0.5)
             color: rgba(255,255,255,0.5)
-
 
 .a-open
     padding: 150px 0px
@@ -201,14 +217,16 @@
 
     @media (max-width: $laptop-small)
         padding: 50px 0px 150px
-    
+
     @media (max-width: $tablet-small)
         padding: 50px 0px 0px
-    
+
     @media (max-width: $mobile-large)
         padding: 50px 0px
 
     .wrap-container
+        position: relative
+        z-index: 2
         display: flex
         justify-content: flex-end
         align-items: center
@@ -222,16 +240,16 @@
 
             @media (max-width: $laptop-large)
                 margin-right: 0%
-            
+
             @media (max-width: $laptop-medium)
                 flex-basis: 65%
-            
+
             @media (max-width: $laptop-small)
                 flex-basis: 60%
-            
+
             @media (max-width: $tablet-small)
                 flex-basis: 90%
-            
+
             @media (max-width: $mobile-large)
                 flex-basis: 100%
 
@@ -245,7 +263,11 @@
                     padding: 30px 0px
                     font-size: 1rem
                     line-height: 1.5rem
-    
+
+                &::selection
+                    color: $light
+                    background: $primary
+
     .img-float
         width: 45%
         height: auto
@@ -271,7 +293,7 @@
         @media (max-width: $tablet-large)
             top: -20px
             left: -100px
-        
+
         @media (max-width: $tablet-small)
             position: relative
             display: block
@@ -280,7 +302,7 @@
             left: 0px
             margin: 50px auto 0px
             z-index: 0
-        
+
         @media (max-width: $mobile-large)
             width: 80%
             margin: 50px auto 0px
@@ -288,6 +310,20 @@
         img
             width: 100%
 
+    .text-float
+        position: absolute
+        z-index: 1
+        top: 0px
+        right: 0px
+        width: 50%
+        height: 100%
+        font-size: 5rem
+        font-weight: $bold
+        color: $white
+        text-align: center
+        opacity: 0.02
+        user-select: none
+        overflow: hidden
 
 .servicos
     position: relative
@@ -298,10 +334,10 @@
 
     @media (max-width: $laptop-large)
         clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%)
-    
+
     @media (max-width: $tablet-small)
         clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%)
-    
+
     @media (max-width: $mobile-large)
         clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%)
 
@@ -313,14 +349,14 @@
 
         @media (max-width: $laptop-medium)
             padding: 250px 30px
-        
+
         @media (max-width: $tablet-large)
             padding: 150px 30px 200px
 
         @media (max-width: $tablet-small)
             flex-direction: column
             padding: 150px 30px
-        
+
         @media (max-width: $mobile-large)
             padding: 100px 30px
 
@@ -336,14 +372,14 @@
                 flex-basis: 100%
                 width: 80%
                 margin: 0px auto
-            
+
             @media (max-width: $mobile-large)
                 width: 100%
 
             h2
                 text-align: center
                 margin-bottom: 50px
-            
+
             .box-servicos
                 position: relative
                 width: 100%
@@ -357,7 +393,7 @@
 
                 @media (max-width: $laptop-medium)
                     height: 250px
-                
+
                 @media (max-width: $tablet-small)
                     margin-bottom: 30px
                     height: 200px
@@ -443,10 +479,10 @@
                             @media (max-width: $laptop-medium)
                                 top: 5px
                                 height: 55px
-                            
+
                             @media (max-width: $laptop-small)
                                 height: 40px
-                            
+
                             @media (max-width: $tablet-small)
                                 width: 80px
                                 height: 2px
@@ -500,13 +536,13 @@
 
                                 @media (max-width: $laptop-large)
                                     height: 125px
-                                
+
                                 @media (max-width: $laptop-medium)
                                     height: 115px
-                                
+
                                 @media (max-width: $laptop-small)
                                     height: 90px
-                                
+
                                 @media (max-width: $tablet-small)
                                     width: 80px
                                     height: 2px
@@ -527,11 +563,10 @@
 
             .show-mobile
                 display: none
-                
+
                 @media (max-width: $tablet-small)
                     display: block
                     margin-top: 20px
-
 
 .portfolio
     padding: 150px 0px
@@ -547,7 +582,7 @@
     @media (max-width: $laptop-large)
         clip-path: polygon(100% 15%, 100% 100%, 0 85%, 0 0)
         margin-top: -100px
-    
+
     @media (max-width: $tablet-small)
         clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0)
         margin-top: -50px
@@ -556,7 +591,7 @@
     .wrap-container
         padding: 150px 0px 100px
         display: flex
-        justify-content: center
+        justify-content: space-between
         align-items: center
 
         @media (max-width: $laptop-small)
@@ -570,7 +605,11 @@
             flex-direction: column
             justify-content: flex-start
             align-items: center
-            flex-basis: 50%
+            flex-basis: 45%
+            overflow: hidden
+
+            @media (max-width: $laptop-medium)
+                flex-basis: 40%
 
             @media (max-width: $tablet-small)
                 width: 100%
@@ -580,54 +619,122 @@
                 margin-bottom: 50px
 
             .box-portfolio
-                display: flex
-                width: 80%
-                height: 200px
-                padding: 15px
-                margin: 0px auto 30px
-                flex-direction: column
-                justify-content: flex-end
+                position: relative
+                margin-bottom: 15px
+                width: 100%
+                height: 250px
                 overflow: hidden
-                background-size: cover
+                background-color: $primary
+                +transition(.2s)
 
-                @media (max-width: $laptop-small)
-                    height: 150px
-                
-                @media (max-width: $mobile-large)
+                img
+                    +transition(.3s)
+                    +transform(scale3d(1.1,1.1,1))
+
+                    @media (max-width: $tablet-small)
+                        +filter(blur(10px))
+                        +transform(scale3d(1.15,1.15,1))
+
+                .layer
+                    position: absolute
+                    top: 0px
+                    left: 0px
                     width: 100%
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-end
+                    align-items: flex-start
+                    text-align: left
+                    padding: 30px
+                    +transition(.2s)
 
-                h3
-                    display: none
-                    // text-align: left
-                    // font-size: 1rem
-                    // font-weight: $bold
-                    // color: $white
+                    &__title
+                        text-align: left
+                        font-size: 1.2rem
+                        font-weight: $bold
+                        color: $white
+                        position: absolute
+                        left: 30px
+                        bottom: 15px
+                        +transition(.2s)
+
+                        span
+                            display: block
+
+                            @media (max-width: $tablet-small)
+                                display: inline-block
+
+                    &::before
+                        content: ''
+                        display: block
+                        width: 100%
+                        height: 55px
+                        background-color: rgba(0,0,0,0.8)
+                        position: absolute
+                        bottom: 0px
+                        left: 0px
+                        +transition(.2s)
+
+                    &__text
+                        position: relative
+                        font-size: 0.8rem
+                        line-height: 1.3rem
+                        bottom: -80px
+                        color: transparent
+                        +transition(.2s)
+
+                        @media (max-width: $tablet-small)
+                            padding-left: 0px
+                            top: 15px
+                            color: $white
+
+                    &__link
+                        display: block
+                        position: absolute
+                        z-index: 9
+                        top: 0
+                        left: 0
+                        width: 100%
+                        height: 100%
+                        z-index: 1000
+                        text-indent: 200%
+                        white-space: nowrap
+                        font-size: 0
+                        opacity: 0
+
+                        @media (max-width: $tablet-small)
+                            height: 150px
+
+                &:hover
+                    img
+                        +transform(scale3d(1.15,1.15,1))
+
+                    .layer
+                        &__title
+                            bottom: 80px
+
+                        &__text
+                            bottom: -10px
+                            color: $white
+
+                        &::before
+                            height: 50%
 
             .btn-primary
                 margin-top: 20px
 
         .coluna-esq
-            @media (max-width: $tablet-small)
+            flex-basis: 45%
+
+            @media (max-width: $laptop-medium)
                 order: 2
 
-            .box-portfolio
-                &:first-child
-                    background-image: url('../imgs/box-home-portfolio-acquapower.jpg')
-
-                &:nth-child(2)
-                    background-image: url('../imgs/box-home-portfolio-bio-estetica.jpg')
-
         .coluna-dir
-            @media (max-width: $tablet-small)
+            flex-basis: 45%
+
+            @media (max-width: $laptop-medium)
                 order: 1
-
-            .box-portfolio
-                &:nth-child(2)
-                    background-image: url('../imgs/box-home-portfolio-muaylokeiros.jpg')
-
-                &:nth-child(3)
-                    background-image: url('../imgs/box-home-portfolio-inove.jpg')
-
 
 .depoimentos
     padding: 50px 0px 100px
@@ -683,4 +790,3 @@
                 @media (max-width: $laptop-medium)
                     font-size: 1rem
                     line-height: 1.5rem
-

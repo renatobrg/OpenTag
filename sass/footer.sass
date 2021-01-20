@@ -2,17 +2,16 @@
 @import global
 @import mixins
 @import motors
-@import responsive
 
 .main-footer
 
     .nav-footer
-        padding: 100px 0px
+        padding: 50px 0px
         background-image: url('../imgs/bg-footer-home.jpg')
 
         @media (max-width: $laptop-small)
             padding: 50px 0px
-        
+
         .wrap-container
             .wrap-footer
                 display: flex
@@ -45,21 +44,29 @@
 
                 article
                     flex-basis: 25%
-                    
-                    picture
+
+                    .logo-foot
                         display: block
                         width: auto
                         height: 60px
 
+                        @media (max-width: $mobile-medium)
+                            width: 100%
+                            height: auto
+
                         img
                             height: 100%
+
+                            @media (max-width: $mobile-medium)
+                                width: 100%
+                                height: auto
 
                 nav
                     flex-basis: 15%
 
                     @media (max-width: $laptop-small)
                         flex-basis: 20%
-                    
+
                     @media (max-width: $tablet-small)
                         display: none
 
@@ -76,8 +83,7 @@
                                     color: $primary
 
                             ul
-                                margin-left: 15px 
-
+                                margin-left: 15px
 
                 address
                     flex-basis: 25%
@@ -85,7 +91,7 @@
 
                     @media (max-width: $laptop-small)
                         flex-basis: 20%
-                    
+
                     @media (max-width: $tablet-small)
                         margin-top: 50px
 
@@ -111,14 +117,11 @@
                                     background-color: $primary
                                     border: 1px solid $primary
 
-
     .pos-footer
         padding: 15px 0px
         background-color: $black
-        
+
         small
             display: block
             text-align: center
             color: $grey
-        
-

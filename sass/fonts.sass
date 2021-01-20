@@ -1,37 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap")
-@import node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss
-@import node_modules/@fortawesome/fontawesome-free/scss/regular.scss
-@import node_modules/@fortawesome/fontawesome-free/scss/brands.scss
-@import node_modules/@fortawesome/fontawesome-free/scss/solid.scss
-
 @import mixins
-@import responsive
 
-$font-dense: '../fonts/Dense/'
-
-@font-face 
-    font-family: 'Dense', 'Montserrat', sans-serif
-    src: url($font-dense + 'Dense-Regular.eot'),
-         url:($font-dense + 'Dense-Regular.eot?#iefix') format('embedded-opentype'),
-         url($font-dense + 'Dense-Regular.woff2') format('woff2'),
-         url($font-dense + 'Dense-Regular.woff') format('woff')
-    font-weight: normal
-    font-style: normal
-
+// $font-dense: '../fonts/Dense/'
+// @font-face
+//     font-family: 'Dense', 'Montserrat', sans-serif
+//     src: url($font-dense + 'Dense-Regular.eot'),
+//     url: ($font-dense + 'Dense-Regular.eot?#iefix') format('embedded-opentype'),
+//         url($font-dense + 'Dense-Regular.woff2') format('woff2'),
+//         url($font-dense + 'Dense-Regular.woff') format('woff')
+//     font-weight: normal
+//     font-style: normal
 
 h1, h2, h3, h4, p
     font-family: 'Montserrat'
     font-weight: $regular
 
-
 h1
     font-size: 3rem
     color: $white
 
-    @media (max-width: $laptop-medium)
-        font-size: 2.5rem
-
-    @media (max-width: $laptop-small)
+    @media (max-width: $laptop-large)
         font-size: 2rem
 
     @media (max-width: $tablet-small)
@@ -39,7 +27,6 @@ h1
 
     strong
         font-weight: $regular
-
 
 h2
     font-size: 2.5rem
@@ -79,8 +66,6 @@ h2
         &::after
             margin: 10px 0px 0px
             background-color: $white
-            
-
 
 h3
     font-size: 1.5rem
@@ -106,7 +91,6 @@ ul li
     font-weight: $regular
     line-height: 1.4rem
 
-
 .big
     font-size: 3.2rem
     font-weight: $bold
@@ -123,4 +107,3 @@ ul li
 
     @media (max-width: $mobile-large)
         font-size: 1.3rem
-
