@@ -46,7 +46,7 @@
 
                 @media (max-width: $laptop-small)
                   font-size: 0.8rem
-                  padding-top: 7px
+                  padding-top: 5px
 
               &:hover
                 a
@@ -98,17 +98,20 @@
         align-items: center
 
         .logo
-          height: 60px
+          height: auto
 
-          img
-            height: 100%
-            width: auto
+          a
+            display: block
 
-            @media (max-width: $laptop-large)
-              height: 50px
+            img
+              height: 100%
+              width: auto
 
-            @media (max-width: $tablet-small)
-              height: 40px
+              @media (max-width: $laptop-large)
+                height: 50px
+
+              @media (max-width: $tablet-small)
+                height: 40px
 
         .menu
           @media (max-width: $tablet-small)

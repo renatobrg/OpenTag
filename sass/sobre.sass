@@ -8,8 +8,8 @@
     background-color: $dark
     position: relative
 
-    @media (max-width: $laptop-small)
-        padding: 50px 0px 0px
+    @media (max-width: $laptop-medium)
+        padding: 50px 0px
 
     .wrap-container
         display: flex
@@ -83,7 +83,7 @@
     background-color: $dark
 
     @media (max-width: $laptop-small)
-        padding: 50px 0px
+        padding: 50px 0px 100px
 
     .wrap-container
         .depos
@@ -92,23 +92,27 @@
             margin: 0px auto
 
             @media (max-width: $mobile-large)
-                width: 100%
+                width: 90%
 
             &__title
                 span
                     color: $primary
                 &::after
                     background-color: $light
-                    margin: 15px auto 0px
+                    margin: 10px auto 0px
 
             &__foto
                 display: block
-                margin: 50px auto 0px
+                margin: 30px auto 0px
                 width: 150px
                 height: 150px
                 overflow: hidden
                 background-color: $light
                 +border-radius(50%)
+
+                @media (max-width: $mobile-large)
+                    width: 100px
+                    height: 100px
 
                 img
                     width: auto
@@ -116,10 +120,15 @@
 
             &__nome
                 margin-top: 30px
-                font-size: 1.5rem
                 font-weight: $bold
                 color: $light
 
             &__text
-                margin-top: 15px
+                padding: 15px 0px 30px
+                font-size: 1.3rem
+                line-height: 2rem
                 color: $light
+
+                @media (max-width: $laptop-medium)
+                    font-size: 1rem
+                    line-height: 1.5rem

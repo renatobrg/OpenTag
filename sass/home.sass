@@ -403,7 +403,8 @@
                     +transform(scale3d(1.1,1.1,1))
 
                     @media (max-width: $tablet-small)
-                        +filter(blur(10px))
+                        // display: none
+                        // +filter(blur(10px))
                         +transform(scale3d(1.15,1.15,1))
 
                 .layer
@@ -427,8 +428,9 @@
                         height: 250px
 
                     @media (max-width: $tablet-small)
-                        height: 200px
+                        height: auto
                         justify-content: flex-start
+                        background-color: $primary
 
                     &__title
                         text-align: left
@@ -518,7 +520,7 @@
                         opacity: 0
 
                         @media (max-width: $tablet-small)
-                            height: 150px
+                            height: 200px
 
                 &:hover
                     img
@@ -586,7 +588,7 @@
     @media (max-width: $tablet-small)
         clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0)
         margin-top: -50px
-        padding: 50px 30px
+        padding: 50px 0px
 
     .wrap-container
         padding: 150px 0px 100px
@@ -595,7 +597,7 @@
         align-items: center
 
         @media (max-width: $laptop-small)
-            padding: 100px 0px
+            padding: 100px 30px
 
         @media (max-width: $tablet-small)
             flex-direction: column
@@ -612,6 +614,9 @@
                 flex-basis: 40%
 
             @media (max-width: $tablet-small)
+                width: 80%
+            
+            @media (max-width: $mobile-large)
                 width: 100%
 
             h2
@@ -632,7 +637,7 @@
                     +transform(scale3d(1.1,1.1,1))
 
                     @media (max-width: $tablet-small)
-                        +filter(blur(10px))
+                        // +filter(blur(10px))
                         +transform(scale3d(1.15,1.15,1))
 
                 .layer
@@ -659,6 +664,10 @@
                         bottom: 15px
                         +transition(.2s)
 
+                        @media (max-width: $tablet-small)
+                            bottom: 30px
+                            font-size: 1rem
+
                         span
                             display: block
 
@@ -676,6 +685,9 @@
                         left: 0px
                         +transition(.2s)
 
+                        @media (max-width: $tablet-small)
+                            height: 30%
+
                     &__text
                         position: relative
                         font-size: 0.8rem
@@ -685,9 +697,7 @@
                         +transition(.2s)
 
                         @media (max-width: $tablet-small)
-                            padding-left: 0px
-                            top: 15px
-                            color: $white
+                            display: none
 
                     &__link
                         display: block
@@ -704,7 +714,7 @@
                         opacity: 0
 
                         @media (max-width: $tablet-small)
-                            height: 150px
+                            height: 100%
 
                 &:hover
                     img
@@ -714,12 +724,18 @@
                         &__title
                             bottom: 80px
 
+                            @media (max-width: $tablet-small)
+                                bottom: 30px
+
                         &__text
                             bottom: -10px
                             color: $white
 
                         &::before
                             height: 50%
+
+                            @media (max-width: $tablet-small)
+                                height: 30%
 
             .btn-primary
                 margin-top: 20px
