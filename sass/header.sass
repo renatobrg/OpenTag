@@ -17,7 +17,7 @@
         align-items: center
         color: $midgrey
         font-size: 1rem
-        border-bottom: 1px solid $dark
+        border-bottom: 1px solid#33333380
         padding: 10px 0px
 
         @media (max-width: $laptop-large)
@@ -104,7 +104,7 @@
             display: block
 
             img
-              height: 100%
+              height: 60px
               width: auto
 
               @media (max-width: $laptop-large)
@@ -181,32 +181,133 @@
 
           @media (max-width: $tablet-small)
             display: block
-            z-index: 999
+            z-index: 99999
 
           &:focus,
           &:active,
           &:hover
             border: none
             outline: none
+          
+          &.fixed
+            position: fixed
+            right: 30px
+          
+          &.open, &.close
+            &::before,
+            &::after
+              content: ''
+              display: block
+              width: 60%
+              height: 3px
+              left: -30%
+              margin-left: 50% 
+              background-color: $light
+              position: absolute
+              transition: .2s
 
-          &::before,
-          &::after
-            content: ''
+            &::before
+              top: 9px
+              transition: .2s
+
+            &::after
+              bottom: 8px
+              transition: .2s
+            
+            .traco
+              display: block
+              width: 100%
+              height: 3px
+              background-color: $light
+              transition: .2s
+          
+          &.close
+            &::before
+              top: 18px
+              transform: rotate(45deg)
+            
+            &::after
+              bottom: 19px
+              transform: rotate(-45deg)
+            
+            .traco
+              display: none
+              transition: .2s
+
+  .menu-mob
+    display: none
+    @media (max-width: $tablet-small)
+      display: block
+      position: fixed
+      z-index: 9999
+      top: 0px
+      left: 0px
+      width: 100%
+      height: 100%
+      background-color: $dark
+      padding: 50px 0px
+
+      .logo-mob
+        display: block
+        width: 200px
+        margin: 30px auto
+        margin-bottom: 50px
+
+        img
+          width: 100%
+
+      .menu-mob-nav
+        text-align: center
+        width: 50%
+        margin: 0px auto
+
+        @media (max-width: $mobile-large)
+          width: 80%
+
+        .mobnav
+          padding-left: 0px
+
+          &__item
             display: block
-            width: 50%
-            height: 3px
-            left: 25%
-            background-color: $light
-            position: absolute
+            margin: 10px 0px
 
-          &::before
-            top: 9px
+            a
+              display: block
+              background-color: #ffffff20
+              color: $light
+              padding: 15px
+              font-size: 1rem
 
-          &::after
-            bottom: 8px
+      .infos-rs
+        margin: 0px auto
+        border-top: 1px solid $grey
+        margin-top: 30px
+        width: 50%
 
-          &__traco
-            display: block
-            width: 100%
-            height: 3px
-            background-color: $light
+        @media (max-width: $mobile-large)
+          width: 80%
+
+        .icons
+          text-align: center
+
+          li
+            display: inline-block
+            margin: 30px 15px
+
+            a
+              display: block
+              width: 50px
+              height: 50px
+              border-radius: 50%
+              border: 1px solid $primary
+              color: $white
+              font-size: 25px
+              font-weight: 600
+              padding-top: 10px
+
+      .infos
+        p
+          padding: 5px 0px
+          text-align: center
+          color: $light
+
