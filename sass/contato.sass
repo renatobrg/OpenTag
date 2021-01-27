@@ -16,34 +16,49 @@
         display: flex
         justify-content: space-between
 
-        @media (max-width: $mobile-large)
+        @media (max-width: $tablet-large)
             flex-direction: column
 
         .content
             flex-basis: 50%
-            padding: 0px 90px
             text-align: center
+            color: $light
 
-            &__title
-                font-size: 3rem
-                line-height: 3.5rem
-                padding: 15px 0px
-                color: $light
-
-                span
-                    color: $primary
-                    display: block
+            @media (max-width: $tablet-large)
+                margin-bottom: 50px
+                padding: 0px
 
             &__txt
                 font-size: 1.5rem
                 line-height: 2rem
                 color: $light
+                padding: 0px 90px
+
+                @media (max-width: $mobile-large)
+                    padding: 0px
+                
+                &::after
+                    content: ''
+                    display: block
+                    width: 100px
+                    height: 1px
+                    background-color: $grey
+                    margin: 30px auto
+        
+            .redes-sociais
+                li
+                    display: inline-block
+                    margin: 0px 15px 15px
+                    a
+                        font-size: 2rem
+                        color: $light
+            
+
 
         aside
             flex-basis: 50%
 
             .form-home
-                width: 80%
                 input, textarea
                     display: block
                     width: 100%
@@ -51,7 +66,8 @@
                     border: none
                     margin: 0px
                     margin-bottom: 15px
-                    background-color: $light
+                    background-color: #ffffff10
+                    color: $light
                     padding-left: 15px
                     font-size: 1rem
                     box-sizing: border-box
@@ -79,3 +95,6 @@
                     width: 200px
                     border: none
                     cursor: pointer
+                
+                    @media (max-width: $mobile-large)
+                        float: none

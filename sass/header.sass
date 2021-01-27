@@ -5,8 +5,10 @@
 
 .main-header
   background-color: $black
+  position: relative
 
   .pre-header
+
     @media (max-width: $tablet-small)
       display: none
 
@@ -87,6 +89,7 @@
   .central-header
     padding: 20px 0px
     background-color: $black
+
 
     @media (max-width: $laptop-large)
       padding: 10px 0px
@@ -236,6 +239,7 @@
 
   .menu-mob
     display: none
+    
     @media (max-width: $tablet-small)
       display: block
       position: fixed
@@ -243,26 +247,25 @@
       top: 0px
       left: 0px
       width: 100%
-      height: 100%
+      height: 100vh
       background-color: $dark
-      padding: 50px 0px
+      padding: 10px 30px
 
       .logo-mob
         display: block
-        width: 200px
-        margin: 30px auto
-        margin-bottom: 50px
+        width: 150px
+        margin-bottom: 30px
 
         img
           width: 100%
 
       .menu-mob-nav
         text-align: center
-        width: 50%
+        width: 70%
         margin: 0px auto
 
         @media (max-width: $mobile-large)
-          width: 80%
+          width: 100%
 
         .mobnav
           padding-left: 0px
@@ -282,17 +285,20 @@
         margin: 0px auto
         border-top: 1px solid $grey
         margin-top: 30px
-        width: 50%
+        width: 70%
 
         @media (max-width: $mobile-large)
-          width: 80%
+          width: 100%
 
         .icons
           text-align: center
 
           li
             display: inline-block
-            margin: 30px 15px
+            margin: 30px 15px 20px
+
+            @media (max-width: $mobile-large)
+              margin: 15px 5px
 
             a
               display: block
@@ -311,3 +317,8 @@
           text-align: center
           color: $light
 
+.sticky
+  position: fixed
+  z-index: 999
+  top: 0px
+  width: 100%

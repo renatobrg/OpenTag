@@ -8,8 +8,8 @@ $('#down').on('click', function() {
 $('#slick-home').slick({
     autoplay: true,
     pauseOnHover: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="../imgs/prev.png" /></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="../imgs/next.png" /></button>'
+    prevArrow: '<button type="button" class="slick-prev"><img src="./imgs/prev.png" /></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="./imgs/next.png" /></button>'
 })
 
 
@@ -35,6 +35,7 @@ btnHamburger.addEventListener('click', function () {
         btnHamburger.classList.remove('fixed')
     }
 })
+
 
 
 lightbox.option({
