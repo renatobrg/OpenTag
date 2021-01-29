@@ -37,6 +37,21 @@ btnHamburger.addEventListener('click', function () {
 })
 
 
+var header = document.querySelector('.central-header')
+if ( document.documentElement.scrollTop >= 10 ) {
+    header.classList.add( 'scrolled' )
+} else {
+    header.classList.remove( 'scrolled' )
+}
+
+window.addEventListener( 'scroll', function() {
+    if ( document.documentElement.scrollTop >= 10 ) {
+        header.classList.add( 'scrolled' )
+    } else {
+        header.classList.remove( 'scrolled' )
+    }
+})
+
 
 lightbox.option({
     'wrapAround': false,

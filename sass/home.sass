@@ -3,6 +3,7 @@
 @import mixins
 @import motors
 
+
 .main-hero
     position: relative
     height: 90vh
@@ -26,6 +27,8 @@
     &__title
         text-align: center
         padding: 150px 0px
+        animation-name: fadein
+        animation-duration: 2.5s
 
         @media (max-width: $laptop-large)
             padding: 80px 0px
@@ -56,6 +59,8 @@
         justify-content: center
         margin: 0px auto
         width: 80vw
+        animation-name: fadein
+        animation-duration: 2.5s
 
         @media (max-width: $laptop-large)
             width: 90vw
@@ -195,6 +200,8 @@
         font-size: 1.2rem
         text-align: center
         color: rgba(255,255,255,0.3)
+        animation-name: fadein
+        animation-duration: 2.5s
 
         @media (max-width: $laptop-large)
             width: 40px
