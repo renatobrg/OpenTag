@@ -1,3 +1,4 @@
+AOS.init();
 
 $('#down').on('click', function() {
     $('html, body').animate({
@@ -11,6 +12,46 @@ $('#slick-home').slick({
     prevArrow: '<button type="button" class="slick-prev"><img src="./imgs/prev.png" /></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="./imgs/next.png" /></button>'
 })
+
+$({ Counter: 0 }).animate({
+    Counter: $('.number1').text()
+    }, {
+    duration: 2000,
+    easing: 'swing',
+    step: function() {
+        $('.number1').text(Math.ceil(this.Counter));
+    }
+});
+
+$({ Counter: 0 }).animate({
+    Counter: $('.number2').text()
+    }, {
+    duration: 2000,
+    easing: 'swing',
+    step: function() {
+        $('.number2').text(Math.ceil(this.Counter));
+    }
+});
+
+$({ Counter: 0 }).animate({
+    Counter: $('.number3').text()
+    }, {
+    duration: 2000,
+    easing: 'swing',
+    step: function() {
+        $('.number3').text(Math.ceil(this.Counter));
+    }
+});
+
+$({ Counter: 0 }).animate({
+    Counter: $('.number4').text()
+    }, {
+    duration: 2000,
+    easing: 'swing',
+    step: function() {
+        $('.number4').text(Math.ceil(this.Counter));
+    }
+});
 
 
 var menuMob = document.getElementById('menu-mob')

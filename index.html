@@ -45,6 +45,7 @@
 
 	<link rel="stylesheet" href="css/style.min.css" />
 	<link rel="stylesheet" href="css/slick.css" />
+	<link rel="stylesheet" href="css/aos.css" />
 	<script src="https://kit.fontawesome.com/66d42d88cc.js" crossorigin="anonymous"></script>
 </head>
 
@@ -55,7 +56,7 @@
 		<header class="main-header">
 
 			<div class="pre-header">
-				<div class="wrap-container">
+				<div class="wrap-container" data-aos="fade-down" data-aos-duration="2000">
 					<div class="wrap-pre">
 
 						<div class="esq-itens">
@@ -92,7 +93,7 @@
 			</div>
 
 			<div id="menu-fixed" class="central-header">
-				<div class="wrap-container">
+				<div class="wrap-container" data-aos="fade-down" data-aos-duration="2000">
 					<div class="wrap-menu">
 
 						<picture class="logo">
@@ -118,7 +119,7 @@
 				</div>
 			</div>
 
-			<div id="menu-mob" class="menu-mob hide fade-out">
+			<div id="menu-mob" class="menu-mob hide fade-out" data-aos="fade-down" data-aos-duration="5000">
 				<picture class="logo-mob">
 					<a href="index.html" title="Ir para a Home">
 						<img src="./imgs/Logo-Open.svg" alt="Logo OpenTag - Agência Digital" />
@@ -169,20 +170,20 @@
 				<span></span>
 			</div>
 
-			<button id="btn-toggle" class="btn-toggle open">
+			<button id="btn-toggle" class="btn-toggle open" data-aos="fade-down" data-aos-duration="5000">
 				<span class="traco"></span>
 			</button>
 
 		</header>
 
 
-		<main class="main-hero">
-			<h1 class="main-hero__title">
+		<main class="main-hero ">
+			<h1 class="main-hero__title" data-aos="fade-up" data-aos-duration="2000">
 				<span>A <strong>agência perfeita</strong> pra quem quer</span>
 				<span>se <strong>mostrar para o mundo</strong></span>
 			</h1>
 
-			<div class="wrap-box">
+			<div class="wrap-box" data-aos="fade-up" data-aos-duration="2000">
 				<figure class="box">
 					<img src="./imgs/bg-topo-servs-identidade-visual.jpg" alt="" />
 					<figcaption class="layer">
@@ -387,7 +388,7 @@
 
 		<section id="a-open" class="a-open">
 			<div class="wrap-container">
-				<article class="content">
+				<article class="content" data-aos="fade-left" data-aos-duration="2000">
 					<h2 class="content__title home">Estamos <span>Aqui</span></h2>
 					<p id="txt-teste" class="content__text red">Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Soluta ipsa necessitatibus eum minima? Perspiciatis itaque maxime laboriosam, eligendi
@@ -398,7 +399,7 @@
 				</article>
 			</div>
 
-			<picture class="img-float">
+			<picture class="img-float" data-aos="fade-right" data-aos-duration="2000">
 				<img src="./imgs/homem-sentado.png" alt="Homem sentado usando o notebook" />
 			</picture>
 
@@ -413,144 +414,90 @@
 		<section class="servicos">
 			<div class="wrap-container">
 
-				<div class="coluna-esq">
-					<h2 class="home">O que <span>Fazemos</span></h2>
+				<div class="coluna-esq" data-aos="fade-right" data-aos-duration="2000">
+					<h2 class="home">Nossos <span>Trabalhos</span></h2>
 
 					<figure class="box-servicos">
 						<img src="./imgs/box-home-serv-identidade-visual.jpg" alt="" />
 						<figcaption class="layer">
-							<h3 class="layer__title">Identidade <span>Visual</span></h3>
+							<h3 class="layer__title">Bio Estética <span>e Saúde</span></h3>
 							<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
 								consectetur.</p>
 							<a href="servicos-identidade-visual.html" title="Ir para a Identidade Visual" class="layer__link" aria-label="Identidade Visual"></a>
 						</figcaption>
 					</figure>
-
+					
 					<a href="servicos.html" title="Ir para a Serviços" title="Ver todos" class="show-desk btn-primary">Ver
 						Todos</a>
 				</div>
-
-				<div class="coluna-dir">
-
+					
+				<div class="coluna-dir" data-aos="fade-left" data-aos-duration="2000">
+					
 					<figure class="box-servicos">
 						<img src="./imgs/box-home-serv-sites.jpg" alt="" />
 						<figcaption class="layer">
-							<h3 class="layer__title">Sites e <span>E-Commerce</span></h3>
-							<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
-								consectetur.</p>
+						<h3 class="layer__title">Team <span>MuayLokeiros</span></h3>
+						<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
+							consectetur.</p>
 							<a href="servicos-sites-ecommerce.html" title="Ir para a Sites e E-commerce" class="layer__link" aria-label="Sites e E-commerce"></a>
 						</figcaption>
 					</figure>
-
+					
 					<figure class="box-servicos">
 						<img src="./imgs/box-home-serv-mkt-digital.jpg" alt="" />
 						<figcaption class="layer">
-							<h3 class="layer__title">Marketing <span>Digital</span></h3>
+							<h3 class="layer__title">Only <span> 4 You</span></h3>
 							<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
 								consectetur.</p>
-							<a href="servicos-marketing-digital.html" title="Ir para a Marketing Digital" class="layer__link" aria-label="Marketing Digital"></a>
-						</figcaption>
+								<a href="servicos-marketing-digital.html" title="Ir para a Marketing Digital" class="layer__link" aria-label="Marketing Digital"></a>
+							</figcaption>
 					</figure>
-
+					
 					<a href="servicos.html" title="Ir para a Serviços" class="show-mobile btn-primary">Ver Todos</a>
 				</div>
-
+				
 			</div>
 		</section>
+				
+				
+		<section class="numeros">
+			<div class="wrap-container" data-aos="fade-up" data-aos-duration="2000">
 
+				<h2 class="home">Alguns <span>Números</span></h2>
 
-		<section class="portfolio">
-			<div class="wrap-container">
-				<div class="coluna-esq">
-
-					<figure class="box-portfolio">
-						<img src="./imgs/box-home-portfolio-bio-estetica.jpg" alt="" />
-						<figcaption class="layer">
-							<h3 class="layer__title">Bio Estética e Saúde</h3>
-							<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
-								consectetur.</p>
-							<a href="portfolio-bio-estetica.html" title="Ir para a Bio Estética e Saúde" class="layer__link"
-								aria-label="Bio Estética e Saúde"></a>
-						</figcaption>
-					</figure>
-
-					<figure class="box-portfolio">
-						<img src="./imgs/box-home-portfolio-acquapower.jpg" alt="" />
-						<figcaption class="layer">
-							<h3 class="layer__title">Only4You</h3>
-							<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
-								consectetur.</p>
-							<a href="portfolio-o4y.html" title="Ir para a O4Y" class="layer__link" aria-label="Only4You"></a>
-						</figcaption>
-					</figure>
-
-					<a href="portfolio.html" title="Ir para a Portfolio" title="Ver todos" class="show-desk btn-primary">Ver
-						Todos</a>
-				</div>
-
-				<div class="coluna-dir">
-					<h2 class="home">O que já <span>Fizemos</span></h2>
-
-					<figure class="box-portfolio">
-						<img src="./imgs/box-home-portfolio-muaylokeiros.jpg" alt="" />
-						<figcaption class="layer">
-							<h3 class="layer__title">MuayThai Team</h3>
-							<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
-								consectetur.</p>
-							<a href="portfolio-team-muaylokeiros.html" title="Ir para a Team MuayLokeiros" class="layer__link" aria-label="Team MuayLokeiros"></a>
-						</figcaption>
-					</figure>
-
-					<figure class="box-portfolio">
-						<img src="./imgs/box-home-portfolio-inove.jpg" alt="" />
-						<figcaption class="layer">
-							<h3 class="layer__title">Inove Nails e Bauty</h3>
-							<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
-								consectetur.</p>
-							<a href="portfolio-inove-nails.html" title="Ir para a Inove Nails" class="layer__link" aria-label="Inove Nails"></a>
-						</figcaption>
-					</figure>
-				</div>
-			</div>
-		</section>
-
-
-		<section class="depoimentos">
-			<div class="wrap-container">
-
-				<article class="depos">
-					<h2 class="depos__title pages">O que estão <span>dizendo</span></h2>
-
-					<div id="slick-home">
-						<div>
-							<picture class="depos__foto"><img src="./imgs/box-home-serv-sites.jpg" alt="" title="" /></picture>
-							<h3 class="depos__nome">Nome da Pessoa</h3>
-
-							<p class="depos__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Quas maiores atque quasi magnam sequi laborum eveniet, suscipit placeat officiis.
-								At molestiae commodi provident iusto natus recusandae odio sed accusantium dolore!</p>
-						</div>
-
-						<div>
-							<picture class="depos__foto"><img src="./imgs/box-home-serv-sites.jpg" alt="" title="" /></picture>
-							<h3 class="depos__nome">Nome da Pessoa</h3>
-
-							<p class="depos__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Quas maiores atque quasi magnam sequi laborum eveniet, suscipit placeat officiis.
-								At molestiae commodi provident iusto natus recusandae odio sed accusantium dolore!</p>
-						</div>
-
-						<div>
-							<picture class="depos__foto"><img src="./imgs/box-home-serv-sites.jpg" alt="" title="" /></picture>
-							<h3 class="depos__nome">Nome da Pessoa</h3>
-
-							<p class="depos__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Quas maiores atque quasi magnam sequi laborum eveniet, suscipit placeat officiis.
-								At molestiae commodi provident iusto natus recusandae odio sed accusantium dolore!</p>
-						</div>
+				<div class="wrap-numbers">
+					<div class="box">
+						<p class="box__nums number1">170</p>
+						<h4 class="box__title">Jobs</h4>
 					</div>
-				</article>
 
+					<div class="box">
+						<p class="box__nums number2">30</p>
+						<h4 class="box__title">Projetos</h4>
+					</div>
+
+					<div class="box">
+						<p class="box__nums number3">90</p>
+						<h4 class="box__title">Peças</h4>
+					</div>
+
+					<div class="box">
+						<p class="box__nums number4">200</p>
+						<h4 class="box__title">Cafés</h4>
+					</div>
+				</div>
+						
+			</div>
+		</section>
+
+		
+		<section class="callback-home">
+			<div class="wrap-container" data-aos="fade-up" data-aos-duration="2000">
+				<div class="box">
+					<h3 class="box__title big">O que achou?</h3>
+					<p class="box__subtitle">Entre em contato e tire suas dúvidas</p>
+					<a href="" title="" class="btn-primary">Fale Conosco</a>
+				</div>
 			</div>
 		</section>
 
@@ -644,6 +591,7 @@
 
 	<script src="./js/jquery-3.5.1.min.js"></script>
 	<script src="./js/slick.min.js"></script>
+	<script src="./js/aos.js"></script>
 	<script src="./js/script.js"></script>
 </body>
 

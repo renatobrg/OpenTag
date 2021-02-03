@@ -59,8 +59,6 @@
         justify-content: center
         margin: 0px auto
         width: 80vw
-        animation-name: fadein
-        animation-duration: 2.5s
 
         @media (max-width: $laptop-large)
             width: 90vw
@@ -337,16 +335,16 @@
     z-index: 2
     margin-top: -130px
     background-color: $black
-    clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%)
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 20%)
 
     @media (max-width: $laptop-large)
-        clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%)
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%)
 
     @media (max-width: $tablet-small)
-        clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%)
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%)
 
     @media (max-width: $mobile-large)
-        clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%)
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%)
 
     .wrap-container
         padding: 250px 0px 350px
@@ -577,187 +575,61 @@
                     display: block
                     margin-top: 20px
 
-.portfolio
+.numeros
     padding: 150px 0px
     height: auto
     margin-top: -200px
     position: relative
-    z-index: 1
+    z-index: 3
     background-image: url('../imgs/bg-port-home.jpg')
     background-size: cover
     background-repeat: no-repeat
-    clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0)
 
     @media (max-width: $laptop-large)
-        clip-path: polygon(100% 15%, 100% 100%, 0 85%, 0 0)
         margin-top: -100px
 
     @media (max-width: $tablet-small)
-        clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0)
         margin-top: -50px
         padding: 50px 0px
 
     .wrap-container
-        padding: 150px 0px 100px
         display: flex
         justify-content: space-between
+        flex-direction: column
         align-items: center
-
-        @media (max-width: $laptop-small)
-            padding: 100px 30px
-
-        @media (max-width: $tablet-small)
-            flex-direction: column
-
-        .coluna-esq, .coluna-dir
+        color: $light
+        
+        .wrap-numbers
             display: flex
-            flex-direction: column
-            justify-content: flex-start
-            align-items: center
-            flex-basis: 45%
-            overflow: hidden
-
-            @media (max-width: $laptop-medium)
-                flex-basis: 40%
+            justify-content: space-between
+            width: 80%
 
             @media (max-width: $tablet-small)
-                width: 80%
-            
-            @media (max-width: $mobile-large)
-                width: 100%
+                flex-direction: column
 
-            h2
+            .box
+                display: block
+                margin-top: 50px
                 text-align: center
-                margin-bottom: 50px
 
-            .box-portfolio
-                position: relative
-                margin-bottom: 15px
-                width: 100%
-                height: 250px
-                overflow: hidden
-                background-color: $primary
-                +transition(.2s)
+                @media (max-width: $tablet-small)
+                    margin-top: 30px
 
-                img
-                    +transition(.3s)
-                    +transform(scale3d(1.1,1.1,1))
+                &__title
+                    font-size: 1rem
+                    padding-bottom: 15px
+                    color: $midgrey
+                
+                &__nums
+                    font-size: 5rem
+                    font-weight: 900
+                    line-height: 5rem
+                    color: $grey
 
                     @media (max-width: $tablet-small)
-                        // +filter(blur(10px))
-                        +transform(scale3d(1.15,1.15,1))
+                        font-size: 3rem
 
-                .layer
-                    position: absolute
-                    top: 0px
-                    left: 0px
-                    width: 100%
-                    height: 100%
-                    display: flex
-                    flex-direction: column
-                    justify-content: flex-end
-                    align-items: flex-start
-                    text-align: left
-                    padding: 30px
-                    +transition(.2s)
 
-                    &__title
-                        text-align: left
-                        font-size: 1.2rem
-                        font-weight: $bold
-                        color: $white
-                        position: absolute
-                        left: 30px
-                        bottom: 15px
-                        +transition(.2s)
-
-                        @media (max-width: $tablet-small)
-                            bottom: 30px
-                            font-size: 1rem
-
-                        span
-                            display: block
-
-                            @media (max-width: $tablet-small)
-                                display: inline-block
-
-                    &::before
-                        content: ''
-                        display: block
-                        width: 100%
-                        height: 55px
-                        background-color: rgba(0,0,0,0.8)
-                        position: absolute
-                        bottom: 0px
-                        left: 0px
-                        +transition(.2s)
-
-                        @media (max-width: $tablet-small)
-                            height: 30%
-
-                    &__text
-                        position: relative
-                        font-size: 0.8rem
-                        line-height: 1.3rem
-                        bottom: -80px
-                        color: transparent
-                        +transition(.2s)
-
-                        @media (max-width: $tablet-small)
-                            display: none
-
-                    &__link
-                        display: block
-                        position: absolute
-                        z-index: 9
-                        top: 0
-                        left: 0
-                        width: 100%
-                        height: 100%
-                        z-index: 1000
-                        text-indent: 200%
-                        white-space: nowrap
-                        font-size: 0
-                        opacity: 0
-
-                        @media (max-width: $tablet-small)
-                            height: 100%
-
-                &:hover
-                    img
-                        +transform(scale3d(1.15,1.15,1))
-
-                    .layer
-                        &__title
-                            bottom: 80px
-
-                            @media (max-width: $tablet-small)
-                                bottom: 30px
-
-                        &__text
-                            bottom: -10px
-                            color: $white
-
-                        &::before
-                            height: 50%
-
-                            @media (max-width: $tablet-small)
-                                height: 30%
-
-            .btn-primary
-                margin-top: 20px
-
-        .coluna-esq
-            flex-basis: 45%
-
-            @media (max-width: $laptop-medium)
-                order: 2
-
-        .coluna-dir
-            flex-basis: 45%
-
-            @media (max-width: $laptop-medium)
-                order: 1
 
 .depoimentos
     padding: 50px 0px 100px
@@ -813,3 +685,45 @@
                 @media (max-width: $laptop-medium)
                     font-size: 1rem
                     line-height: 1.5rem
+
+.callback-home //temporário
+    padding: 150px 0px
+    background-color: $dark
+
+    @media (max-width: $laptop-medium)
+        padding: 100px 0px
+    
+    @media (max-width: $tablet-small)
+        padding: 50px 0px
+
+    .wrap-container
+
+        .box
+            background-size: cover
+            text-align: center
+
+            @media (max-width: $laptop-small)
+                width: 80%
+                margin: 0px auto
+                padding: 30px
+
+            @media (max-width: $tablet-small)
+                width: 100%
+
+            &__title
+                color: $light
+
+            &__subtitle
+                font-size: 1.5rem
+                text-transform: uppercase
+                color: $primary
+                padding: 15px 0px
+
+                @media (max-width: $laptop-small)
+                    font-size: 1rem
+
+            .btn-primary
+                width: 250px
+
+                @media (max-width: $mobile-small)
+                    width: 100%
