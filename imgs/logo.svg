@@ -1,57 +1,57 @@
-<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.58 78.52">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        stroke: #fff;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-2 {
-        fill: #d2770f;
-      }
-
-      .cls-3, .cls-4 {
-        fill: #fff;
-      }
-
-      .cls-4 {
-        font-size: 75.07px;
-        font-family: Dense-Regular, Dense;
-      }
-
-      .cls-5 {
-        letter-spacing: 0em;
-      }
-
-      .cls-6, .cls-7 {
-        fill: #d37825;
-      }
-
-      .cls-6 {
-        letter-spacing: 0em;
-      }
-    </style>
-  </defs>
-  <title>logo</title>
-  <g>
-    <polygon class="cls-1" points="42.2 36.11 49.9 31.5 65.29 22.87 80.68 22.77 66.68 20.45 70.86 13.17 80.68 9.47 89.68 11.55 92.61 16.77 98.77 18.14 92.99 22.87 91.48 30.78 92.81 36.14 92.73 43.65 80.73 60.23 73.08 62.71 61.75 62.71 42.06 62.71 27.28 64.11 3.58 76.15 27.17 56.14 39.59 58.21 34.64 49.41 42.2 36.11"/>
-    <polygon class="cls-2" points="80.68 22.77 80.61 49.26 57.61 36.14 80.68 22.77"/>
-    <polygon class="cls-1" points="92.56 16.68 95.13 21.12 98.77 18.14 92.56 16.68"/>
-    <line class="cls-1" x1="27.28" y1="64.22" x2="27.21" y2="56.29"/>
-    <polygon class="cls-1" points="81.03 9.55 80.76 22.61 87.26 11.06 81.03 9.55"/>
-    <line class="cls-1" x1="80.68" y1="22.87" x2="91.48" y2="30.78"/>
-    <path class="cls-3" d="M230.32,71.08a.5.5,0,0,1-.5.49.49.49,0,0,1,0-1A.5.5,0,0,1,230.32,71.08Z" transform="translate(-149.14 -48.31)"/>
-    <polyline class="cls-1" points="57.61 36.14 72.58 61.96 80.68 49.23"/>
-    <line class="cls-1" x1="57.6" y1="27.18" x2="57.64" y2="36.22"/>
-    <line class="cls-1" x1="57.76" y1="36.06" x2="42.12" y2="36.26"/>
-    <line class="cls-1" x1="57.6" y1="36.07" x2="42.48" y2="62.74"/>
-    <path class="cls-3" d="M207.23,84.35a.49.49,0,0,1-.49.49.5.5,0,1,1,0-1A.49.49,0,0,1,207.23,84.35Z" transform="translate(-149.14 -48.31)"/>
-    <line class="cls-3" x1="80.69" y1="49.25" x2="84.22" y2="55.44"/>
-    <path class="cls-3" d="M230.32,97.56a.49.49,0,1,1-.49-.49A.49.49,0,0,1,230.32,97.56Z" transform="translate(-149.14 -48.31)"/>
-    <text class="cls-4" transform="translate(107.94 62.87)">ope<tspan class="cls-5" x="65.61" y="0">n</tspan><tspan class="cls-6" x="87.98" y="0">t</tspan><tspan class="cls-7" x="102.92" y="0">ag</tspan></text>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 253.6 78.5" style="enable-background:new 0 0 253.6 78.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#ED771E;}
+	.st2{font-family:'Dense-Regular';}
+	.st3{font-size:80.535px;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M1.4,72.4l20.8-17.7l10.4,1.6l-4.8-7.6l6.8-11.3l0.1,0l20.2-10.9l9.9,0.2l-9.2-2.1l3.5-6.7l8.5-2.7l7,1.5
+			l3.2,4.8l6.2,0.8l-5.9,4.3l-1.3,6.7l1.1,4.9l0,0l-0.4,5.8l0,0.1L68,58.5l-7.4,2.2L35,60.8l-12,1L1.4,72.4z M22.4,55.3L4.9,70.1
+			l17.9-8.8l0,0l12-1l25.6-0.1l7.1-2.1l9.4-14l0.4-5.6l-1.1-4.9l1.3-7l5-3.6l-5.1-0.7l-3.2-4.8l-6.7-1.5l-8.2,2.6l-3.1,5.9l11.1,2.5
+			l-0.1,0.5L55,27.1L35,37.9l-6.6,10.9l5.2,8.3L22.4,55.3z"/>
+		
+			<rect x="28.6" y="49.2" transform="matrix(0.5048 -0.8632 0.8632 0.5048 -22.1461 60.3022)" class="st0" width="25.7" height="0.5"/>
+		
+			<rect x="54.3" y="36.8" transform="matrix(0.8654 -0.501 0.501 0.8654 -17.3724 33.9949)" class="st0" width="0.5" height="25.1"/>
+		<rect x="57.5" y="54" transform="matrix(0.499 -0.8666 0.8666 0.499 -14.8603 82.8999)" class="st0" width="13.6" height="0.5"/>
+		<rect x="68.9" y="48" transform="matrix(0.8847 -0.4662 0.4662 0.8847 -15.9593 38.1825)" class="st0" width="0.5" height="6.6"/>
+		
+			<rect x="41" y="31.3" transform="matrix(1.460051e-02 -0.9999 0.9999 1.460051e-02 2.8712 78.4829)" class="st0" width="0.5" height="12.9"/>
+		
+			<rect x="47.9" y="30.5" transform="matrix(1 -3.269105e-03 3.269105e-03 1 -0.1114 0.1576)" class="st0" width="0.5" height="7.2"/>
+		<path class="st0" d="M67.4,28.7l0.4-13.1l5.9,1.2L67.4,28.7z M68.3,16.2L68,26.4l4.9-9.4L68.3,16.2z"/>
+		
+			<rect x="22.1" y="55" transform="matrix(0.9999 -1.407722e-02 1.407722e-02 0.9999 -0.8192 0.3202)" class="st0" width="0.5" height="6.7"/>
+		
+			<rect x="72.1" y="25.1" transform="matrix(0.5834 -0.8122 0.8122 0.5834 5.3425 71.4542)" class="st0" width="0.5" height="10.9"/>
+		
+			<rect x="78.5" y="21.7" transform="matrix(0.8638 -0.5039 0.5039 0.8638 -1.2034 42.8837)" class="st0" width="0.5" height="3.9"/>
+		<g>
+			<polygon class="st1" points="67.6,26.9 67.5,49 48.1,37.9 			"/>
+			<path class="st0" d="M67.7,49.5L47.6,37.9l20.3-11.4L67.7,49.5z M48.6,37.9l18.6,10.7l0.1-21.2L48.6,37.9z"/>
+		</g>
+		<g>
+			<circle class="st0" cx="48.1" cy="37.9" r="0.7"/>
+			<path class="st0" d="M48.1,38.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9s0.9,0.4,0.9,0.9C49,38.4,48.6,38.8,48.1,38.8z
+				 M48.1,37.5c-0.2,0-0.4,0.2-0.4,0.4c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4C48.5,37.7,48.3,37.5,48.1,37.5z"/>
+		</g>
+		<g>
+			<path class="st0" d="M68.3,27.3c0,0.4-0.3,0.7-0.7,0.7c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7C68,26.7,68.3,27,68.3,27.3z"/>
+			<path class="st0" d="M67.7,28.3c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9
+				C68.6,27.8,68.2,28.3,67.7,28.3z M67.7,26.9c-0.2,0-0.4,0.2-0.4,0.4c0,0.2,0.2,0.4,0.4,0.4c0.2,0,0.4-0.2,0.4-0.4
+				C68.1,27.1,67.9,26.9,67.7,26.9z"/>
+		</g>
+		<g>
+			<path class="st0" d="M68.2,48.7c0,0.4-0.3,0.7-0.7,0.7c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7C67.9,48,68.2,48.3,68.2,48.7z"/>
+			<path class="st0" d="M67.6,49.6c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9S68.1,49.6,67.6,49.6z M67.6,48.3
+				c-0.2,0-0.4,0.2-0.4,0.4s0.2,0.4,0.4,0.4c0.2,0,0.4-0.2,0.4-0.4S67.8,48.3,67.6,48.3z"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 98.8003 61.6934)"><tspan x="0" y="0" class="st0 st2 st3">open</tspan><tspan x="94.6" y="0" class="st1 st2 st3">tag</tspan></text>
+</g>
 </svg>
