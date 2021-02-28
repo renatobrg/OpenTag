@@ -1,0 +1,147 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+
+.page-servicos
+    padding: 100px 0px
+    background-color: $dark
+    position: relative
+
+    @media (max-width: $laptop-medium)
+        padding: 50px 0px
+
+    .wrap-container
+        .content
+
+            &__title
+                color: $light
+
+            &__text
+                color: $light
+                padding-top: 30px
+
+        .boxes
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: flex-start
+            margin-top: 50px
+
+            @media (max-width: $mobile-large)
+                flex-direction: column
+
+            .box
+                position: relative
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                overflow: hidden
+                padding: 15px 0px
+                flex-basis: 48%
+                min-height: 250px
+
+                @media (max-width: $tablet-large)
+                    flex-direction: column
+                    min-height: auto
+
+                .box-imagem
+                    flex-basis: 50%
+                    padding: 15px
+                    display: flex
+                    align-items: flex-end
+                    min-height: 250px
+
+                    &.bg-site, &.bg-iden, &.bg-mark, &.bg-pape, &.bg-seoa
+                        background-size: cover
+                        background-repeat: no-repeat
+
+                    &.bg-site
+                        background-image: url('../imgs/bg-topo-servs-sites-ecommerce.jpg')
+
+                    &.bg-iden
+                        background-image: url('../imgs/bg-topo-servs-identidade-visual.jpg')
+
+                    &.bg-mark
+                        background-image: url('../imgs/bg-topo-servs-marketing-digital.jpg')
+
+                    &.bg-pape
+                        background-image: url('../imgs/bg-topo-servs-papelarias-brindes.jpg')
+
+                    &.bg-seoa
+                        background-image: url('../imgs/bg-topo-servs-seo-adwords.jpg')
+
+                    &__title
+                        position: relative
+                        color: $white
+                        padding-left: 0px
+                        +transition(.2s)
+
+                        span
+                            display: block
+
+                        &::before
+                            display: block
+                            content: ''
+                            position: absolute
+                            left: 0px
+                            top: 5px
+                            width: 0px
+                            height: 50px
+                            background-color: $white
+                            +transition(.2s)
+
+                            @media (max-width: $laptop-small)
+                                height: 45px
+                                top: 3px
+
+                            @media (max-width: $tablet-small)
+                                display: none
+
+                .box-text
+                    padding: 15px
+                    background-color: $black
+                    flex-basis: 50%
+                    display: flex
+                    align-items: flex-start
+                    position: relative
+                    height: auto
+
+                    &__text
+                        color: $light
+                        font-size: 0.8rem
+                        position: relative
+                        z-index: 3
+
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        z-index: 2
+                        width: 30px
+                        height: 30px
+                        background-color: transparent
+                        transform: rotate(45deg)
+                        left: -15px
+                        bottom: 30px
+                        +transition(.2s)
+
+                        @media (max-width: $tablet-large)
+                            display: none
+
+                &:hover
+
+                    .box-imagem
+                        &__title
+                            padding-left: 15px
+
+                            @media (max-width: $tablet-small)
+                                padding-left: 0px
+
+                            &::before
+                                width: 5px
+
+                    .box-text
+                        &::before
+                            background-color: $black

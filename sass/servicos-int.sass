@@ -1,0 +1,159 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+
+.servicos-int
+    padding: 100px 0px 0px
+    background-color: $dark
+    position: relative
+
+    @media (max-width: $laptop-medium)
+        padding: 50px 0px 0px
+
+    .wrap-container
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        align-items: flex-start 
+
+        .content
+
+            &__title
+                color: $light
+
+            &__imagem
+                display: block
+                width: 100%
+                height: 400px
+                margin: 50px 0px
+                overflow: hidden
+
+                @media (max-width: $laptop-small)
+                    height: auto
+
+                img
+                    width: 100%
+                    height: auto
+
+            &__text
+                color: $light
+                padding-bottom: 30px
+
+            &__list-services
+                list-style: none
+                padding-left: 25px
+                margin-bottom: 50px
+
+                li
+                    position: relative
+                    display: block
+                    color: $light
+                    padding-top: 5px
+
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        top: 15px
+                        left: -25px
+                        width: 10px
+                        height: 10px
+                        background-color: $primary
+                        +border-radius(50%)
+
+            .galeria
+                margin-top: 50px
+
+                &__title
+                    color: $light
+                    padding-bottom: 30px
+
+                &__imagens
+                    display: flex
+                    flex-direction: row
+                    flex-wrap: wrap
+                    justify-content: flex-start
+                    align-items: flex-start
+
+                    @media (max-width: $mobile-large)
+                        flex-direction: column
+
+                    li
+                        flex-basis: 24%
+                        margin-right: 5px
+                        margin-top: 5px
+
+                        @media (max-width: $laptop-small)
+                            flex-basis: 30%
+                        
+                        @media (max-width: $tablet-small)
+                            flex-basis: 45%
+
+                        a
+                            display: block
+                            width: 100%
+                            height: 200px
+
+                            @media (max-width: $mobile-large)
+                                height: auto
+
+                            img
+                                width: 100%
+
+        .barra-servicos
+            border-top: 1px solid $grey
+            padding-top: 50px
+            margin: 100px 0px 50px
+            width: 100%
+
+            &__title
+                color: $light
+                padding-bottom: 30px
+
+            .lista
+                display: flex
+                justify-content: space-between
+
+                @media (max-width: $tablet-large)
+                    flex-direction: column
+
+
+
+                &__item
+                    display: block
+                    margin-bottom: 15px
+                    flex-basis: 19%
+
+                    @media (max-width: $tablet-large)
+                        width: 50%
+                    
+                    @media (max-width: $mobile-large)
+                        width: 100%
+
+                    a
+                        display: flex
+                        align-items: center
+                        width: 100%
+                        padding: 15px
+                        background-color: rgba(255,255,255,0.05)
+                        color: $light
+                        font-size: 0.9rem
+                        +transition(.2s)
+
+                        &:hover
+                            background-color: rgba(255,255,255,0.1)
+
+                        .icone
+                            display: inline-block
+                            width: 30px
+                            height: 30px
+                            margin-right: 15px
+
+                        .texto
+                            display: inline-block
+                            width: auto
+                            height: auto
+                        
+                        &.active
+                            background-color: $primary

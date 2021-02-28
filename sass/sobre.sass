@@ -1,0 +1,173 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+
+.page-sobre-nos
+    padding: 100px 0px
+    background-color: $dark
+    position: relative
+
+    @media (max-width: $laptop-medium)
+        padding: 50px 0px
+    
+    @media (max-width: $tablet-large)
+        padding: 50px 0px 0px
+
+    .wrap-container
+        display: flex
+
+        @media (max-width: $laptop-small)
+            flex-direction: column
+
+        .content
+            flex-basis: 75%
+
+            @media (max-width: $laptop-small)
+                flex-basis: 100%
+
+            &__title
+                color: $light
+
+            &__text
+                color: $light
+                padding-top: 30px
+
+    .img-float-right
+        display: block
+        width: 650px
+        height: auto
+        position: absolute
+        bottom: -5px
+        right: 0px
+        z-index: 1
+        opacity: 0.1
+
+        @media (max-width: $laptop-small)
+            text-align: right
+            position: relative
+            margin: 30px auto 0px
+
+        @media (max-width: $tablet-small)
+            width: 90%
+
+        img
+            width: 100%
+
+.chamada
+    padding: 80px 0px
+    background-image: url('../imgs/bg-cta-sobre-blur.jpg')
+    background-size: cover
+    position: relative
+    z-index: 2
+
+    @media (max-width: $laptop-small)
+        padding: 50px 0px
+
+    .wrap-container
+        .pages
+            text-align: center
+            .brs
+                display: block
+                color: $light
+                .cor
+                    color: $primary
+
+            &::after
+                display: none
+
+        .btn-primary
+            display: block
+            margin: 30px auto 0px
+            width: 200px
+
+.depoimentos-sobre
+    padding: 100px 0px
+    background-color: $dark
+
+    @media (max-width: $laptop-small)
+        padding: 50px 0px 100px
+
+    .wrap-container
+        .depos
+            text-align: center
+            width: 70%
+            margin: 0px auto
+
+            @media (max-width: $mobile-large)
+                width: 90%
+
+            &__title
+                span
+                    color: $primary
+                &::after
+                    background-color: $light
+                    margin: 10px auto 0px
+
+            &__foto
+                display: block
+                margin: 30px auto 0px
+                width: 150px
+                height: 150px
+                overflow: hidden
+                background-color: $light
+                +border-radius(50%)
+
+                @media (max-width: $mobile-large)
+                    width: 100px
+                    height: 100px
+
+                img
+                    width: auto
+                    height: 100%
+
+            &__nome
+                margin-top: 30px
+                font-weight: $bold
+                color: $light
+
+            &__text
+                padding: 15px 0px 30px
+                font-size: 1.3rem
+                line-height: 2rem
+                color: $light
+
+                @media (max-width: $laptop-medium)
+                    font-size: 1rem
+                    line-height: 1.5rem
+
+.clientes
+    padding: 100px 0px
+    background-color: $dark
+
+    .wrap-container
+        .box
+            display: flex
+            justify-content: flex-start
+            flex-wrap: wrap
+
+            @media (max-width: $mobile-large)
+                justify-content: center
+                flex-direction: column
+
+            .logo
+                margin-top: 30px
+                margin-right: 15px
+                display: block
+                flex-basis: 15%
+                opacity: 0.3
+                +transition(.2s)
+
+                @media (max-width: $tablet-small)
+                    flex-basis: 30%
+                
+                @media (max-width: $mobile-large)
+                    width: 90%
+                    margin: 30px auto 0px
+                    margin-right: 0px
+
+                &:hover
+                    opacity: 0.5
+
+                img
+                    width: 100%

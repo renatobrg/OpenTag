@@ -1,0 +1,731 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+
+
+.main-hero
+    position: relative
+    height: 90vh
+    background-image: url('../imgs/bg-topo-home.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    @media (max-width: $laptop-large)
+        height: 80vh
+
+    @media (max-width: $laptop-small)
+        height: auto
+        padding: 50px 0px
+
+    @media (max-width: $tablet-small)
+        padding: 50px 30px
+
+    &__title
+        text-align: center
+        padding: 150px 0px
+        animation-name: fadein
+        animation-duration: 2.5s
+
+        @media (max-width: $laptop-large)
+            padding: 80px 0px
+
+        @media (max-width: $laptop-small)
+            padding: 0px
+            padding-bottom: 20px
+
+        @media (max-width: $tablet-small)
+            padding: 0px 75px
+
+        @media (max-width: $mobile-large)
+            padding: 0px
+
+        span
+            display: block
+
+            @media (max-width: $tablet-small)
+                display: inline
+
+        strong
+            color: $primary
+
+    .wrap-box
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: center
+        margin: 0px auto
+        width: 80vw
+
+        @media (max-width: $laptop-large)
+            width: 90vw
+
+        @media (max-width: $laptop-small)
+            flex-wrap: wrap
+            width: 80vw
+
+        @media (max-width: $tablet-small)
+            width: 100%
+            margin-top: 20px
+
+        @media (max-width: $mobile-large)
+            justify-content: space-around
+            margin-top: 35px
+
+        .box
+            position: relative
+            flex-basis: 20%
+            height: 250px
+            margin: 0px 15px
+            overflow: hidden
+            background-color: $primary
+            +transition(.2s)
+
+            img
+                +transition(.3s)
+                +transform(scale3d(1.1,1.1,1))
+
+                @media (max-width: $tablet-small)
+                    display: none
+
+            &:hover
+                img
+                    +transform(scale3d(1.2,1.2,1))
+
+            @media (max-width: $laptop-large)
+                height: 160px
+                flex-basis: 15%
+
+            @media (max-width: $laptop-small)
+                flex-basis: 25%
+                margin: 30px 15px 0px
+
+            @media (max-width: $tablet-small)
+                flex-basis: 25%
+                padding: 20px 15px
+                margin: 30px 15px 0px
+                height: 150px
+
+            @media (max-width: $mobile-large)
+                flex-basis: 45%
+                margin: 15px 0px 0px
+
+            .layer
+                position: absolute
+                top: 0px
+                left: 0px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                text-align: center
+                padding: 30px
+                width: 100%
+                height: 250px
+                +transition(.2s)
+
+                @media (max-width: $laptop-large)
+                    height: 160px
+
+                @media (max-width: $tablet-small)
+                    height: 150px
+                    padding: 15px
+
+                &__icon
+                    position: relative
+                    z-index: 2
+                    width: 90px
+                    height: 90px
+                    margin: 0px auto 15px
+
+                    @media (max-width: $laptop-large)
+                        width: 50px
+                        height: 50px
+
+                    svg
+                        width: 100%
+                        .st0
+                            fill: $white
+
+                    img
+                        width: 100%
+
+                &__title
+                    position: relative
+                    z-index: 2
+                    color: $white
+                    font-weight: $regular
+                    font-size: 1.3rem
+
+                    @media (max-width: $laptop-large)
+                        font-size: 1rem
+
+                    @media (max-width: $tablet-small)
+                        font-size: 0.8rem
+
+                    span
+                        display: block
+
+                &__link
+                    display: block
+                    position: absolute
+                    z-index: 9
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    z-index: 1000
+                    text-indent: 200%
+                    white-space: nowrap
+                    font-size: 0
+                    opacity: 0
+
+                    @media (max-width: $tablet-small)
+                        height: 150px
+
+    .scrolldown
+        display: block
+        padding: 12px
+        margin: 50px auto 0px
+        width: 50px
+        height: 50px
+        border: 1px solid rgba(255,255,255,0.3)
+        +border-radius(50%)
+        +transition(.2s)
+        font-size: 1.2rem
+        text-align: center
+        color: rgba(255,255,255,0.3)
+        animation-name: fadein
+        animation-duration: 2.5s
+
+        @media (max-width: $laptop-large)
+            width: 40px
+            height: 40px
+            margin: 30px auto 0px
+            padding: 8px 11px
+
+        &:hover
+            background-color: $primary
+            border: 1px solid $primary
+            color: $white
+
+.a-open
+    padding: 150px 0px
+    position: relative
+    background-color: $dark
+
+    @media (max-width: $laptop-medium)
+        padding: 100px 0px 200px
+
+    @media (max-width: $laptop-small)
+        padding: 50px 0px 150px
+
+    @media (max-width: $tablet-small)
+        padding: 50px 0px 0px
+
+    @media (max-width: $mobile-large)
+        padding: 50px 0px
+
+    .wrap-container
+        position: relative
+        z-index: 2
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+        @media (max-width: $tablet-small)
+            justify-content: center
+
+        .content
+            flex-basis: 55%
+            text-align: center
+
+            @media (max-width: $laptop-large)
+                margin-right: 0%
+
+            @media (max-width: $laptop-medium)
+                flex-basis: 65%
+
+            @media (max-width: $laptop-small)
+                flex-basis: 60%
+
+            @media (max-width: $tablet-small)
+                flex-basis: 90%
+
+            @media (max-width: $mobile-large)
+                flex-basis: 100%
+
+            &__text
+                padding: 30px 0px 50px
+                font-size: 1.3rem
+                line-height: 2rem
+                color: $light
+
+                @media (max-width: $laptop-medium)
+                    padding: 30px 0px
+                    font-size: 1rem
+                    line-height: 1.5rem
+
+                &::selection
+                    color: $light
+                    background: $primary
+
+    .img-float
+        width: 45%
+        height: auto
+        position: absolute
+        z-index: 3
+        top: -20px
+        left: -200px
+
+        @media (max-width: $laptop-large)
+            width: 55%
+            top: 0px
+            left: -250px
+
+        @media (max-width: $laptop-medium)
+            width: 50%
+            top: -30px
+            left: -200px
+
+        @media (max-width: $laptop-small)
+            top: -10px
+            left: -150px
+
+        @media (max-width: $tablet-large)
+            top: -20px
+            left: -100px
+
+        @media (max-width: $tablet-small)
+            position: relative
+            display: block
+            width: 400px
+            top: 0px
+            left: 0px
+            margin: 50px auto 0px
+            z-index: 0
+
+        @media (max-width: $mobile-large)
+            width: 80%
+            margin: 50px auto 0px
+
+        img
+            width: 100%
+
+    .text-float
+        position: absolute
+        z-index: 1
+        top: 0px
+        right: 0px
+        width: 50%
+        height: 100%
+        font-size: 5rem
+        font-weight: $bold
+        color: $white
+        text-align: center
+        opacity: 0.02
+        user-select: none
+        overflow: hidden
+
+.servicos
+    position: relative
+    z-index: 2
+    margin-top: -130px
+    background-color: $black
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 20%)
+
+    @media (max-width: $laptop-large)
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%)
+
+    @media (max-width: $tablet-small)
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%)
+
+    @media (max-width: $mobile-large)
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%)
+
+    .wrap-container
+        padding: 250px 0px 350px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        @media (max-width: $laptop-medium)
+            padding: 250px 30px
+
+        @media (max-width: $tablet-large)
+            padding: 150px 30px 200px
+
+        @media (max-width: $tablet-small)
+            flex-direction: column
+            padding: 150px 30px
+
+        @media (max-width: $mobile-large)
+            padding: 100px 30px
+
+        .coluna-esq, .coluna-dir
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+            flex-basis: 50%
+            overflow: hidden
+
+            @media (max-width: $tablet-small)
+                flex-basis: 100%
+                width: 80%
+                margin: 0px auto
+
+            @media (max-width: $mobile-large)
+                width: 100%
+
+            h2
+                text-align: center
+                margin-bottom: 50px
+
+            .box-servicos
+                position: relative
+                width: 100%
+                max-height: 400px
+                overflow: hidden
+                background-color: $primary
+                +transition(.2s)
+
+                @media (max-width: $laptop-large)
+                    height: 300px
+
+                @media (max-width: $laptop-medium)
+                    height: 250px
+
+                @media (max-width: $tablet-small)
+                    margin-bottom: 30px
+                    height: 200px
+
+                img
+                    width: 100%
+                    +transition(.3s)
+                    +transform(scale3d(1.1,1.1,1))
+
+                    @media (max-width: $tablet-small)
+                        // display: none
+                        // +filter(blur(10px))
+                        +transform(scale3d(1.15,1.15,1))
+
+                .layer
+                    position: absolute
+                    top: 0px
+                    left: 0px
+                    width: 100%
+                    height: 400px
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-end
+                    align-items: flex-start
+                    text-align: left
+                    padding: 30px
+                    background-color: $layer
+                    +transition(.2s)
+
+                    @media (max-width: $laptop-large)
+                        height: 300px
+
+                    @media (max-width: $laptop-medium)
+                        height: 250px
+
+                    @media (max-width: $tablet-small)
+                        height: auto
+                        justify-content: flex-start
+                        background-color: $primary
+
+                    &__title
+                        text-align: left
+                        font-size: 2.5rem
+                        font-weight: $bold
+                        padding-left: 15px
+                        color: $white
+                        position: relative
+                        top: 50px
+                        +transition(.2s)
+
+                        @media (max-width: $laptop-large)
+                            font-size: 2rem
+
+                        @media (max-width: $laptop-medium)
+                            font-size: 1.7rem
+                            top: 65px
+
+                        @media (max-width: $laptop-small)
+                            font-size: 1.2rem
+                            top: 50px
+
+                        @media (max-width: $tablet-small)
+                            top: 0px
+                            padding-left: 0px
+                            font-size: 1rem
+
+                        span
+                            display: block
+
+                            @media (max-width: $tablet-small)
+                                display: inline-block
+
+                        &::before
+                            content: ''
+                            display: block
+                            width: 5px
+                            height: 80px
+                            background-color: $white
+                            position: absolute
+                            top: 10px
+                            left: 0px
+                            +transition(.2s)
+
+                            @media (max-width: $laptop-large)
+                                height: 65px
+
+                            @media (max-width: $laptop-medium)
+                                top: 5px
+                                height: 55px
+
+                            @media (max-width: $laptop-small)
+                                height: 40px
+
+                            @media (max-width: $tablet-small)
+                                width: 80px
+                                height: 2px
+                                top: 25px
+
+                    &__text
+                        position: relative
+                        padding-left: 15px
+                        top: 50px
+                        color: transparent
+                        +transition(.2s)
+
+                        @media (max-width: $laptop-medium)
+                            font-size: 1rem
+
+                        @media (max-width: $tablet-small)
+                            padding-left: 0px
+                            top: 15px
+                            color: $white
+
+                    &__link
+                        display: block
+                        position: absolute
+                        z-index: 9
+                        top: 0
+                        left: 0
+                        width: 100%
+                        height: 100%
+                        z-index: 1000
+                        text-indent: 200%
+                        white-space: nowrap
+                        font-size: 0
+                        opacity: 0
+
+                        @media (max-width: $tablet-small)
+                            height: 200px
+
+                &:hover
+                    img
+                        +transform(scale3d(1.15,1.15,1))
+
+                    .layer
+                        &__title
+                            top: -20px
+
+                            @media (max-width: $tablet-small)
+                                top: 0px
+
+                            &::before
+                                height: 145px
+
+                                @media (max-width: $laptop-large)
+                                    height: 125px
+
+                                @media (max-width: $laptop-medium)
+                                    height: 115px
+
+                                @media (max-width: $laptop-small)
+                                    height: 90px
+
+                                @media (max-width: $tablet-small)
+                                    width: 80px
+                                    height: 2px
+
+                        &__text
+                            top: -15px
+                            color: $white
+
+                            @media (max-width: $tablet-small)
+                                top: 15px
+
+            .show-desk
+                display: block
+                margin-top: 50px
+
+                @media (max-width: $tablet-small)
+                    display: none
+
+            .show-mobile
+                display: none
+
+                @media (max-width: $tablet-small)
+                    display: block
+                    margin-top: 20px
+
+.numeros
+    padding: 150px 0px
+    height: auto
+    margin-top: -200px
+    position: relative
+    z-index: 3
+    background-image: url('../imgs/bg-port-home.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+
+    @media (max-width: $laptop-large)
+        margin-top: -100px
+
+    @media (max-width: $tablet-small)
+        margin-top: -50px
+        padding: 50px 0px
+
+    .wrap-container
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        align-items: center
+        color: $light
+        
+        .wrap-numbers
+            display: flex
+            justify-content: space-between
+            width: 80%
+
+            @media (max-width: $tablet-small)
+                flex-direction: column
+
+            .box
+                display: block
+                margin-top: 50px
+                text-align: center
+
+                @media (max-width: $tablet-small)
+                    margin-top: 30px
+
+                &__title
+                    font-size: 1rem
+                    padding-bottom: 15px
+                    color: $midgrey
+                
+                &__nums
+                    font-size: 5rem
+                    font-weight: 900
+                    line-height: 5rem
+                    color: $grey
+
+                    @media (max-width: $tablet-small)
+                        font-size: 3rem
+
+
+
+.depoimentos
+    padding: 50px 0px 100px
+    background-color: $dark
+
+    @media (max-width: $laptop-small)
+        padding: 100px 0px
+
+    .wrap-container
+        .depos
+            text-align: center
+            width: 70%
+            margin: 0px auto
+
+            @media (max-width: $mobile-large)
+                width: 90%
+
+            &__title
+                span
+                    color: $primary
+                &::after
+                    background-color: $light
+                    margin: 10px auto 0px
+
+            &__foto
+                display: block
+                margin: 30px auto 0px
+                width: 150px
+                height: 150px
+                overflow: hidden
+                background-color: $light
+                +border-radius(50%)
+
+                @media (max-width: $mobile-large)
+                    width: 100px
+                    height: 100px
+
+                img
+                    width: auto
+                    height: 100%
+
+            &__nome
+                margin-top: 30px
+                font-weight: $bold
+                color: $light
+
+            &__text
+                padding: 15px 0px 30px
+                font-size: 1.3rem
+                line-height: 2rem
+                color: $light
+
+                @media (max-width: $laptop-medium)
+                    font-size: 1rem
+                    line-height: 1.5rem
+
+.callback-home //temporário
+    padding: 150px 0px
+    background-color: $dark
+
+    @media (max-width: $laptop-medium)
+        padding: 100px 0px
+    
+    @media (max-width: $tablet-small)
+        padding: 50px 0px
+
+    .wrap-container
+
+        .box
+            background-size: cover
+            text-align: center
+
+            @media (max-width: $laptop-small)
+                width: 80%
+                margin: 0px auto
+                padding: 30px
+
+            @media (max-width: $tablet-small)
+                width: 100%
+
+            &__title
+                color: $light
+
+            &__subtitle
+                font-size: 1.5rem
+                text-transform: uppercase
+                color: $primary
+                padding: 15px 0px
+
+                @media (max-width: $laptop-small)
+                    font-size: 1rem
+
+            .btn-primary
+                width: 250px
+
+                @media (max-width: $mobile-small)
+                    width: 100%

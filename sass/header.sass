@@ -1,0 +1,341 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+
+.main-header
+  background-color: $black
+  margin-bottom: 100px
+
+  @media (max-width: $laptop-large)
+    margin-bottom: 80px
+  
+  @media (max-width: $tablet-small)
+    margin-bottom: 60px
+
+  .pre-header
+
+    @media (max-width: $tablet-small)
+      display: none
+
+    .wrap-container
+      .wrap-pre
+        display: flex
+        justify-content: space-between
+        align-items: center
+        color: $midgrey
+        font-size: 1rem
+        border-bottom: 1px solid#33333380
+        padding: 10px 0px
+
+        @media (max-width: $laptop-large)
+          font-size: 0.8rem
+
+        .esq-itens
+          display: flex
+          justify-content: flex-start
+
+          .redes-sociais-icons
+            li
+              display: inline-block
+
+              a
+                display: block
+                padding-top: 5px
+                margin-right: 10px
+                width: 30px
+                height: 30px
+                border: 1px solid $grey
+                +border-radius(50%)
+                +transition(.2s)
+                text-align: center
+                font-size: 1rem
+                color: $midgrey
+
+                @media (max-width: $laptop-small)
+                  font-size: 0.8rem
+                  padding-top: 5px
+
+              &:hover
+                a
+                  background-color: $primary
+                  border: 1px solid $primary
+                  color: $white
+
+          span
+            display: inline-block
+            padding-top: 7px
+            padding-left: 15px
+
+            @media (max-width: $laptop-small)
+              padding-top: 9px
+
+            i
+              margin-right: 5px
+              font-size: 1rem
+
+              @media (max-width: $laptop-small)
+                font-size: 0.8rem
+
+        .dir-itens
+          display: flex
+          justify-content: flex-end
+          margin-top: 2px
+
+          span
+            display: inline-block
+
+            i
+              margin-right: 5px
+              font-size: 1rem
+
+              @media (max-width: $laptop-small)
+                font-size: 0.8rem
+
+  .central-header
+    padding: 20px 0px
+    background-color: $black
+    width: 100%
+    height: auto
+    top: 56px
+    left: 0
+    position: fixed
+    z-index: 1000
+    transition: all .2s ease
+    box-shadow: 0px 0px 0px 5px $black
+
+    @media (max-width: $laptop-large)
+      padding: 10px 0px
+    
+    @media (max-width: $tablet-small)
+      top: 0px
+    
+    &.scrolled
+      top: 0px
+      padding: 10px 0px
+      background-color: $dark
+
+
+    .wrap-container
+      .wrap-menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .logo
+          height: auto
+
+          a
+            display: block
+
+            img
+              height: 60px
+              width: auto
+
+              @media (max-width: $laptop-large)
+                height: 50px
+
+              @media (max-width: $tablet-small)
+                height: 40px
+
+        .menu
+          @media (max-width: $tablet-small)
+            display: none
+            width: 100%
+            height: 100vh
+            scroll-behavior: none
+            position: absolute
+            top: 0px
+            left: 0px
+            z-index: 99
+            padding: 30px
+            background-color: $dark
+
+          .menu-nav
+            padding: 10px 0px 0px
+            margin: 0px
+
+            &__item
+              display: inline-block
+              margin: 0px 5px
+
+              @media (max-width: $tablet-small)
+                display: block
+                margin: 5px 0px
+
+              a
+                display: block
+                color: $white
+                padding: 0px 15px
+                padding-right: 0px
+                +transition(.2s)
+
+                @media (max-width: $laptop-large)
+                  font-size: 1rem
+                  padding: 0px 10px
+                  padding-right: 0px
+
+                &::after
+                  content: ''
+                  display: block
+                  width: 0px
+                  height: 2px
+                  margin: 5px auto
+                  background-color: $primary
+                  +transition(.2s)
+
+                &:hover
+                  color: $primary
+
+                  &::after
+                    width: 30px
+
+              &:last-child
+                margin-right: 0px
+
+  .btn-toggle
+    display: none
+    position: relative
+    cursor: pointer
+    width: 40px
+    height: 40px
+    background-color: rgba(255,255,255,0.2)
+    border: none
+    +border-radius(5px)
+    +transition(.2s)
+
+    @media (max-width: $tablet-small)
+      display: block
+      position: fixed
+      z-index: 99999
+      right: 30px
+      top: 15px
+
+    &:focus,
+    &:active,
+    &:hover
+      border: none
+      outline: none
+    
+    &.fixed
+    
+    &.open, &.close
+      &::before,
+      &::after
+        content: ''
+        display: block
+        width: 60%
+        height: 3px
+        left: -30%
+        margin-left: 50% 
+        background-color: $light
+        position: absolute
+        transition: .2s
+
+      &::before
+        top: 9px
+        transition: .2s
+
+      &::after
+        bottom: 8px
+        transition: .2s
+      
+      .traco
+        display: block
+        width: 100%
+        height: 3px
+        background-color: $light
+        transition: .2s
+    
+    &.close
+      &::before
+        top: 18px
+        transform: rotate(45deg)
+      
+      &::after
+        bottom: 19px
+        transform: rotate(-45deg)
+      
+      .traco
+        display: none
+        transition: .2s
+
+  .menu-mob
+    display: none
+    
+    @media (max-width: $tablet-small)
+      display: block
+      position: fixed
+      z-index: 9999
+      top: 0px
+      left: 0px
+      width: 100%
+      height: 100vh
+      background-color: $dark
+      padding: 10px 30px
+
+      .logo-mob
+        display: block
+        width: 150px
+        margin-bottom: 30px
+
+        img
+          width: 100%
+
+      .menu-mob-nav
+        text-align: center
+        width: 70%
+        margin: 0px auto
+
+        @media (max-width: $mobile-large)
+          width: 100%
+
+        .mobnav
+          padding-left: 0px
+
+          &__item
+            display: block
+            margin: 10px 0px
+
+            a
+              display: block
+              background-color: #ffffff20
+              color: $light
+              padding: 15px
+              font-size: 1rem
+
+      .infos-rs
+        margin: 0px auto
+        border-top: 1px solid $grey
+        margin-top: 30px
+        width: 70%
+
+        @media (max-width: $mobile-large)
+          width: 100%
+
+        .icons
+          text-align: center
+
+          li
+            display: inline-block
+            margin: 30px 15px 20px
+
+            @media (max-width: $mobile-large)
+              margin: 15px 5px
+
+            a
+              display: block
+              width: 50px
+              height: 50px
+              border-radius: 50%
+              border: 1px solid $primary
+              color: $white
+              font-size: 25px
+              font-weight: 600
+              padding-top: 10px
+
+      .infos
+        p
+          padding: 5px 0px
+          text-align: center
+          color: $light

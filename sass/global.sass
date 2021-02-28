@@ -1,0 +1,52 @@
+@import mixins
+@import motors
+
+/*GLOBALS*/
+.wrap-container
+    max-width: 1170px
+    margin: 0 auto
+
+    @media (max-width: $laptop-medium)
+        max-width: 990px
+
+    @media (max-width: $laptop-small)
+        width: 100%
+        padding: 0px 50px
+
+    @media (max-width: $tablet-small)
+        padding: 0px 30px
+
+/*BUTTONS*/
+.btn-primary
+    display: inline-block
+    width: 150px
+    height: auto
+    padding: 15px
+    background-color: $primary
+    text-align: center
+    text-transform: uppercase
+    font-weight: $bold
+    font-size: 0.8rem
+    color: $white
+    +transition(.2s)
+
+    &:hover
+        background-color: $secondary
+
+
+/*CLASSES*/
+.hide
+  visibility: hidden
+  transition: .2s
+
+.show
+  visibility: visible
+  transition: .2s
+
+.fade-in
+  opacity: 1
+  transition: .2s
+
+.fade-out
+  opacity: 0
+  transition: .2s
