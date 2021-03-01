@@ -23,7 +23,7 @@
             </article>
 
             <div class="boxes" data-aos="fade-up" data-aos-duration="2000">
-                <a href="servicos-sites-ecommerce.html" title="Ir para Sites e E-Commerce" aria-label="Sites e E-Commerce"
+                <a href="servicos-sites-ecommerce.php" title="Ir para Sites e E-Commerce" aria-label="Sites e E-Commerce"
                     class="box">
                     <div class="box-imagem bg-site">
                         <h3 class="box-imagem__title">Sites <span>E-Commerce</span></h3>
@@ -36,7 +36,7 @@
                     </div>
                 </a>
 
-                <a href="servicos-identidade-visual.html" title="Ir para Identidade Visual" aria-label="Identidade Visual"
+                <a href="servicos-identidade-visual.php" title="Ir para Identidade Visual" aria-label="Identidade Visual"
                     class="box">
                     <div class="box-imagem bg-iden">
                         <h3 class="box-imagem__title">Identidade <span>Visual</span></h3>
@@ -49,7 +49,7 @@
                     </div>
                 </a>
 
-                <a href="servicos-marketing-digital.html" title="Ir para Marketing Digital" aria-label="Marketing Digital"
+                <a href="servicos-marketing-digital.php" title="Ir para Marketing Digital" aria-label="Marketing Digital"
                     class="box">
                     <div class="box-imagem bg-mark">
                         <h3 class="box-imagem__title">Marketing <span>Digital</span></h3>
@@ -62,7 +62,7 @@
                     </div>
                 </a>
 
-                <a href="servicos-papelarias-brindes.html" title="Ir para Papelarias e Brindes" aria-label="Papelarias e Brindes"
+                <a href="servicos-papelarias-brindes.php" title="Ir para Papelarias e Brindes" aria-label="Papelarias e Brindes"
                     class="box">
                     <div class="box-imagem bg-pape">
                         <h3 class="box-imagem__title">Papelarias <span>e Brindes</span></h3>
@@ -75,7 +75,7 @@
                     </div>
                 </a>
 
-                <a href="servicos-seo-adwords.html" title="Ir para SEO e AdWords" aria-label="SEO e AdWords" class="box">
+                <a href="servicos-seo-adwords.php" title="Ir para SEO e AdWords" aria-label="SEO e AdWords" class="box">
                     <div class="box-imagem bg-seoa">
                         <h3 class="box-imagem__title">SEO <span>e AdWords</span></h3>
                     </div>

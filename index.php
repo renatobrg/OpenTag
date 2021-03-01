@@ -55,7 +55,7 @@
 					<h3 class="layer__title">
 						Identidade<span>Visual</span>
 					</h3>
-					<a href="servicos-identidade-visual.html" title="Ir para a Identidade Visual" class="layer__link" aria-label="Identidade Visual"></a>
+					<a href="servicos-identidade-visual.php" title="Ir para a Identidade Visual" class="layer__link" aria-label="Identidade Visual"></a>
 				</figcaption>
 			</figure>
 
@@ -84,7 +84,7 @@
 					<h3 class="layer__title">
 						Sites e <span>E-Commerce</span>
 					</h3>
-					<a href="servicos-sites-ecommerce.html" title="Ir para a Sites e E-commerce" class="layer__link" aria-label="Sites e E-commerce"></a>
+					<a href="servicos-sites-ecommerce.php" title="Ir para a Sites e E-commerce" class="layer__link" aria-label="Sites e E-commerce"></a>
 				</figcaption>
 			</figure>
 
@@ -118,7 +118,7 @@
 					<h3 class="layer__title">
 						Marketing <span>Digital</span>
 					</h3>
-					<a href="servicos-marketing-digital.html" title="Ir para a Marketing Digital" class="layer__link" aria-label="Marketing Digital"></a>
+					<a href="servicos-marketing-digital.php" title="Ir para a Marketing Digital" class="layer__link" aria-label="Marketing Digital"></a>
 				</figcaption>
 			</figure>
 
@@ -148,7 +148,7 @@
 					<h3 class="layer__title">
 						Papelarias <span>e Brindes</span>
 					</h3>
-					<a href="servicos-papelarias-brindes.html" title="Ir para a Papelarias e Brindes" class="layer__link" aria-label="Papelarias e Brindes"></a>
+					<a href="servicos-papelarias-brindes.php" title="Ir para a Papelarias e Brindes" class="layer__link" aria-label="Papelarias e Brindes"></a>
 				</figcaption>
 			</figure>
 
@@ -194,7 +194,7 @@
 					<h3 class="layer__title">
 						SEO <span>e AdWords</span>
 					</h3>
-					<a href="servicos-seo-adwords.html" title="Ir para a SEO e AdWords" class="layer__link" aria-label="SEO e AdWords"></a>
+					<a href="servicos-seo-adwords.php" title="Ir para a SEO e AdWords" class="layer__link" aria-label="SEO e AdWords"></a>
 				</figcaption>
 			</figure>
 		</div>
@@ -215,7 +215,7 @@
 					repellat, adipisci, minus dolore unde quaerat ex corporis eaque nemo eligendi
 					autem. Minus dolore unde quaerat ex corporis eaque nemo eligendi autem consequatur nemo.</p>
 				<span id="msg-teste"></span>
-				<a id="btn-teste" class="btn-primary" href="sobre.html" title="Ir para a Sobre Nós">Ler Sobre</a>
+				<a id="btn-teste" class="btn-primary" href="sobre.php" title="Ir para a Sobre Nós">Ler Sobre</a>
 			</article>
 		</div>
 
@@ -244,11 +244,11 @@
 						<h3 class="layer__title">Bio Estética <span>e Saúde</span></h3>
 						<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
 							consectetur.</p>
-						<a href="portfolio-bio-estetica.html" title="Ir para Bio Estética e Saúde" class="layer__link" aria-label="Bio Estética e Saúde"></a>
+						<a href="portfolio-bio-estetica.php" title="Ir para Bio Estética e Saúde" class="layer__link" aria-label="Bio Estética e Saúde"></a>
 					</figcaption>
 				</figure>
 				
-				<a href="servicos.html" title="Ir para a Serviços" title="Ver todos" class="show-desk btn-primary">Ver
+				<a href="servicos.php" title="Ir para a Serviços" title="Ver todos" class="show-desk btn-primary">Ver
 					Todos</a>
 			</div>
 				
@@ -260,7 +260,7 @@
 						<h3 class="layer__title">Team <span>MuayLokeiros</span></h3>
 						<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
 							consectetur.</p>
-						<a href="portfolio-team-muaylokeiros.html" title="Ir para Team MuayLokeiros" class="layer__link" aria-label="Team MuayLokeiros"></a>
+						<a href="portfolio-team-muaylokeiros.php" title="Ir para Team MuayLokeiros" class="layer__link" aria-label="Team MuayLokeiros"></a>
 					</figcaption>
 				</figure>
 				
@@ -270,11 +270,11 @@
 						<h3 class="layer__title">O <span> Prico</span></h3>
 						<p class="layer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sit amet
 							consectetur.</p>
-							<a href="portfolio-prico.html" title="Ir para Prico" class="layer__link" aria-label="Prico"></a>
+							<a href="portfolio-prico.php" title="Ir para Prico" class="layer__link" aria-label="Prico"></a>
 						</figcaption>
 				</figure>
 				
-				<a href="servicos.html" title="Ir para a Serviços" class="show-mobile btn-primary">Ver Todos</a>
+				<a href="servicos.php" title="Ir para a Serviços" class="show-mobile btn-primary">Ver Todos</a>
 			</div>
 			
 		</div>
@@ -319,7 +319,7 @@
 			<div class="box">
 				<h3 class="box__title big">O que achou?</h3>
 				<p class="box__subtitle">Entre em contato e tire suas dúvidas</p>
-				<a href="./contato.html" title="Ir Para Contato" class="btn-primary">Peça um Orçamento</a>
+				<a href="./contato.php" title="Ir Para Contato" class="btn-primary">Peça um Orçamento</a>
 			</div>
 		</div>
 	</section>

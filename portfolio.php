@@ -23,21 +23,21 @@
             </article>
 
             <div class="boxes" data-aos="fade-up" data-aos-duration="2000">
-                <a href="portfolio-bio-estetica.html" title="Ir para Bio Estética e Saúde" aria-label="Ir para Bio Estética e Saúde" class="box">
+                <a href="portfolio-bio-estetica.php" title="Ir para Bio Estética e Saúde" aria-label="Ir para Bio Estética e Saúde" class="box">
                     <div class="box-imagem port-01">
                         <h3 class="box-imagem__title">Bio Estética <span>e Saúde</span></h3>
                     </div>
                     <div class="box__layer"></div>
                 </a>
 
-                <a href="portfolio-team-muaylokeiros.html" title="Ir para Team Muaylokeiros" aria-label="Ir para Team Muaylokeiros" class="box">
+                <a href="portfolio-team-muaylokeiros.php" title="Ir para Team Muaylokeiros" aria-label="Ir para Team Muaylokeiros" class="box">
                     <div class="box-imagem port-02">
                         <h3 class="box-imagem__title">Team <span>Muaylokeiros</span></h3>
                     </div>
                     <div class="box__layer"></div>
                 </a>
 
-                <a href="portfolio-prico.html" title="Ir para Prico" aria-label="Ir para Prico" class="box">
+                <a href="portfolio-prico.php" title="Ir para Prico" aria-label="Ir para Prico" class="box">
                     <div class="box-imagem port-03">
                         <h3 class="box-imagem__title">Prico</span></h3>
                     </div>
