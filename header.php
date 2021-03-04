@@ -106,7 +106,7 @@
 							</li>
 							<li class="menu-nav__item"><a href="servicos.php" title="Ir para a Serviços">Serviços</a>
 							</li>
-							<li class="menu-nav__item"><a href="portfolio.php" title="Ir para a Portfolio">Portfolio</a></li>
+							<!-- <li class="menu-nav__item"><a href="portfolio.php" title="Ir para a Portfolio">Portfolio</a></li> -->
 							<li class="menu-nav__item"><a href="contato.php" title="Ir para a Contato">Contato</a>
 							</li>
 						</ul>
@@ -130,7 +130,7 @@
 							Open</a>
 					</li>
 					<li class="mobnav__item"><a class="mob-link" href="servicos.php" title="Ir para a Serviços">Serviços</a></li>
-					<li class="mobnav__item"><a class="mob-link" href="portfolio.php" title="Ir para a Portfolio">Portfolio</a>
+					<!-- <li class="mobnav__item"><a class="mob-link" href="portfolio.php" title="Ir para a Portfolio">Portfolio</a> -->
 					</li>
 					<li class="mobnav__item"><a class="mob-link" href="contato.php" title="Ir para a Contato">Contato</a>
 					</li>
