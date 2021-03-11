@@ -211,11 +211,9 @@
 			<article class="content" data-aos="fade-up" data-aos-duration="2000">
 				<h2 class="content__title home">Estamos <span>Aqui</span></h2>
 				<p id="txt-teste" class="content__text red">
-					Temos o objetivo de conectar sua empresa com seus clientes. 
-					Desenvolvemos seu site, suas redes sociais, sua identidade visual e outras coisas a mais. 
-					Tudo isso sem enrolação, sem termos técnicos e sem burocracias. 
-					<br />Do seu jeito e com sua cara. 
-					<br /><br /><b>Vem com a gente que é sucesso</b>.
+					Somos uma agência nova, pronta para novos desafios e para te ajudar a conseguir alçar voos mais altos.
+					Temos o objetivo de conectar sua empresa com seus clientes, atendendo suas necessidades, do digital ao impresso, e falando a sua língua.
+					<br /><br /><strong>O seu sucesso é o nosso sucesso.</strong>
 				</p>
 				<span id="msg-teste"></span>
 				<a id="btn-teste" class="btn-primary" href="sobre.php" title="Ir para a Sobre Nós">Ler Sobre</a>
@@ -227,10 +225,8 @@
 		</picture>
 
 		<div class="text-float">
-			<span>Temos o objetivo de conectar sua empresa com seus clientes. 
-			Desenvolvemos seu site, suas redes sociais, sua identidade visual e outras coisas a mais. 
-			Tudo isso sem enrolação, sem termos técnicos e sem burocracias. Do seu jeito e com sua cara.
-			Vem com a gente que é sucesso.</span>
+			<span>Somos uma agência nova, pronta para novos desafios e para te ajudar a conseguir alçar voos mais altos.
+				Temos o objetivo de conectar sua empresa com seus clientes, atendendo suas necessidades, do digital ao impresso, e falando a sua língua.</span>
 		</div>
 	</section>
 
@@ -246,8 +242,7 @@
 					<img src="./imgs/box-home-processo-01.jpg" alt="" />
 					<figcaption class="layer">
 						<h3 class="layer__title">1 - Estudo <span>de Caso</span></h3>
-						<p class="layer__text">Clínica de estética facial e corporal, focado no bem estar e na saúde dos clientes.</p>
-						<a href="portfolio-bio-estetica.php" title="Ir para Bio Estética e Saúde" class="layer__link" aria-label="Bio Estética e Saúde"></a>
+						<p class="layer__text">Etapa inicial. Aqui pesquisamos, levantamos informações e nos inteiramos sobre o assunto.</p>
 					</figcaption>
 				</figure>
 				<div class="img-mob"><img src="./imgs/box-home-processo-01.jpg" alt="" /></div>
@@ -256,13 +251,10 @@
 					<img src="./imgs/box-home-processo-02.jpg" alt="" />
 					<figcaption class="layer">
 						<h3 class="layer__title">2 - Planejamento<span> e Estratégia</span></h3>
-						<p class="layer__text">Clínica de estética facial e corporal, focado no bem estar e na saúde dos clientes.</p>
-						<a href="portfolio-bio-estetica.php" title="Ir para Bio Estética e Saúde" class="layer__link" aria-label="Bio Estética e Saúde"></a>
+						<p class="layer__text">Assim que sabemos do que se trata, partimos para montar um plano de ação.</p>
 					</figcaption>
 				</figure>
 				<div class="img-mob"><img src="./imgs/box-home-processo-02.jpg" alt="" /></div>
-				
-				<!-- <a href="servicos.php" title="Ir para a Serviços" title="Ver todos" class="show-desk btn-primary">Ver Todos</a> -->
 			</div>
 				
 			<div class="coluna-dir" data-aos="fade-up" data-aos-duration="2000">
@@ -271,8 +263,7 @@
 					<img src="./imgs/box-home-processo-03.jpg" alt="" />
 					<figcaption class="layer">
 						<h3 class="layer__title">3 - Criação e<span> Desenvolvimento</span></h3>
-						<p class="layer__text">Centro de treinamento de artes marciais, com ênfase em MuayThai e treinamentos funcionais.</p>
-						<a href="portfolio-team-muaylokeiros.php" title="Ir para Team MuayLokeiros" class="layer__link" aria-label="Team MuayLokeiros"></a>
+						<p class="layer__text">Aqui é onde a mágica acontece. Damos vida ao que estava nos papéis e aos planos.</p>
 					</figcaption>
 				</figure>
 				<div class="img-mob"><img src="./imgs/box-home-processo-03.jpg" alt="" /></div>
@@ -281,8 +272,7 @@
 					<img src="./imgs/box-home-processo-04.jpg" alt="" />
 					<figcaption class="layer">
 						<h3 class="layer__title">4 - Análise de <span>Resultados</span></h3>
-						<p class="layer__text">Artesanato baseado nos antigos povos indígenas e totalmente sustentável.</p>
-						<a href="portfolio-prico.php" title="Ir para Prico" class="layer__link" aria-label="Prico"></a>
+						<p class="layer__text">Tudo pronto! É a hora de analisarmos os resultados e trabalhar para melhorar cada vez mais.</p>
 					</figcaption>
 				</figure>
 				<div class="img-mob"><img src="./imgs/box-home-processo-04.jpg" alt="" /></div>
@@ -330,9 +320,9 @@
 	<section class="callback-home">
 		<div class="wrap-container" data-aos="fade-up" data-aos-duration="2000">
 			<div class="box">
-				<h3 class="box__title big">O que achou?</h3>
-				<p class="box__subtitle">Entre em contato e tire suas dúvidas</p>
-				<a href="./contato.php" title="Ir Para Contato" class="btn-primary">Peça um Orçamento</a>
+				<h3 class="box__title big">Diz aí, o que achou?</h3>
+				<p class="box__subtitle">Peça um orçamento, dê uma opinião <br />ou tire suas dúvidas</p>
+				<a href="./contato.php" title="Ir Para Contato" class="btn-primary">Entre em Contato</a>
 			</div>
 		</div>
 	</section>

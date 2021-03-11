@@ -81,8 +81,7 @@
 					</div>
 
 					<div class="dir-itens">
-						<span><i class="fas fa-phone-square-alt"></i>&nbsp; 11.95488.9713 &nbsp;|&nbsp;
-							11.95488.9713</span>
+						<span><i class="fab fa-whatsapp"></i>&nbsp; 11.95488.9713</span>
 					</div>
 
 				</div>

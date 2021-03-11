@@ -427,7 +427,6 @@
                     align-items: flex-start
                     text-align: left
                     padding: 30px
-                    background-color: $layer
                     +transition(.2s)
 
                     @media (max-width: $laptop-large)
@@ -439,7 +438,6 @@
                     @media (max-width: $tablet-small)
                         height: auto
                         display: block
-                        background-color: $primary
                         position: relative
 
                     &__title
@@ -608,7 +606,12 @@
                 @media (max-width: $tablet-small)
                     display: block
                     margin-top: 20px
+        
+        .coluna-dir
+            margin-top: -50px
 
+            @media (max-width: $tablet-small)
+                margin-top: 0px
 .numeros
     padding: 150px 0px
     height: auto
