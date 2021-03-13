@@ -232,7 +232,7 @@
 
 
   <!-- SECTION NOSSOS TRABALHOS -->
-	<section class="servicos">
+	<section class="trabalhos">
 		<div class="wrap-container">
 
 			<div class="coluna-esq" data-aos="fade-up" data-aos-duration="2000">
@@ -256,9 +256,8 @@
 				</figure>
 				<div class="img-mob"><img src="./imgs/box-home-processo-02.jpg" alt="" /></div>
 			</div>
-				
+
 			<div class="coluna-dir" data-aos="fade-up" data-aos-duration="2000">
-				
 				<figure class="box-servicos">
 					<img src="./imgs/box-home-processo-03.jpg" alt="" />
 					<figcaption class="layer">
@@ -267,7 +266,7 @@
 					</figcaption>
 				</figure>
 				<div class="img-mob"><img src="./imgs/box-home-processo-03.jpg" alt="" /></div>
-				
+
 				<figure class="box-servicos">
 					<img src="./imgs/box-home-processo-04.jpg" alt="" />
 					<figcaption class="layer">
@@ -276,10 +275,10 @@
 					</figcaption>
 				</figure>
 				<div class="img-mob"><img src="./imgs/box-home-processo-04.jpg" alt="" /></div>
-				
+
 				<!-- <a href="servicos.php" title="Ir para a Serviços" class="show-mobile btn-primary">Ver Todos</a> -->
 			</div>
-			
+
 		</div>
 	</section>
 

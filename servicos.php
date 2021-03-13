@@ -16,10 +16,11 @@
         <div class="wrap-container" data-aos="fade-up" data-aos-duration="2000">
             <article class="content">
                 <h2 class="content__title pages">Conheça nossos <span>serviços</span></h2>
-                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta ipsa necessitatibus eum minima? Perspiciatis itaque maxime laboriosam, eligendi
-                    repellat, adipisci, minus dolore unde quaerat ex corporis eaque nemo eligendi
-                    autem. Minus dolore unde quaerat ex corporis eaque nemo eligendi autem consequatur nemo.</p>
+                <p class="content__text"><strong>A comunicação é uma das coisas mais importantes</strong> de qualquer tipo de relacionamento, 
+                sendo assim você tem que se comunicar da maneira mais acertiva possível com os seus clientes, tanto para passar a mensagem correta sobre a sua empresa,
+                sua marca e seus ideais, quanto <strong>para conseguir vender seu peixe.</strong></p>
+                <p class="content__text">Logo abaixo há uma lista de serviços que prestamos. Dê uma olhada, não vai te custar nada, pelo contrário, 
+                pode ser que você, ou algum contato seu, esteja precisando de algum deles.</p>
             </article>
 
             <div class="boxes" data-aos="fade-up" data-aos-duration="2000">
@@ -30,8 +31,7 @@
                     </div>
                     <div class="box-text">
                         <p class="box-text__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi similique impedit dolores
-                            sapiente explicabo voluptates cupiditate.
+                            Marque presença na internet com o seu próprio site ou aumente suas vendas com um e-commerce e landing pages.
                         </p>
                     </div>
                 </a>
@@ -43,8 +43,7 @@
                     </div>
                     <div class="box-text">
                         <p class="box-text__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi similique impedit dolores
-                            sapiente explicabo voluptates cupiditate.
+                            Uma marca legal, com uma identidade visual bonita, tem mais credibilidade e aumenta o seu orgulho da sua empresa.
                         </p>
                     </div>
                 </a>
@@ -56,8 +55,7 @@
                     </div>
                     <div class="box-text">
                         <p class="box-text__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi similique impedit dolores
-                            sapiente explicabo voluptates cupiditate.
+                            Direcione melhor suas redes sociais, melhore o visual e conteúdo de suas postagens e conquiste mais seguidores.
                         </p>
                     </div>
                 </a>
@@ -69,8 +67,7 @@
                     </div>
                     <div class="box-text">
                         <p class="box-text__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi similique impedit dolores
-                            sapiente explicabo voluptates cupiditate.
+                            Distribua seus produtos com sua marca, dê brindes à seus clientes, eles vão gostar e propagar sua marca naturalmente.
                         </p>
                     </div>
                 </a>
@@ -81,8 +78,7 @@
                     </div>
                     <div class="box-text">
                         <p class="box-text__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi similique impedit dolores
-                            sapiente explicabo voluptates cupiditate.
+                            Quer ser encontrado com mais facilidade pelo Google? Vamos preparar esse terreno para você.
                         </p>
                     </div>
                 </a>

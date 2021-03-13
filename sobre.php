@@ -15,15 +15,11 @@
     <main class="page-sobre-nos">
         <div class="wrap-container" data-aos="fade-up" data-aos-duration="2000">
             <article class="content">
-                <h2 class="content__title pages">Estamos <span>Aqui</span></h2>
-                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta ipsa necessitatibus eum minima? Perspiciatis itaque maxime laboriosam, eligendi
-                    repellat, adipisci, minus dolore unde quaerat ex corporis eaque nemo eligendi
-                    autem. Minus dolore unde quaerat ex corporis eaque nemo eligendi autem consequatur nemo.</p>
-                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta ipsa necessitatibus eum minima? Perspiciatis itaque maxime laboriosam, eligendi
-                    repellat, adipisci, minus dolore unde quaerat ex corporis eaque nemo eligendi autem.</p>
-                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="content__title pages">Um resumo <span>sobre nós</span></h2>
+                <p class="content__text">Sabemos o quanto é difícil o caminho para buscar nossos objetivos, por isso decidimos iniciar essa jornada e criar a nossa <strong>Agência de Marketing Digital - OpenTag</strong>. Entendemos que muitas agências se distanciam de seus possíveis clientes por não falar a mesma língua que eles, seja usando bordões, termos técnicos ou expressões em inglês que ninguém entende.</p>
+                <p class="content__text">Nós fugimos disso, a vida real é muito mais simples. Com uma conversa direta e real a gente sempre chega numa solução que ajuda tanto o cliente quanto a nós mesmos. </p>
+                <p class="content__text">Nosso objetivo é fazer você alcançar sucesso com sua empresa, a ser conhecido em seu segmento, a aumentar suas vendas e solidificar sua marca com seus clientes. Seja com um novo <strong>Site ou E-Commerce</strong>, uma nova <strong>Identidade Visual</strong> com um <strong>Logo</strong> bonitão que é a sua cara, seja direcionando suas <strong>Redes Sociais</strong> para atingir mais o seu público alvo ou até mesmo com materiais impressos como <strong>Folhetos e Panfletos</strong> para você distribuir.</p>
+                <p class="content__text">E é acreditando nesses ideais que trabalhamos.</p>
             </article>
         </div>
 
@@ -45,25 +41,32 @@
     </section>
 
 
-    <!-- CLIENTES -->
-    <section class="clientes">
+    <!-- ETAPAS -->
+    <section class="etapas">
         <div class="wrap-container" data-aos="fade-up" data-aos-duration="2000">
-            <h2 class="pages">Alguns <span>Clientes</span></h2>
-
-            <div class="box">
-                <picture class="logo">
-                    <img src="./imgs/logo-01.png" alt="" />
-                </picture>
-
-                <picture class="logo">
-                    <img src="./imgs/logo-02.png" alt="" />
-                </picture>
-
-                <picture class="logo">
-                    <img src="./imgs/logo-03.png" alt="" />
-                </picture>
+            <h2 class="wrap-container__title">Como <span>Trabalhamos</span></h2>
+            <div class="boxes">
+                <div class="box">
+                    <figure><img src="./imgs/etapas-ico-01.svg" alt=""></figure>
+                    <h3>1 - Estudo <span>de Caso</span></h3>
+                    <p>Etapa inicial. Aqui pesquisamos, levantamos informações e nos inteiramos sobre o assunto.</p>
+                </div>
+                <div class="box">
+                    <figure><img src="./imgs/etapas-ico-02.svg" alt=""></figure>
+                    <h3>2 - Planejamento e Estratégia</h3>
+                    <p>Assim que sabemos do que se trata, partimos para montar um plano de ação.</p>
+                </div>
+                <div class="box">
+                    <figure><img src="./imgs/etapas-ico-03.svg" alt=""></figure>
+                    <h3>3 - Criação e Desenvolvimento</h3>
+                    <p>Aqui é onde a mágica acontece. Damos vida ao que estava nos papéis e aos planos.</p>
+                </div>
+                <div class="box">
+                    <figure><img src="./imgs/etapas-ico-04.svg" alt=""></figure>
+                    <h3>4 - Análise de Resultados</h3>
+                    <p>Tudo pronto! É a hora de analisarmos os resultados e trabalhar para melhorar cada vez mais.</p>
+                </div>
             </div>
-
         </div>
     </section>
 

@@ -4,9 +4,8 @@
 				<div class="wrap-footer">
 					<article>
 						<h3>Sobre Nós </h3>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, quod, doloremque animi?
-							Cupiditate, architecto.
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<p>Surgimos no ano de 2020, um dos mais difícil dos tempos atuais, com o objetivo principal de ajudar o micro e pequeno empreendedor. 
+						Sabemos que a base da pirâmide é o que há de mais valioso nesse país, então é aí que vamos atuar. <br /><br /><strong>"O seu sucesso é o nosso sucesso"</strong></p>
 						<picture class="logo-foot">
 							<a href="/index.php" title="Ir para a Home">
 								<img src="./imgs/Logo-Open.svg" alt="Logo OpenTag - Agência Digital" />
@@ -32,7 +31,6 @@
 								<li><a href="/servicos-seo-adwords.php" title="Ir para seo e adwords">- SEO e
 										AdWords</a></li>
 							</ul>
-							<li><a href="/portfolio.php" title="Ir para portfolio">Portfolio</a></li>
 							<li><a href="/contato.php" title="Ir para contato">Contato</a></li>
 						</ul>
 					</nav>
