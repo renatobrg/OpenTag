@@ -23,7 +23,7 @@
                     justify-content: center
                     align-items: center
 
-                article, nav, address
+                article, nav, .address
 
                     @media (max-width: $tablet-small)
                         text-align: center
@@ -83,9 +83,10 @@
                                     color: $primary
 
                             ul
+                                margin-top: 5px
                                 margin-left: 15px
 
-                address
+                .address
                     flex-basis: 25%
                     font-style: normal
 
@@ -96,6 +97,14 @@
                         margin-top: 50px
 
                     .redes-sociais-icons
+                        &::before
+                            content: ''
+                            display: block
+                            background-color: $grey
+                            width: 100px
+                            height: 1px
+                            margin: 15px 0px 20px
+                            
                         li
                             display: inline-block
 
@@ -124,4 +133,4 @@
         small
             display: block
             text-align: center
-            color: $grey
+            color: $light

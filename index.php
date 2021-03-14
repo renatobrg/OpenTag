@@ -11,7 +11,7 @@
 			<figure class="box">
 				<img src="./imgs/bg-topo-servs-identidade-visual.jpg" alt="" />
 				<figcaption class="layer">
-					<picture class="layer__icon">
+					<span class="layer__icon">
 						<svg x="0px" y="0px" viewBox="0 0 250 250">
 							<g>
 								<path class="st0" d="M157.4,171.8L157.4,171.8c26.2-11.9,43.1-38.1,43.1-66.8c0-15.5-4.8-30.3-13.8-42.9c-1.4-2-4.2-2.4-6.2-1
@@ -50,7 +50,7 @@
 									c1.6,0,3-0.8,3.9-2.2c0.6-1.1,0.8-2.3,0.5-3.4C211.4,149.1,210.7,148.2,209.7,147.6z"/>
 							</g>
 						</svg>
-					</picture>
+					</span>
 					<h3 class="layer__title">
 						Identidade<span>Visual</span>
 					</h3>
@@ -61,7 +61,7 @@
 			<figure class="box">
 				<img src="./imgs/bg-topo-servs-sites-ecommerce.jpg" alt="" />
 				<figcaption class="layer">
-					<picture class="layer__icon">
+					<span class="layer__icon">
 						<svg x="0px" y="0px" viewBox="0 0 250 250">
 							<g>
 								<g>
@@ -77,7 +77,7 @@
 								</g>
 							</g>
 						</svg>
-					</picture>
+					</span>
 					<h3 class="layer__title">
 						Sites e <span>E-Commerce</span>
 					</h3>
@@ -88,7 +88,7 @@
 			<figure class="box">
 				<img src="./imgs/bg-topo-servs-marketing-digital.jpg" alt="" />
 				<figcaption class="layer">
-					<picture class="layer__icon">
+					<span class="layer__icon">
 						<svg x="0px" y="0px" viewBox="0 0 250 250">
 							<g>
 								<path class="st0" d="M195,31.9c-1.1-0.8-2.5-0.9-3.9-0.5l-33,13V17.1c0-4.7-3.9-8.6-8.6-8.6H71.1c-1.6,0-2.8,1.2-2.8,2.8v3.2
@@ -132,7 +132,7 @@
 									C107.9,112,109,113.1,110.3,113.1z"/>
 							</g>
 						</svg>
-					</picture>
+					</span>
 					<h3 class="layer__title">
 						Marketing <span>Digital</span>
 					</h3>
@@ -143,7 +143,7 @@
 			<figure class="box">
 				<img src="./imgs/bg-topo-servs-papelarias-brindes.jpg" alt="" />
 				<figcaption class="layer">
-					<picture class="layer__icon">
+					<span class="layer__icon">
 						<svg x="0px" y="0px" viewBox="0 0 250 250">
 							<g>
 								<path class="st0" d="M205.5,238.6H91.9c-13,0-23.7-10.6-23.7-23.7v-142c0-13.1,10.6-23.7,23.7-23.7h113.6c13,0,23.7,10.6,23.7,23.7
@@ -162,7 +162,7 @@
 									C191.3,94.5,189.2,96.6,186.6,96.6z"/>
 							</g>
 						</svg>
-					</picture>
+					</span>
 					<h3 class="layer__title">
 						Papelarias <span>e Brindes</span>
 					</h3>
@@ -173,7 +173,7 @@
 			<figure class="box">
 				<img src="./imgs/bg-topo-servs-seo-google-ads.jpg" alt="" />
 				<figcaption class="layer">
-					<picture class="layer__icon">
+					<span class="layer__icon">
 						<svg x="0px" y="0px" viewBox="0 0 250 250">
 							<g>
 								<path class="st0" d="M237,212.2l-3.2-3.2c-1.7-1.7-4.4-1.7-6.1,0c-1.7,1.7-1.7,4.4,0,6.1l2.1,2.1l-12.6,12.6l-22.5-22.5l12.6-12.6
@@ -203,7 +203,7 @@
 									c2.4,0,4.3-1.9,4.3-4.3s-1.9-4.3-4.3-4.3H124.7z"/>
 							</g>
 						</svg>
-					</picture>
+					</span>
 					<h3 class="layer__title">
 						SEO e<span>Google Ads</span>
 					</h3>
@@ -248,7 +248,7 @@
 	<section class="trabalhos">
 		<div class="wrap-container">
 
-			<div class="coluna-esq" data-aos="fade-up" data-aos-duration="2000">
+			<article class="coluna-esq" data-aos="fade-up" data-aos-duration="2000">
 				<h2 class="home">Como <span>Trabalhamos</span></h2>
 
 				<figure class="box-servicos">
@@ -268,9 +268,9 @@
 					</figcaption>
 				</figure>
 				<div class="img-mob"><img src="./imgs/box-home-processo-02.jpg" alt="" /></div>
-			</div>
+			</article>
 
-			<div class="coluna-dir" data-aos="fade-up" data-aos-duration="2000">
+			<article class="coluna-dir" data-aos="fade-up" data-aos-duration="2000">
 				<figure class="box-servicos">
 					<img src="./imgs/box-home-processo-03.jpg" alt="" />
 					<figcaption class="layer">
@@ -290,7 +290,7 @@
 				<div class="img-mob"><img src="./imgs/box-home-processo-04.jpg" alt="" /></div>
 
 				<!-- <a href="servicos.php" title="Ir para a Serviços" class="show-mobile btn-primary">Ver Todos</a> -->
-			</div>
+			</article>
 
 		</div>
 	</section>

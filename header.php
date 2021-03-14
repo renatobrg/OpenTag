@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br" />
+<html lang="pt-br">
 
 <head>	
 	<title>OpenTag - Agência Digital</title>
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Desenvolvemos sites e e-commerces, criamos sua identidade visual, promovemos suas redes sociais." / />
+	<meta name="description" content="Desenvolvemos sites e e-commerces, criamos sua identidade visual, promovemos suas redes sociais." />
 	<meta name="keywords" content="Sites, e-commerce, redes sociais, criação de logo e identidade visual" />
 	<meta name="author" content="Equipe OpenTag" />
 
@@ -92,22 +92,19 @@
 			<div class="wrap-container" data-aos="fade-down" data-aos-duration="2000">
 				<div class="wrap-menu">
 
-					<picture class="logo">
-						<a href="index.php" title="Ir para a Home">
+					<a class="logo" href="index.php" title="Ir para a Home">
+						<picture>
 							<img src="./imgs/Logo-Open.svg" alt="Logo OpenTag" />
-						</a>
-					</picture>
+						</picture>
+					</a>
 
 					<nav class="menu">
 						<ul class="menu-nav">
 							<li class="menu-nav__item"><a href="index.php" title="Ir para a Home">Home</a></li>
-							<li class="menu-nav__item"><a href="sobre.php" title="Ir para a Sobre Nós">A Open</a>
-							</li>
-							<li class="menu-nav__item"><a href="servicos.php" title="Ir para a Serviços">Serviços</a>
-							</li>
+							<li class="menu-nav__item"><a href="sobre.php" title="Ir para a Sobre Nós">A Open</a></li>
+							<li class="menu-nav__item"><a href="servicos.php" title="Ir para a Serviços">Serviços</a></li>
 							<!-- <li class="menu-nav__item"><a href="portfolio.php" title="Ir para a Portfolio">Portfolio</a></li> -->
-							<li class="menu-nav__item"><a href="contato.php" title="Ir para a Contato">Contato</a>
-							</li>
+							<li class="menu-nav__item"><a href="contato.php" title="Ir para a Contato">Contato</a></li>
 						</ul>
 					</nav>
 
@@ -116,23 +113,19 @@
 		</div>
 
 		<div id="menu-mob" class="menu-mob hide fade-out" data-aos="fade-down" data-aos-duration="2000">
-			<picture class="logo-mob">
-				<a href="index.php" title="Ir para a Home">
+			<a class="logo-mob" href="index.php" title="Ir para a Home">
+				<picture>
 					<img src="./imgs/Logo-Open.svg" alt="Logo OpenTag - Agência Digital" />
-				</a>
-			</picture>
+				</picture>
+			</a>
 
 			<nav class="menu-mob-nav">
 				<ul class="mobnav">
 					<li class="mobnav__item"><a class="mob-link" href="index.php" title="Ir para a Home">Home</a></li>
-					<li class="mobnav__item"><a class="mob-link" href="sobre.php" title="Ir para a Sobre Nós">A
-							Open</a>
-					</li>
+					<li class="mobnav__item"><a class="mob-link" href="sobre.php" title="Ir para a Sobre Nós">A Open</a></li>
 					<li class="mobnav__item"><a class="mob-link" href="servicos.php" title="Ir para a Serviços">Serviços</a></li>
-					<!-- <li class="mobnav__item"><a class="mob-link" href="portfolio.php" title="Ir para a Portfolio">Portfolio</a> -->
-					</li>
-					<li class="mobnav__item"><a class="mob-link" href="contato.php" title="Ir para a Contato">Contato</a>
-					</li>
+					<!-- <li class="mobnav__item"><a class="mob-link" href="portfolio.php" title="Ir para a Portfolio">Portfolio</a></li>-->
+					<li class="mobnav__item"><a class="mob-link" href="contato.php" title="Ir para a Contato">Contato</a></li>
 				</ul>
 			</nav>
 
