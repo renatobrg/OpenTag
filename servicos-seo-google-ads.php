@@ -11,13 +11,13 @@
     </section>
 
 
-    <!-- SECTION - SEO e ADWORDS -->
+    <!-- SECTION - SEO e GOOGLE ADS -->
     <main class="servicos-int">
         <div class="wrap-container">
             <article class="content" data-aos="fade-up" data-aos-duration="2000">
                 <h2 class="content__title pages">SEO e Google Ads</h2>
                 <picture class="content__imagem">
-                    <img src="./imgs/capa-servicos-05.jpg" alt="Capa SEO e AdWords" />
+                    <img src="./imgs/capa-servicos-05.jpg" alt="Capa SEO e Google Ads" />
                 </picture>
                 <p class="content__text">Quer ser encontrado nos primeiros resutados do Google, ou em algum outro site de busca? Aqui nós trabalhamos desde a parte estrutural do seu site, até a questão visual de usabilidade, passando pelo conteúdo de qualidade, imagens significativas e eficiência de carregamento. Essa já é uma boa junção de fatores que ajudam o sucesso do site.</p>
                 <p class="content__text">Além desses itens citados acima, temos a questão de Google Ads, que, resumindo, criar anúncios pagos sobre um determinado tema com o objetivo de atingir um público mais segmentado, no caso os seus possíveis clientes. </p>
@@ -103,9 +103,9 @@
                         </a>
                     </li>
                     <li class="lista__item">
-                        <a href="servicos-seo-adwords.php" title="Ir para SEO e AdWords" class="active">
+                        <a href="servicos-seo-google-ads.php" title="Ir para SEO e Google Ads" class="active">
                             <span class="icone"><img src="./imgs/servs-ico-seo-ad.svg" alt="Ícone SVG" /></span>
-                            <span class="texto"> SEO e <span>AdWords</span></span>
+                            <span class="texto"> SEO e <span>Google Ads</span></span>
                         </a>
                     </li>
                 </ul>

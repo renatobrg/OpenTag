@@ -171,7 +171,7 @@
 			</figure>
 
 			<figure class="box">
-				<img src="./imgs/bg-topo-servs-seo-adwords.jpg" alt="" />
+				<img src="./imgs/bg-topo-servs-seo-google-ads.jpg" alt="" />
 				<figcaption class="layer">
 					<picture class="layer__icon">
 						<svg x="0px" y="0px" viewBox="0 0 250 250">
@@ -205,9 +205,9 @@
 						</svg>
 					</picture>
 					<h3 class="layer__title">
-						SEO <span>e AdWords</span>
+						SEO e<span>Google Ads</span>
 					</h3>
-					<a href="servicos-seo-adwords.php" title="Ir para a SEO e AdWords" class="layer__link" aria-label="SEO e AdWords"></a>
+					<a href="servicos-seo-google-ads.php" title="Ir para a SEO e Google Ads" class="layer__link" aria-label="SEO e Google Ads"></a>
 				</figcaption>
 			</figure>
 		</div>

@@ -72,9 +72,9 @@
                     </div>
                 </a>
 
-                <a href="servicos-seo-adwords.php" title="Ir para SEO e AdWords" aria-label="SEO e AdWords" class="box">
+                <a href="servicos-seo-google-ads.php" title="Ir para SEO e Google Ads" aria-label="SEO e Google Ads" class="box">
                     <div class="box-imagem bg-seoa">
-                        <h3 class="box-imagem__title">SEO <span>e AdWords</span></h3>
+                        <h3 class="box-imagem__title">SEO <span>e Google Ads</span></h3>
                     </div>
                     <div class="box-text">
                         <p class="box-text__text">

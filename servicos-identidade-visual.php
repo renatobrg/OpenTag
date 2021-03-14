@@ -106,9 +106,9 @@
                         </a>
                     </li>
                     <li class="lista__item">
-                        <a href="servicos-seo-adwords.php" title="Ir para SEO e AdWords">
+                        <a href="servicos-seo-google-ads.php" title="Ir para SEO e Google Ads">
                             <span class="icone"><img src="./imgs/servs-ico-seo-ad.svg" alt="Ícone SVG" /></span>
-                            <span class="texto"> SEO e <span>AdWords</span></span>
+                            <span class="texto"> SEO e <span>Google Ads</span></span>
                         </a>
                     </li>
                 </ul>

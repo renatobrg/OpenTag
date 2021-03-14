@@ -7,7 +7,7 @@
 						<p>Surgimos no ano de 2020, um dos mais difícil dos tempos atuais, com o objetivo principal de ajudar o micro e pequeno empreendedor. 
 						Sabemos que a base da pirâmide é o que há de mais valioso nesse país, então é aí que vamos atuar. <br /><br /><strong>"O seu sucesso é o nosso sucesso"</strong></p>
 						<picture class="logo-foot">
-							<a href="/index.php" title="Ir para a Home">
+							<a href="./index.php" title="Ir para a Home">
 								<img src="./imgs/Logo-Open.svg" alt="Logo OpenTag - Agência Digital" />
 							</a>
 						</picture>
@@ -16,22 +16,22 @@
 					<nav>
 						<h3>Menu Rápido</h3>
 						<ul class="menu-rapido">
-							<li><a href="/index.php" title="Ir para home">Home</a></li>
-							<li><a href="/sobre.php" title="Ir para sobre nós">A OpenTag</a></li>
-							<li><a href="/servicos.php" title="Ir para serviços">Serviços</a></li>
+							<li><a href="./index.php" title="Ir para home">Home</a></li>
+							<li><a href="./sobre.php" title="Ir para sobre nós">A OpenTag</a></li>
+							<li><a href="./servicos.php" title="Ir para serviços">Serviços</a></li>
 							<ul>
-								<li><a href="/servicos-identidade-visual.php" title="Ir para idadentidade visual">-
+								<li><a href="./servicos-identidade-visual.php" title="Ir para idadentidade visual">-
 										Identidade Visual</a></li>
-								<li><a href="/servicos-sites-ecommerce.php" title="Ir para sites e e-commerce">- Sites e
+								<li><a href="./servicos-sites-ecommerce.php" title="Ir para sites e e-commerce">- Sites e
 										e-Commerce</a></li>
-								<li><a href="/servicos-marketing-digital.php" title="Ir para marketing digital">-
+								<li><a href="./servicos-marketing-digital.php" title="Ir para marketing digital">-
 										Marketing Digital</a></li>
-								<li><a href="/servicos-papelarias-brindes.php" title="Ir para papelarias e brindes">-
+								<li><a href="./servicos-papelarias-brindes.php" title="Ir para papelarias e brindes">-
 										Papelarias e Brindes</a></li>
-								<li><a href="/servicos-seo-adwords.php" title="Ir para seo e adwords">- SEO e
-										AdWords</a></li>
+								<li><a href="./servicos-seo-google-ads.php" title="Ir para seo e Google Ads">- SEO e
+										Google Ads</a></li>
 							</ul>
-							<li><a href="/contato.php" title="Ir para contato">Contato</a></li>
+							<li><a href="./contato.php" title="Ir para contato">Contato</a></li>
 						</ul>
 					</nav>
 
