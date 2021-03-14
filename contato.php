@@ -15,10 +15,10 @@
     <section class="page-contato">
         <div class="wrap-container">
             <article class="content" data-aos="fade-up" data-aos-duration="2000">
-                <p class="content__txt">Vamos tomar um café e <br /><strong>falar sobre como podemos ajudar.</strong><br /><br /> Escolha um dos canais abaixo e entre em contato.</p>
+                <p class="content__text">Vamos tomar um café e <br /><strong>falar sobre como podemos ajudar.</strong><br /><br /> Escolha um dos canais abaixo e entre em contato.</p>
                 
-                <p class="content__txt"><i class="fab fa-whatsapp"></i>&nbsp; 11.95488.9713 </p>
-                <p class="content__txt">contato@opentag.com.br <br /> comercial@opentag.com.br</p>
+                <p class="content__text"><i class="fab fa-whatsapp"></i>&nbsp; 11.95488.9713 </p>
+                <p class="content__text">contato@opentag.com.br <br /> comercial@opentag.com.br</p>
 
                 <ul class="redes-sociais">
                     <li>

@@ -19,17 +19,15 @@
                 <picture class="content__imagem">
                     <img src="./imgs/capa-servicos-04.jpg" alt="Capa Papelarias e Brindes" />
                 </picture>
-                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta ipsa necessitatibus eum minima? Perspiciatis itaque maxime laboriosam, eligendi
-                    repellat, adipisci, minus dolore unde quaerat ex corporis eaque nemo eligendi
-                    autem. Minus dolore unde quaerat ex corporis eaque nemo eligendi autem consequatur nemo.</p>
+                <p class="content__text">Tenha sua marca estampada por aí.</p>
 
                 <ul class="content__list-services">
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
+                    <li>Brindes Personalizados</li>
+                    <li>Pen drive, carregador, canetas e etc</li>
+                    <li>Cadernos, pastas, envelopes, crachás</li>
+                    <li>Panfletos, folhetos, flyers</li>
+                    <li>Calendários</li>
+                    <li>Canecas, Camisetas</li>
                 </ul>
 
                 <!-- <div class="galeria">

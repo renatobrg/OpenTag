@@ -19,17 +19,18 @@
                 <picture class="content__imagem">
                     <img src="./imgs/capa-servicos-01.jpg" alt="Capa Web Serviços" />
                 </picture>
-                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta ipsa necessitatibus eum minima? Perspiciatis itaque maxime laboriosam, eligendi
-                    repellat, adipisci, minus dolore unde quaerat ex corporis eaque nemo eligendi
-                    autem. Minus dolore unde quaerat ex corporis eaque nemo eligendi autem consequatur nemo.</p>
+                <p class="content__text">Hoje temos muitos meios online de mostrar nossos serviços e produtos. Temos redes sociais, blogs e plataformas. Todos esses bem acessíveis e sem pesar no nosso bolso, a pergunta que fica é: se temos tudo isso disponível, por que vou pagar para ter um site? Tenho algumas respostas pra essa pergunta, mas a mais simples É: não construa sua casa em terreno alugado.</p>
 
+                <p class="content__text">Todas essas alternativas citadas acima não são de seu domínio, sendo assim o controle é menor e as coisas podem mudar rapidamente, podendo fazer você perder muito tempo, e talvez dinheiro. Sem contar que ter um site só seu traz muito mais credibilidade e confiabilidade por parte de seus clientes.</p>
+                    
+                <h3 class="content__title3">O que oferecemos sobre esse assunto?</h3>
                 <ul class="content__list-services">
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
+                    <li>Desenvolvimento de Sites responsivos</li>
+                    <li>Desenvolvimento de E-Commerces</li>
+                    <li>Otimização e usabilidade</li>
+                    <li>Criação de Landing Pages</li>
+                    <li>Criação de Hot Sites</li>
+                    <li>Direcionamento de hospedagens e domínios</li>
                 </ul>
 
                 <!-- <div class="galeria">

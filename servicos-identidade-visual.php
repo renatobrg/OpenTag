@@ -19,17 +19,20 @@
                 <picture class="content__imagem">
                     <img src="./imgs/capa-servicos-03.jpg" alt="Capa Identidade Visual" />
                 </picture>
-                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta ipsa necessitatibus eum minima? Perspiciatis itaque maxime laboriosam, eligendi
-                    repellat, adipisci, minus dolore unde quaerat ex corporis eaque nemo eligendi
-                    autem. Minus dolore unde quaerat ex corporis eaque nemo eligendi autem consequatur nemo.</p>
+                <p class="content__text">Algumas vezes você pode não se sentir tão à vontade de exibir sua marca para seus clientes por achar que ela não representa tão bem a sua imagem ou a da sua empresa. Isso é mais comum do que parece, afinal, não é sempre que temos alguém para nos orientar sobre o que pode, ou não, fazer a diferença.</p>
+                <p class="content__text">Estamos aqui para isso. Te orientar e explicar sobre a importância e sobre os cuidados que temos que ter com nossa marca e os resultados que isso pode trazer para nós.</p>
 
+                <h3 class="content__title3">O que <strong>Identidade Visual</strong> engloba?</h3>
                 <ul class="content__list-services">
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
+                    <li><strong>Criação de Logotipo</strong></li>
+                    <li>Definição de cores</li>
+                    <li>Tipografia</li>
+                    <li>Manual de identidade visual (MIV)</li>
+                    <li>Visual das redes sociais</li>
+                    <li>Layouts de sites e blogs</li>
+                    <li>Definição de material impresso</li>
+                    <li>Comunicação em geral</li>
+                    <li>Embalagens</li>
                 </ul>
 
                 <!-- <div class="galeria">

@@ -19,17 +19,18 @@
                 <picture class="content__imagem">
                     <img src="./imgs/capa-servicos-02.jpg" alt="Capa Marketing Digital" />
                 </picture>
-                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta ipsa necessitatibus eum minima? Perspiciatis itaque maxime laboriosam, eligendi
-                    repellat, adipisci, minus dolore unde quaerat ex corporis eaque nemo eligendi
-                    autem. Minus dolore unde quaerat ex corporis eaque nemo eligendi autem consequatur nemo.</p>
+                <p class="content__text">Estamos em um momento em que as pessoas não desgrudam do celular, estão sempre conectados. Sendo assim fica muito difícil pra você que tem uma empresa, um negócio ou apenas serviços à oferecer, ficar de fora das redes. Isso não pode acontecer, as oportunidades que temos nessas redes sociais são inúmeras e muito mais acessíveis do que imaginamos.</p> 
+                
+                <p class="content__text">Então, é aí que a gente entra. Vamos direcionar melhor o seu conteúdo pelas redes e fazer com que o seus clientes recebam o que estão procurando, no caso, você, sua empresa e seus serviços, com a devida qualidade.</p> 
 
+                <h3 class="content__title3">O que <strong>Marketing Digital</strong> engloba?</h3>
                 <ul class="content__list-services">
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
-                    <li>Lorem Ipsum Dolor</li>
+                    <li>Administração de Redes Sociais (Facebook, Instagram, LinkedIn, Youtube)</li>
+                    <li>Comunicação via Whatsapp</li>
+                    <li>Conteúdo estratégico e direcionado</li>
+                    <li>Emails Marketing</li>
+                    <li>Captação de novos clientes</li>
+                    <li>Planejamento de campanhas</li>
                 </ul>
 
                 <!-- <div class="galeria">
