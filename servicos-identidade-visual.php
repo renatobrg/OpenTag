@@ -83,32 +83,32 @@
                 <ul class="lista">
                     <li class="lista__item">
                         <a href="servicos-sites-ecommerce.php" title="Ir para Sites e E-Commerce">
-                            <span class="icone"><img src="./imgs/ih-sites.svg" alt="Ícone SVG" /></span>
-                            <span class="texto"> Sites e E-Commerce</span>
+                            <span class="icone"><img src="./imgs/servs-ico-sites.svg" alt="Ícone SVG" /></span>
+                            <span class="texto"> Sites e <span>E-Commerce</span></span>
                         </a>
                     </li>
                     <li class="lista__item">
                         <a href="servicos-identidade-visual.php" title="Ir para Identidade Visual" class="active">
-                            <span class="icone"><img src="./imgs/ih-identidade-visual.svg" alt="Ícone SVG" /></span>
-                            <span class="texto"> Identidade Visual</span>
+                            <span class="icone"><img src="./imgs/servs-ico-identidade-visual.svg" alt="Ícone SVG" /></span>
+                            <span class="texto"> Identidade <span>Visual</span></span>
                         </a>
                     </li>
                     <li class="lista__item">
                         <a href="servicos-marketing-digital.php" title="Ir para Marketing Digital">
-                            <span class="icone"><img src="./imgs/ih-marketing.svg" alt="Ícone SVG" /></span>
-                            <span class="texto"> Marketing Digital</span>
+                            <span class="icone"><img src="./imgs/servs-ico-marketing.svg" alt="Ícone SVG" /></span>
+                            <span class="texto"> Marketing <span>Digital</span></span>
                         </a>
                     </li>
                     <li class="lista__item">
                         <a href="servicos-papelarias-brindes.php" title="Ir para Papelarias e Brindes">
-                            <span class="icone"><img src="./imgs/ih-papelarias.svg" alt="Ícone SVG" /></span>
-                            <span class="texto"> Papelarias e Brindes</span>
+                            <span class="icone"><img src="./imgs/servs-ico-papelarias.svg" alt="Ícone SVG" /></span>
+                            <span class="texto"> Papelarias <span>e Brindes</span></span>
                         </a>
                     </li>
                     <li class="lista__item">
                         <a href="servicos-seo-adwords.php" title="Ir para SEO e AdWords">
-                            <span class="icone"><img src="./imgs/ih-seo-ad.svg" alt="Ícone SVG" /></span>
-                            <span class="texto"> SEO e AdWords</span>
+                            <span class="icone"><img src="./imgs/servs-ico-seo-ad.svg" alt="Ícone SVG" /></span>
+                            <span class="texto"> SEO e <span>AdWords</span></span>
                         </a>
                     </li>
                 </ul>

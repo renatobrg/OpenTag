@@ -145,22 +145,31 @@
                         padding: 15px
                         background-color: rgba(255,255,255,0.05)
                         color: $light
-                        font-size: 0.9rem
+                        font-size: 1rem
                         +transition(.2s)
+
+                        @media (max-width: $laptop-medium)
+                            font-size: 0.9rem
 
                         &:hover
                             background-color: rgba(255,255,255,0.1)
 
                         .icone
                             display: inline-block
-                            width: 30px
-                            height: 30px
+                            width: 40px
+                            height: 40px
                             margin-right: 15px
 
                         .texto
                             display: inline-block
                             width: auto
                             height: auto
+
+                            span
+                                display: block
+
+                                @media (max-width: $tablet-large)
+                                    display: inline
                         
                         &.active
                             background-color: $primary
