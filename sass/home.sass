@@ -59,6 +59,8 @@
         justify-content: center
         margin: 0px auto
         width: 80vw
+        animation-name: fadein
+        animation-duration: 2.5s
 
         @media (max-width: $laptop-large)
             width: 90vw
@@ -157,7 +159,7 @@
                     position: relative
                     z-index: 2
                     color: $white
-                    font-weight: $regular
+                    font-weight: 600
                     font-size: 1.3rem
 
                     @media (max-width: $laptop-large)
@@ -168,6 +170,7 @@
 
                     span
                         display: block
+                        color: $white
 
                 &__link
                     display: block

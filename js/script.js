@@ -94,7 +94,3 @@ window.addEventListener( 'scroll', function() {
 })
 
 
-lightbox.option({
-    'wrapAround': false,
-    'albumLabel': "Imagem %1 de %2"
-})

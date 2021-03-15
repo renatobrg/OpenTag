@@ -42,9 +42,8 @@
 	<meta name="msapplication-navbutton-color" content="#ec7601" />
 
 	<link rel="stylesheet" href="./css/style.min.css" />
-	<link rel="stylesheet" href="./css/slick.css" />
 	<link rel="stylesheet" href="./css/aos.css" />
-	<link rel="stylesheet" href="./css/lightbox.min.css" />
+	<link rel="stylesheet" href="./css/slick.css" />
 	<script src="https://kit.fontawesome.com/66d42d88cc.js" crossorigin="anonymous"></script>
 </head>
 
@@ -53,26 +52,26 @@
 	<header class="main-header">
 
 		<div class="pre-header">
-			<div class="wrap-container" data-aos="fade-down" data-aos-duration="2000">
+			<div class="wrap-container">
 				<div class="wrap-pre">
 
 					<div class="esq-itens">
 						<ul class="redes-sociais-icons">
 							<li>
 								<a href="https://www.facebook.com/agenciaopentag" title="Ir para Facebook OpenTag" target="_blank"
-									aria-label="Facebook OpenTag">
+									aria-label="Facebook OpenTag" rel="noreferrer">
 									<i class="fab fa-facebook-f"></i>
 								</a>
 							</li>
 							<li>
 								<a href="https://www.instagram.com/agenciaopentag/" title="Ir para Instagram OpenTag" target="_blank"
-									aria-label="Instagram OpenTag">
+									aria-label="Instagram OpenTag" rel="noreferrer">
 									<i class="fab fa-instagram"></i>
 								</a>
 							</li>
 							<li>
 								<a href="https://www.linkedin.com/company/agência-opentag/" title="Ir para LinkedIn OpenTag"
-									target="_blank" aria-label="LinkedIn OpenTag">
+									target="_blank" aria-label="LinkedIn OpenTag" rel="noreferrer">
 									<i class="fab fa-linkedin"></i>
 								</a>
 							</li>
@@ -89,7 +88,7 @@
 		</div>
 
 		<div id="menu-fixed" class="central-header">
-			<div class="wrap-container" data-aos="fade-down" data-aos-duration="2000">
+			<div class="wrap-container">
 				<div class="wrap-menu">
 
 					<a class="logo" href="index.php" title="Ir para a Home">
@@ -112,7 +111,7 @@
 			</div>
 		</div>
 
-		<div id="menu-mob" class="menu-mob hide fade-out" data-aos="fade-down" data-aos-duration="2000">
+		<div id="menu-mob" class="menu-mob hide fade-out">
 			<a class="logo-mob" href="index.php" title="Ir para a Home">
 				<picture>
 					<img src="./imgs/Logo-Open.svg" alt="Logo OpenTag - Agência Digital" />
@@ -133,19 +132,19 @@
 				<ul class="icons">
 					<li>
 						<a href="https://www.facebook.com/agenciaopentag" title="Ir para Facebook OpenTag" target="_blank"
-							aria-label="Facebook OpenTag">
+							aria-label="Facebook OpenTag" rel="noreferrer">
 							<i class="fab fa-facebook-f"></i>
 						</a>
 					</li>
 					<li>
 						<a href="https://www.instagram.com/agenciaopentag/" title="Ir para Instagram OpenTag" target="_blank"
-							aria-label="Instagram OpenTag">
+							aria-label="Instagram OpenTag" rel="noreferrer">
 							<i class="fab fa-instagram"></i>
 						</a>
 					</li>
 					<li>
 						<a href="https://www.linkedin.com/company/agência-opentag/" title="Ir para LinkedIn OpenTag" target="_blank"
-							aria-label="LinkedIn OpenTag">
+							aria-label="LinkedIn OpenTag" rel="noreferrer">
 							<i class="fab fa-linkedin"></i>
 						</a>
 					</li>
@@ -159,7 +158,7 @@
 			<span></span>
 		</div>
 
-		<button id="btn-toggle" class="btn-toggle open" data-aos="fade-down" data-aos-duration="2000">
+		<button id="btn-toggle" class="btn-toggle open" aria-label="Menu Hamburger">
 			<span class="traco"></span>
 		</button>
 

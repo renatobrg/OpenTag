@@ -49,24 +49,26 @@
 								<b>E-Mail</b>
 								<br />
 								contato@opentag.com
+								<br />
+								comercial@opentag.com
 							</p>
 
 							<ul class="redes-sociais-icons">
 								<li>
 									<a href="https://www.facebook.com/agenciaopentag" title="Ir para Facebook OpenTag" target="_blank"
-										aria-label="Facebook OpenTag">
+										aria-label="Facebook OpenTag" rel="noreferrer">
 										<i class="fab fa-facebook-f"></i>
 									</a>
 								</li>
 								<li>
 									<a href="https://www.instagram.com/agenciaopentag/" title="Ir para Instagram OpenTag" target="_blank"
-										aria-label="Instagram OpenTag">
+										aria-label="Instagram OpenTag" rel="noreferrer">
 										<i class="fab fa-instagram"></i>
 									</a>
 								</li>
 								<li>
 									<a href="https://www.linkedin.com/company/agência-opentag/" title="Ir para LinkedIn OpenTag"
-										target="_blank" aria-label="LinkedIn OpenTag">
+										target="_blank" aria-label="LinkedIn OpenTag" rel="noreferrer">
 										<i class="fab fa-linkedin"></i>
 									</a>
 								</li>
@@ -83,7 +85,6 @@
 	</footer>
 
 	<script src="./js/jquery-3.5.1.min.js"></script>
-	<script src="./js/lightbox.min.js"></script>
 	<script src="./js/slick.min.js"></script>
 	<script src="./js/aos.js"></script>
 	<script src="./js/script.js"></script>

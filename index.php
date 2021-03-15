@@ -2,12 +2,12 @@
 
   <!-- BANNER HERO -->
 	<main class="main-hero ">
-		<h1 class="main-hero__title" data-aos="fade-up" data-aos-duration="2000">
+		<h1 class="main-hero__title">
 			<span>A <strong>agência perfeita</strong> pra quem quer</span>
 			<span>se <strong>mostrar para o mundo</strong></span>
 		</h1>
 
-		<div class="wrap-box" data-aos="fade-up" data-aos-duration="2000">
+		<div class="wrap-box">
 			<figure class="box">
 				<img src="./imgs/bg-topo-servs-identidade-visual.jpg" alt="" />
 				<figcaption class="layer">
@@ -51,9 +51,9 @@
 							</g>
 						</svg>
 					</span>
-					<h3 class="layer__title">
+					<h2 class="layer__title">
 						Identidade<span>Visual</span>
-					</h3>
+					</h2>
 					<a href="servicos-identidade-visual.php" title="Ir para a Identidade Visual" class="layer__link" aria-label="Identidade Visual"></a>
 				</figcaption>
 			</figure>
@@ -78,9 +78,9 @@
 							</g>
 						</svg>
 					</span>
-					<h3 class="layer__title">
+					<h2 class="layer__title">
 						Sites e <span>E-Commerce</span>
-					</h3>
+					</h2>
 					<a href="servicos-sites-ecommerce.php" title="Ir para a Sites e E-commerce" class="layer__link" aria-label="Sites e E-commerce"></a>
 				</figcaption>
 			</figure>
@@ -133,9 +133,9 @@
 							</g>
 						</svg>
 					</span>
-					<h3 class="layer__title">
+					<h2 class="layer__title">
 						Marketing <span>Digital</span>
-					</h3>
+					</h2>
 					<a href="servicos-marketing-digital.php" title="Ir para a Marketing Digital" class="layer__link" aria-label="Marketing Digital"></a>
 				</figcaption>
 			</figure>
@@ -163,9 +163,9 @@
 							</g>
 						</svg>
 					</span>
-					<h3 class="layer__title">
+					<h2 class="layer__title">
 						Papelarias <span>e Brindes</span>
-					</h3>
+					</h2>
 					<a href="servicos-papelarias-brindes.php" title="Ir para a Papelarias e Brindes" class="layer__link" aria-label="Papelarias e Brindes"></a>
 				</figcaption>
 			</figure>
@@ -204,9 +204,9 @@
 							</g>
 						</svg>
 					</span>
-					<h3 class="layer__title">
+					<h2 class="layer__title">
 						SEO e<span>Google Ads</span>
-					</h3>
+					</h2>
 					<a href="servicos-seo-google-ads.php" title="Ir para a SEO e Google Ads" class="layer__link" aria-label="SEO e Google Ads"></a>
 				</figcaption>
 			</figure>
@@ -263,7 +263,7 @@
 				<figure class="box-servicos">
 					<img src="./imgs/box-home-processo-02.jpg" alt="" />
 					<figcaption class="layer">
-						<h3 class="layer__title">2 - Planejamento<span> e Estratégia</span></h3>
+						<h3 class="layer__title">2 - Planejamento <span>e Estratégia</span></h3>
 						<p class="layer__text">Assim que sabemos do que se trata, partimos para montar um plano de ação.</p>
 					</figcaption>
 				</figure>
@@ -274,7 +274,7 @@
 				<figure class="box-servicos">
 					<img src="./imgs/box-home-processo-03.jpg" alt="" />
 					<figcaption class="layer">
-						<h3 class="layer__title">3 - Criação e<span> Desenvolvimento</span></h3>
+						<h3 class="layer__title">3 - Criação e <span>Desenvolvimento</span></h3>
 						<p class="layer__text">Aqui é onde a mágica acontece. Damos vida ao que estava nos papéis e aos planos.</p>
 					</figcaption>
 				</figure>
@@ -305,22 +305,22 @@
 			<div class="wrap-numbers">
 				<div class="box">
 					<p class="box__nums">+<span class="number1">30</span></p>
-					<h4 class="box__title">Jobs</h4>
+					<h3 class="box__title">Jobs</h3>
 				</div>
 
 				<div class="box">
 					<p class="box__nums">+<span class="number2">10</span></p>
-					<h4 class="box__title">Projetos</h4>
+					<h3 class="box__title">Projetos</h3>
 				</div>
 
 				<div class="box">
 					<p class="box__nums">+<span class="number3">70</span></p>
-					<h4 class="box__title">Peças</h4>
+					<h3 class="box__title">Peças</h3>
 				</div>
 
 				<div class="box">
 					<p class="box__nums">+<span class="number4">200</span></p>
-					<h4 class="box__title">Cafés</h4>
+					<h3 class="box__title">Cafés</h3>
 				</div>
 			</div>
 					
