@@ -142,6 +142,32 @@
                         @media (max-width: $tablet-large)
                             display: inline
 
+.cta-portfolio
+    padding: 100px 0px
+    background-image: url('../imgs/bg-cta-sobre-portfolio.jpg')
+    background-size: cover
+
+    @media (max-width: $laptop-small)
+        padding: 50px 0px 100px
+
+    .wrap-container
+        .port
+            text-align: center
+            color: $light
+            .brs
+                display: block
+                color: $light
+                .cor
+                    color: $light
+
+            &::after
+                display: none
+
+        .btn-primary
+            display: block
+            margin: 30px auto 0px
+            width: 200px
+
 .depoimentos-sobre
     padding: 100px 0px
     background-color: $dark
@@ -185,6 +211,14 @@
             &__nome
                 margin-top: 30px
                 font-weight: $bold
+                color: $primary
+            
+            &__empresa
+                margin-top: 5px
+                margin-bottom: 15px
+                font-weight: $bold
+                font-size: 1rem
+                text-transform: uppercase
                 color: $light
 
             &__text

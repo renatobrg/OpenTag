@@ -71,6 +71,18 @@
     </section>
 
 
+    <!-- CTA PORTFOLIO -->
+    <section class="cta-portfolio">
+        <div class="wrap-container" data-aos="fade-up" data-aos-duration="2000">
+            <h2 class="port">
+                Quer saber o que já fizemos?
+                <span class="brs big">Veja nossos últimos trabalhos</span></span>
+            </h2>
+            <a href="https://www.behance.net/opentag" title="" class="btn-primary">Abrir Portfolio</a>
+        </div>
+    </section>
+
+
     <?php include ('./callback.php') ?>
 
 <?php include ('./footer.php') ?>

@@ -5,7 +5,7 @@
 					<article>
 						<h3>Sobre Nós </h3>
 						<p>Surgimos no ano de 2020, um dos mais difícil dos tempos atuais, com o objetivo principal de ajudar o micro e pequeno empreendedor. 
-						Sabemos que a base da pirâmide é o que há de mais valioso nesse país, então é aí que vamos atuar. <br /><br /><strong>"O seu sucesso é o nosso sucesso"</strong></p>
+						Sabemos que a base da pirâmide é o que há de mais valioso nesse país, então é aí que vamos atuar. <br /><br /><strong>"Queremos crescer juntos com você"</strong></p>
 						<a class="logo-foot" href="./index.php" title="Ir para a Home">
 							<picture>
 								<img src="./imgs/Logo-Open.svg" alt="Logo OpenTag - Agência Digital" />

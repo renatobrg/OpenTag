@@ -226,7 +226,7 @@
 				<p id="txt-teste" class="content__text red">
 					Somos uma agência nova, pronta para novos desafios e para te ajudar a conseguir alçar voos mais altos.
 					Temos o objetivo de conectar sua empresa com seus clientes, atendendo suas necessidades, do digital ao impresso, e falando a sua língua.
-					<br /><br /><strong>O seu sucesso é o nosso sucesso.</strong>
+					<br /><br /><strong>Queremos crescer juntos com você</strong>
 				</p>
 				<span id="msg-teste"></span>
 				<a id="btn-teste" class="btn-primary" href="sobre.php" title="Ir para a Sobre Nós">Ler Sobre</a>
